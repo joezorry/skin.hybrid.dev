@@ -252,9 +252,10 @@
 			<onfocus condition="System.HasAddon(script.randomitems) + !Skin.HasSetting(HideRandomList) + IsEmpty(Window(home).Property(Randomlist_Control))">XBMC.RunScript(script.randomitems,limit=10&amp;unplayed=$VAR[RandomUnWatchedItems]&amp;alarm=1)</onfocus>
 			<onfocus condition="System.HasAddon(script.randomitems) + !Skin.HasSetting(HideRandomList) + IsEmpty(Window(home).Property(Randomlist_Control))">SetProperty(Randomlist_Control,True)</onfocus>
 			-->
+			<!--
 			<onfocus condition="System.HasAddon(script.favourites) + Skin.HasSetting(FavPlaysPlayList)">XBMC.RunScript(script.favourites,playlists=play)</onfocus>
 			<onfocus condition="System.HasAddon(script.favourites) + !Skin.HasSetting(FavPlaysPlayList)">XBMC.RunScript(script.favourites)</onfocus>
-			
+			-->
 			<!--onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItemOnePlaylist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItemOnePlaylist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListOne)</onfocus>
 			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItemTwoPlaylist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItemTwoPlaylist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListTwo)</onfocus>
 			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItemThreePlaylist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItemThreePlaylist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListThree)</onfocus>
