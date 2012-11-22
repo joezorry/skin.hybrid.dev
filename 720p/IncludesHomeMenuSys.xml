@@ -195,7 +195,6 @@
 			<onfocus condition="IsEmpty(Skin.String(HomeItemOneStats))">Skin.SetString(HomeItemOneStats,Weather)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItemOneAction))">Skin.SetString(HomeItemOneAction,ActivateWindow(Weather))</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItemOneBackground))">Skin.SetString(HomeItemOneBackground,special://skin/backgrounds/weather/weather.jpg)</onfocus>
-			<onfocus>Skin.SetBool(CurrentWeatherBackdrop)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItemOneType))">Skin.SetString(HomeItemOneType,Weather)</onfocus>	
 			<onfocus condition="IsEmpty(Skin.String(HomeItemTwoLabel))">Skin.SetString(HomeItemTwoLabel,$LOCALIZE[1])</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItemTwoWidget))">Skin.SetString(HomeItemTwoWidget,None)</onfocus>
@@ -235,6 +234,7 @@
 			<onfocus condition="IsEmpty(Skin.String(HomeItemElevenSub))">Skin.SetString(HomeItemElevenSub,Settings)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItemElevenStats))">Skin.SetString(HomeItemElevenStats,Settings)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeSystemBackground))">Skin.SetString(HomeSystemBackground,special://skin/backgrounds/homescreen/settings.jpg)</onfocus>
+			<onfocus>Skin.SetBool(CurrentWeatherBackdrop)</onfocus>
 			<onfocus>Skin.SetBool(InitialSetUpRun)</onfocus>
 			<onfocus>SetFocus(9000)</onfocus>
 			<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
@@ -353,17 +353,8 @@
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="300">
+				<include>HomeSubMenuInfo</include>
 				<include>HomeSeperator</include>
-				<control type="image">
-					<posx>5</posx>
-					<posy>8</posy>
-					<width>32</width>
-					<height>32</height>
-					<texture>HomeBlade/UserPreSet.png</texture>
-					<animation effect="fade" start="0" end="100" time="200">Focus</animation>
-					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-					<visible>Container(9000).Hasfocus(1) + !IsEmpty(Skin.String(HomeItemLastAction)) + Skin.HasSetting(StickyHomeMenuAction)</visible>
-				</control>
 				<control type="label">
 					<posx>150</posx>
 					<posy>0</posy>
@@ -399,6 +390,9 @@
 			<posy>0</posy>
 			<animation effect="slide" end="0,70" time="0" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="slide" end="170,0" time="0" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +!ControlGroup(9001).HasFocus">conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">conditional</animation>
+            <animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">WindowClose</animation>	
 			<animation effect="fade" start="100" end="0" time="0" condition="![ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)]  + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">WindowClose</animation>
