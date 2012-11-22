@@ -5,6 +5,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 		<control type="button" id="90101">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -77,6 +83,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuMovies">
@@ -85,6 +97,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 		<control type="button" id="90201">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -154,6 +172,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuTVShows">
@@ -162,6 +186,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 		<control type="button" id="90301">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -231,6 +261,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) |
+				[!IsEmpty(Skin.String(VideoSubMenuOneAction)) + !IsEmpty(Skin.String(VideoSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuTwoAction)) + !IsEmpty(Skin.String(VideoSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(VideoSubMenuThreeAction)) + !IsEmpty(Skin.String(VideoSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuMusic">
@@ -239,8 +275,13 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) | 
+				[!IsEmpty(Skin.String(MusicSubMenuOneAction)) + !IsEmpty(Skin.String(MusicSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(MusicSubMenuTwoAction)) + !IsEmpty(Skin.String(MusicSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(MusicSubMenuThreeAction)) + !IsEmpty(Skin.String(MusicSubMenuThreeLabel))]
+			</visible>
 		</control>
-		
 		<control type="button" id="90401">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
@@ -263,7 +304,6 @@
 			<visible>!IsEmpty(Skin.String(MusicSubMenuTwoAction))</visible>
 			<visible>!IsEmpty(Skin.String(MusicSubMenuTwoLabel))</visible>
 		</control>
-		
 		<control type="button" id="90403">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
@@ -275,7 +315,6 @@
 			<visible>!IsEmpty(Skin.String(MusicSubMenuThreeAction))</visible>
 			<visible>!IsEmpty(Skin.String(MusicSubMenuThreeLabel))</visible>
 		</control>
-	
 		<control type="button" id="90404">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
@@ -325,6 +364,12 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				!Skin.HasSetting(HideDefaultSubItem) | 
+				[!IsEmpty(Skin.String(MusicSubMenuOneAction)) + !IsEmpty(Skin.String(MusicSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(MusicSubMenuTwoAction)) + !IsEmpty(Skin.String(MusicSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(MusicSubMenuThreeAction)) + !IsEmpty(Skin.String(MusicSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuSystem">
@@ -333,6 +378,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
 		</control>
 		<control type="button" id="90501">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -400,6 +446,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuPlayDisc">
@@ -432,6 +479,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
 		</control>
 		<control type="button" id="90701">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -498,6 +546,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuFavourites">
@@ -506,6 +555,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem) + !StringCompare(Window(0).Property(favourite.1.name),Can Not Find favourites.xml)</visible>
 		</control>
 		<control type="button" id="90801">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -563,6 +613,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem) + !StringCompare(Window(0).Property(favourite.1.name),Can Not Find favourites.xml)</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuPlaylist">
@@ -571,6 +622,13 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(SubMenuItemOneAction)) + !IsEmpty(Skin.String(SubMenuItemOneLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemTwoAction)) + !IsEmpty(Skin.String(SubMenuItemTwoLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemThreeAction)) + !IsEmpty(Skin.String(SubMenuItemThreeLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemFourAction)) + !IsEmpty(Skin.String(SubMenuItemFourLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemFiveAction)) + !IsEmpty(Skin.String(SubMenuItemFiveLabel))]
+			</visible>
 		</control>
 		<control type="button" id="90901">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -632,6 +690,13 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(SubMenuItemOneAction)) + !IsEmpty(Skin.String(SubMenuItemOneLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemTwoAction)) + !IsEmpty(Skin.String(SubMenuItemTwoLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemThreeAction)) + !IsEmpty(Skin.String(SubMenuItemThreeLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemFourAction)) + !IsEmpty(Skin.String(SubMenuItemFourLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemFiveAction)) + !IsEmpty(Skin.String(SubMenuItemFiveLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuAddOn">
@@ -640,6 +705,13 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(SubMenuItemSixAction)) + !IsEmpty(Skin.String(SubMenuItemSixLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemSevenAction)) + !IsEmpty(Skin.String(SubMenuItemSevenLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemEightAction)) + !IsEmpty(Skin.String(SubMenuItemEightLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemNineAction)) + !IsEmpty(Skin.String(SubMenuItemNineLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemTenAction)) + !IsEmpty(Skin.String(SubMenuItemTenLabel))]
+			</visible>
 		</control>
 		<control type="button" id="91001">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -701,6 +773,13 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(SubMenuItemSixAction)) + !IsEmpty(Skin.String(SubMenuItemSixLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemSevenAction)) + !IsEmpty(Skin.String(SubMenuItemSevenLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemEightAction)) + !IsEmpty(Skin.String(SubMenuItemEightLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemNineAction)) + !IsEmpty(Skin.String(SubMenuItemNineLabel))] |
+				[!IsEmpty(Skin.String(SubMenuItemTenAction)) + !IsEmpty(Skin.String(SubMenuItemTenLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuLiveTV">
@@ -709,6 +788,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem) + System.GetBool(pvrmanager.enabled)</visible>
 		</control>
 		<control type="button" id="91101">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -767,6 +847,7 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem) + System.GetBool(pvrmanager.enabled)</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuConcerts">
@@ -775,20 +856,17 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
+			<visible>false</visible>
 		</control>
-		
-		
-		
-		
-		
-		
-		
-		
+		<!-- Concerts Submenu Here -->
 		<control type="image" id="91201">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
+			<visible>false</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuPictures">
@@ -797,6 +875,11 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(PicSubMenuOneAction)) + !IsEmpty(Skin.String(PicSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(PicSubMenuTwoAction)) + !IsEmpty(Skin.String(PicSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(PicSubMenuThreeAction)) + !IsEmpty(Skin.String(PicSubMenuThreeLabel))]
+			</visible>
 		</control>
 		<control type="button" id="91301">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -836,6 +919,11 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(PicSubMenuOneAction)) + !IsEmpty(Skin.String(PicSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(PicSubMenuTwoAction)) + !IsEmpty(Skin.String(PicSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(PicSubMenuThreeAction)) + !IsEmpty(Skin.String(PicSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuPrograms">
@@ -844,6 +932,11 @@
 			<height>35</height>
 			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(ProgSubMenuOneAction)) + !IsEmpty(Skin.String(ProgSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(ProgSubMenuTwoAction)) + !IsEmpty(Skin.String(ProgSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(ProgSubMenuThreeAction)) + !IsEmpty(Skin.String(ProgSubMenuThreeLabel))]
+			</visible>
 		</control>
 		<control type="button" id="91401">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -883,6 +976,11 @@
 			<height>35</height>
 			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>
+				[!IsEmpty(Skin.String(ProgSubMenuOneAction)) + !IsEmpty(Skin.String(ProgSubMenuOneLabel))] |
+				[!IsEmpty(Skin.String(ProgSubMenuTwoAction)) + !IsEmpty(Skin.String(ProgSubMenuTwoLabel))] |
+				[!IsEmpty(Skin.String(ProgSubMenuThreeAction)) + !IsEmpty(Skin.String(ProgSubMenuThreeLabel))]
+			</visible>
 		</control>
 	</include>
 	<include name="HomeSubMenuFullScreen">
