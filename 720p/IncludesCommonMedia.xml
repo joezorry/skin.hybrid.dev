@@ -97,9 +97,6 @@
 		<include condition="Skin.HasSetting(GlobalLiveBackdrop)">InteractiveCasesBackground</include>
 		<include>MediaPlayingBackground</include>	
 	</include>	
-	
-	
-	
 	<include name="CommonVideoBackground">
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 

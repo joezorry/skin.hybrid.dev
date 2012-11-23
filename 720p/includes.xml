@@ -170,8 +170,6 @@
 			<animation effect="slide" start="0,10" end="0,0" time="200" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.Next(home)">WindowClose</animation>
 		</control>
-	
-	
 	</include>
 	<include name="ListImagePosi">
 		<posx>0</posx>

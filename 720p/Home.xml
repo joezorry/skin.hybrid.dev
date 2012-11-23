@@ -7,6 +7,7 @@
 	<onload condition="Library.HasContent(Movies) + IsEmpty(Skin.String(HomeScreenMoviesBackGround))">Skin.SetString(HomeScreenMoviesBackGround,special://masterprofile/Thumbnails/Video/Fanart/)</onload>
 	<onload condition="IsEmpty(Skin.String(MediaPanelTrans))">Skin.SetString(MediaPanelTrans,5FFFFFFF)</onload>
 	<onload condition="Window.Previous(startup) + !IsEmpty(Skin.String(CustomFocusOffset))">Control.Move(9000,$INFO[Skin.String(CustomFocusOffset)])</onload>
+	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<defaultcontrol always="true">8999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
@@ -14,7 +15,6 @@
 		<include>MediaContentBackground</include>
 		<include condition="!Skin.HasSetting(HideRainDropEffect)">BackgroundRainDropEffect</include>
 		<control type="group">
-			<!-- Vertical Home Screen -->
 			<animation effect="slide" end="-450,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
 			<animation effect="slide" start="-450,0" time="500" tween="quadratic" easing="out">WindowOpen</animation>
 			<include>HomeVerticalSubBlade</include>
@@ -27,7 +27,6 @@
 			<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
 		</control>	
 		<control type="group">
-			<!-- Horizontal Home Screen -->
 			<control type="group">
 				<posy>610</posy>
 				<animation type="WindowOpen" reversible="false">
