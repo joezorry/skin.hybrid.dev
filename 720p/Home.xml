@@ -12,8 +12,6 @@
 	<controls>
 		<include>HomeScreenBackground</include>
 		<include>MediaContentBackground</include>
-		
-		
 		<include condition="!Skin.HasSetting(HideRainDropEffect)">BackgroundRainDropEffect</include>
 		<control type="group">
 			<!-- Vertical Home Screen -->
@@ -26,7 +24,6 @@
 			<include>HomeVerticalMainMenu</include>
 			<include>HomeVerticalMenuBlade</include>
 			<include>WeatherInfo</include>
-			<!--include>HomeMediaControl</include-->
 			<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
 		</control>	
 		<control type="group">
@@ -46,7 +43,6 @@
 				<include>HomeMainMenuInitialSetup</include>
 				<include>HomeHorizontalMainMenu</include>
 				<include>HomeHorizontalSideFade</include>
-				<!--include>HomeMediaControl</include-->
 			</control>
 			<include>WeatherInfo</include>
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
