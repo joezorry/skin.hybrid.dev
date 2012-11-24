@@ -10,6 +10,7 @@
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeLiveCases.xml" />
 	<include file="IncludesHomeAddons.xml" />
+	<include file="IncludesHomeWeather.xml" />
 	<include file="IncludesGenreFlagging.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
@@ -838,7 +839,7 @@
 		<control type="group">
 			<posx>20</posx>
 			<posy>0</posy>
-			<visible>Window.IsActive(home) + !IsEmpty(Weather.Conditions) + Weather.IsFetched + !Skin.HasSetting(ShowWeatherInfo)</visible>
+			<visible>Window.IsActive(home) + !IsEmpty(Weather.Conditions) + Weather.IsFetched + !Skin.HasSetting(HideWeatherInfo)</visible>
 			<visible>!Window.IsVisible(videoscan)</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">

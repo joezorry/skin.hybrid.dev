@@ -33,6 +33,7 @@
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(Favourites)">conditional</animation>
+			<include>HomeWeatherForecast</include>
 			<include>AddonsHomePanel</include>			
 		
 		</control>	

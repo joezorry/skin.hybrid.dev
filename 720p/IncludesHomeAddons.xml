@@ -7,11 +7,11 @@
 				!IsEmpty(Skin.String(HomeAddon.4.Label)) | !IsEmpty(Skin.String(HomeAddon.5.Label)) | !IsEmpty(Skin.String(HomeAddon.6.Label)) | !IsEmpty(Skin.String(HomeAddon.7.Label)) |
 				!IsEmpty(Skin.String(HomeAddon.8.Label)) | !IsEmpty(Skin.String(HomeAddon.9.Label)) | !IsEmpty(Skin.String(HomeAddon.10.Label))
 			</visible>
-			<animation effect="slide" start="0,0" end="200,75" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
 			<include>VisibleFadeEffect</include>
 			<posx>215</posx>
-			<posy>50</posy>
+			<posy>60</posy>
 			<control type="image">
 				<description>background</description>
 				<posx>0</posx>

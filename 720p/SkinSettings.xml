@@ -2745,8 +2745,8 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[20084]</label>
-						<onclick>Skin.ToggleSetting(ShowWeatherInfo)</onclick>
-						<selected>!Skin.HasSetting(ShowWeatherInfo)</selected>
+						<onclick>Skin.ToggleSetting(HideWeatherInfo)</onclick>
+						<selected>!Skin.HasSetting(HideWeatherInfo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
