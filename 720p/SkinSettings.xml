@@ -2788,8 +2788,6 @@
 						<onclick>Skin.ToggleSetting(HideBackHomePlaying)</onclick>
 						<selected>Skin.HasSetting(HideBackHomePlaying)</selected>
 					</control>
-					
-					
 					<control type="label" id="408">
 						<width>750</width>
 						<height>45</height>

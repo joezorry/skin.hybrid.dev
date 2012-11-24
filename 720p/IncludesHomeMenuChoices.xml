@@ -209,8 +209,6 @@
 				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Stats,None)</onclick>
 				<include>CloseMenuChoice</include>
 			</item>
-			
-			
 			<item id="17">
                 <description>Favourites</description>
                 <label>$LOCALIZE[31958] - $LOCALIZE[1036]</label>
@@ -226,8 +224,6 @@
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 				<visible>System.HasAddon(script.favourites)</visible>
 	        </item>
-			
-			
 			<item id="18">
                 <description>Favourites Folder</description>
 				<label>$LOCALIZE[1036] - $LOCALIZE[513]</label>
