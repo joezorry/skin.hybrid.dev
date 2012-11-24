@@ -9,6 +9,7 @@
 	<include file="IncludesCommonMedia.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeLiveCases.xml" />
+	<include file="IncludesHomeAddons.xml" />
 	<include file="IncludesGenreFlagging.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
@@ -814,6 +815,7 @@
 			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-50" time="100" condition="Window.IsVisible(busydialog)">conditional</animation>
 			<animation effect="slide" start="0,0" end="350,0" time="200" condition="Window.IsVisible(extendedprogressdialog)">conditional</animation>
+			<visible>!Window.IsVisible(Favourites)</visible>
 		</control>	
 		<control type="label">
 			<description>time label</description>
@@ -829,6 +831,7 @@
 			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-50" time="100" condition="Window.IsVisible(busydialog)">conditional</animation>
 			<animation effect="slide" start="0,0" end="350,0" time="200" condition="Window.IsVisible(extendedprogressdialog)">conditional</animation>
+			<visible>!Window.IsVisible(Favourites)</visible>
 		</control>
 	</include>
 	<include name="WeatherInfo">
@@ -976,8 +979,6 @@
 		<width>1280</width>
 		<height>35</height>
 		<align>center</align>
-		<onup>9000</onup>
-		<ondown>9000</ondown>		
 		<itemgap>0</itemgap>
 		<orientation>Horizontal</orientation>
 		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>

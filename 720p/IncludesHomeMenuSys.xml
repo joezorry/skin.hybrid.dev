@@ -242,18 +242,6 @@
 		<control type="button" id="8999">
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<!--
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.1.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListOne)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.2.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.2.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListTwo)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.3.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.3.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListThree)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.4.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.4.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListFour)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.5.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.5.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListFive)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.6.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.6.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListSix)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.7.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.7.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListSeven)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.8.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.8.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListEight)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.9.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.9.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListNine)</onfocus>
-			<onfocus condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.10.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.10.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListTen)</onfocus>
-			-->
 			<onfocus>SetFocus(9000)</onfocus>
 			<visible>Skin.HasSetting(InitialSetUpRun)</visible>
 		</control>	
@@ -268,7 +256,7 @@
 			<height>600</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<onleft>9000</onleft>
+			<onleft>9003</onleft>
 			<onright>9001</onright>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>550</scrolltime>
@@ -319,7 +307,7 @@
 			<height>60</height>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
-			<onup>9000</onup>
+			<onup>9003</onup>
 			<ondown>9001</ondown>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>300</scrolltime>
@@ -385,17 +373,19 @@
 			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)]  + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="0" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">WindowClose</animation>
 			<animation effect="slide" end="210,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
-			<onup>9000</onup>
-			<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+			<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
+			<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
+			<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
+			<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 			<control type="grouplist" id="9010">
 				<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalSubMenuValues</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalSubMenuValues</include>
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9010</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9010</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9010</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9010</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Videos)</visible>
@@ -407,9 +397,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9011</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9011</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9011</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9011</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Movies)</visible>
@@ -421,9 +411,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9012</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9012</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),TVShows)</visible>
@@ -435,9 +425,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9013</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9013</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9013</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9013</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Music)</visible>
@@ -449,9 +439,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9014</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9014</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9014</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9014</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Settings)</visible>
@@ -463,9 +453,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9015</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9015</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9015</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9015</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),PlayDisc)</visible>
@@ -477,9 +467,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9016</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9016</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9016</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9016</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Shutdown)</visible>
@@ -491,9 +481,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9017</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9017</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9017</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9017</ondown>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Favourites) + System.HasAddon(script.favourites)</visible>
@@ -505,9 +495,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9018</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9018</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9018</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9018</ondown>
 				<include>HomeSubMenuPlaylist</include> 
@@ -519,9 +509,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9019</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9019</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9019</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9019</ondown>
 				<include>HomeSubMenuAddOn</include> 
@@ -533,9 +523,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9020</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9020</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9020</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9020</ondown>
 				<include>HomeSubMenuLiveTV</include> 
@@ -547,9 +537,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9021</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9021</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9021</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9021</ondown>
 				<include>HomeSubMenuConcerts</include> 
@@ -561,9 +551,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9022</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9022</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9022</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9022</ondown>
 				<include>HomeSubMenuPictures</include> 
@@ -575,9 +565,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9023</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9023</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9023</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9023</ondown>
 				<include>HomeSubMenuPrograms</include> 
@@ -589,9 +579,9 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9024</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9024</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9024</onup>
 				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9024</ondown>
 				<include>HomeSubMenuFullScreen</include> 
