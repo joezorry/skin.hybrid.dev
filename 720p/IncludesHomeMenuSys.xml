@@ -378,6 +378,7 @@
 			<animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +!ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="0" end="100" delay="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">WindowClose</animation>	
+			<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 			<control type="grouplist" id="9010">
 				<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalSubMenuValues</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalSubMenuValues</include>

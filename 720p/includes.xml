@@ -11,6 +11,7 @@
 	<include file="IncludesHomeLiveCases.xml" />
 	<include file="IncludesHomeAddons.xml" />
 	<include file="IncludesHomeWeather.xml" />
+	<include file="IncludesHomePlaylists.xml" />
 	<include file="IncludesGenreFlagging.xml" />
 	<include file="IncludesSuggestedContent.xml" />
 	<include file="ViewsVideoLibrary.xml" />
