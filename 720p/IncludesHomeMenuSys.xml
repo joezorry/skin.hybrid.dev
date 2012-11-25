@@ -256,14 +256,17 @@
 			<height>600</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<onleft>9003</onleft>
+			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2118)</onleft>		
+			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2119)</onleft>
+			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">ActivateWindow(2120)</onleft>		
 			<onright>9001</onright>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>550</scrolltime>
 			<focusposition>2</focusposition>
 			<movement>2</movement>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(9001).HasFocus | Control.HasFocus(9002)">conditional</animation>
+			<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(9001).HasFocus | ControlGroup(9003).HasFocus | Control.HasFocus(9002)">conditional</animation>
+			<animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
 			<itemlayout height="102" width="380">
 				<control type="label">
 					<posx>380</posx>
@@ -276,11 +279,12 @@
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.Label]</label>
 					<animation effect="zoom" start="65" end="65" center="380,51" time="0" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(9001).HasFocus">conditional</animation>
+					<animation effect="fade" start="100" end="30" time="200" condition="ControlGroup(9001).HasFocus | ControlGroup(9003).HasFocus">conditional</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout height="102" width="380">
 				<include>HomeSubMenuInfo</include>
+				<include>HomeSuggestedImage</include>
 				<control type="label">
 					<posx>380</posx>
 					<posy>0</posy>
@@ -330,6 +334,7 @@
 			</itemlayout>
 			<focusedlayout height="60" width="300">
 				<include>HomeSubMenuInfo</include>
+				<include>HomeSuggestedImage</include>
 				<include>HomeSeperator</include>
 				<control type="label">
 					<posx>150</posx>
@@ -364,19 +369,15 @@
 			<control type="group" id="9001">
 			<posx>0</posx>
 			<posy>0</posy>
-			<animation effect="slide" end="0,70" time="0" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="slide" end="170,0" time="0" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="![ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="0" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">WindowClose</animation>
+			<animation effect="slide" end="210,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)]  + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
+			<animation effect="slide" end="0,70" time="0" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +!ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="0" end="100" delay="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">conditional</animation>
             <animation effect="fade" start="100" end="0" time="300" condition="Skin.HasSetting(HorizontalHomeScreen) + Skin.HasSetting(AutoHorizontalSubMenu) +ControlGroup(9001).HasFocus">WindowClose</animation>	
-			<animation effect="fade" start="100" end="0" time="0" condition="![ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
-			<animation effect="fade" start="0" end="100" delay="300" time="200" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)]  + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
-			<animation effect="fade" start="100" end="0" time="0" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">WindowClose</animation>
-			<animation effect="slide" end="210,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9001).HasFocus | Control.HasFocus(9002)] + !Skin.HasSetting(HorizontalHomeScreen)">conditional</animation>
-			<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-			<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
-			<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-			<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 			<control type="grouplist" id="9010">
 				<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalSubMenuValues</include>
 				<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalSubMenuValues</include>
@@ -397,7 +398,7 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9011</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9011</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2118)</ondown>	
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
 				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9011</onup>
@@ -411,7 +412,7 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2119)</ondown>	
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
 				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9012</onup>
@@ -425,7 +426,7 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9013</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9013</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2120)</ondown>	
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
 				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9013</onup>

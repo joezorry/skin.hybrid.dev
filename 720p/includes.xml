@@ -12,6 +12,7 @@
 	<include file="IncludesHomeAddons.xml" />
 	<include file="IncludesHomeWeather.xml" />
 	<include file="IncludesGenreFlagging.xml" />
+	<include file="IncludesSuggestedContent.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -817,6 +818,7 @@
 			<animation effect="slide" start="0,0" end="0,-50" time="100" condition="Window.IsVisible(busydialog)">conditional</animation>
 			<animation effect="slide" start="0,0" end="350,0" time="200" condition="Window.IsVisible(extendedprogressdialog)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(CustomPanelType.xml) | Window.IsVisible(CustomSubMenuAddon.xml) | Window.IsVisible(CustomMenuAddon.xml) | Window.IsVisible(CustomSubMenuType.xml) | Window.IsVisible(Favourites)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
 		</control>	
 		<control type="label">
 			<description>time label</description>
@@ -833,6 +835,7 @@
 			<animation effect="slide" start="0,0" end="0,-50" time="100" condition="Window.IsVisible(busydialog)">conditional</animation>
 			<animation effect="slide" start="0,0" end="350,0" time="200" condition="Window.IsVisible(extendedprogressdialog)">conditional</animation>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(CustomPanelType.xml) | Window.IsVisible(CustomSubMenuAddon.xml) | Window.IsVisible(CustomMenuAddon.xml) | Window.IsVisible(CustomSubMenuType.xml) | Window.IsVisible(Favourites)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
 		</control>
 	</include>
 	<include name="WeatherInfo">

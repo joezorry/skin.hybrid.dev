@@ -146,6 +146,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,Weather)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
+					<!--
 					<item id="5">
 						<description>Recent Movies</description>
 						<label>$LOCALIZE[31927]</label>
@@ -242,6 +243,7 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
+					-->
 				</content>				
 			</control>
 			<control type="button">
