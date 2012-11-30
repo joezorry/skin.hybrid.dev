@@ -161,7 +161,7 @@
 						<visible>!Skin.HasSetting(HideWatchedStat) + !IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="Skin.HasSetting(!HideFileListPoster)" height="40" width="580">
+				<focusedlayout condition="!Skin.HasSetting(HideFileListPoster)" height="40" width="580">
 					<control type="image">
 						<posx>10</posx>
 						<posy>5</posy>
@@ -571,7 +571,36 @@
 					</control>
 				</control>
 			</control>
-			
+			<!-- Episode List -->
+			<control type="group">		
+				<posx>850</posx>
+				<posy>100</posy>
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(HideFileListPoster) + Container.Content(episodes) + !stringcompare(ListItem.Label,..)</visible>
+				<control type="image">
+					<description>Title Icon</description>
+					<include>ListImagePosi</include>
+					<texture fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Thumb]</texture> 
+					<visible>!Skin.HasSetting(HideEpisodeThumb)</visible>
+				</control>
+				<control type="image">
+					<description>Title Icon</description>
+					<include>ListImagePosi</include>
+					<texture fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Property(Fanart_Image)]</texture> 
+					<visible>Skin.HasSetting(HideEpisodeThumb)</visible>
+				</control>
+				<control type="image">
+					<description>Title Icon Reflection</description>
+					<include>ListImageReflection</include>
+					<texture diffuse="diffuse_mirror3.png" flipy="true" >$INFO[ListItem.Thumb]</texture> 
+					<visible>!Skin.HasSetting(HideEpisodeThumb)</visible>
+				</control>
+				<control type="image">
+					<description>Title Icon Reflection</description>
+					<include>ListImageReflection</include>
+					<texture diffuse="diffuse_mirror3.png" flipy="true">$INFO[ListItem.Property(Fanart_Image)]</texture> 
+					<visible>Skin.HasSetting(HideEpisodeThumb)</visible>
+				</control>
+			</control>
 			
 			
 			<!-- TVLogo ontop of Episode -->
@@ -625,11 +654,15 @@
 					<texture>CDCase/cdcase.png</texture>
 				</control>	
 			</control>	
+			
+			
+			
+			
 			<!-- All Others Not Defined -->
 			<control type="group">		
 				<posx>850</posx>
 				<posy>100</posy>
-				<visible>Control.IsVisible(50) + !Skin.HasSetting(HideFileListPoster) + [StringCompare(ListItem.Label,..) | !Container.Content(movies) + !Container.Content(actors) + !Container.Content(studios) + !Container.Content(directors) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(albums) + !Container.Content(songs)]</visible>
+				<visible>Control.IsVisible(50) + !Skin.HasSetting(HideFileListPoster) + [StringCompare(ListItem.Label,..) | !Container.Content(movies) + !Container.Content(actors) + !Container.Content(studios) + !Container.Content(directors) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs)]</visible>
 				<control type="image">
 					<description>Title Icon</description>
 					<include>ListImagePosi</include>
@@ -866,7 +899,7 @@
 						<height>240</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture background="true" fallback="DefaultFallback/poster-fallback.png">$INFO[Listitem.Icon]</texture>
+						<texture background="true" fallback="DefaultFallback/DefaultPoster.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>108</posx>
@@ -897,7 +930,7 @@
 						<height>240</height>
 						<bordertexture border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
-						<texture background="true" fallback="DefaultFallback/poster-fallback.png">$INFO[Listitem.Icon]</texture>
+						<texture background="true" fallback="DefaultFallback/DefaultPoster.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
 						<posx>108</posx>
