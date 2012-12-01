@@ -940,7 +940,11 @@ msgctxt "#31693"
 msgid "Show Media Now Playing"
 msgstr ""
 
-#empty strings from id 31694 to 31899
+msgctxt "#31694"
+msgid "Get Artwork"
+msgstr ""
+
+#empty strings from id 31695 to 31899
 
 msgctxt "#31900"
 msgid "Weather Maps"
