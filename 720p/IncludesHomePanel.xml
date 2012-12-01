@@ -674,34 +674,49 @@
 				<control type="group">
 					<visible>!Skin.HasSetting(UseFanartThumbPanel)</visible>
 					<control type="label">
-						<description>Random Title label</description>
-						<posx>10</posx>
-						<posy>18</posy>
-						<height>20</height>
-						<width>830</width>
-						<label>$INFO[Container(9000).ListItem.Label] $LOCALIZE[31981] </label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font13_title</font>
-						<textcolor>HomeInfoOne</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
-						<visible>!Control.HasFocus(8014)</visible>
-					</control>
-					<control type="label">
-						<description>Title label</description>
-						<posx>10</posx>
-						<posy>18</posy>
-						<height>20</height>
-						<width>830</width>
-						<label>$INFO[Container(9000).ListItem.Label] - $INFO[Container(8014).ListItem.Label]</label>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font13_title</font>
-						<textcolor>HomeInfoOne</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<visible>Control.HasFocus(8014)</visible>
-					</control>
+					<description>Random Title label</description>
+					<posx>10</posx>
+					<posy>18</posy>
+					<height>20</height>
+					<width>830</width>
+					<label>$INFO[Container(9000).ListItem.Label] $LOCALIZE[31981] </label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>HomeInfoOne</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Control.HasFocus(8014)</visible>
+				</control>
+				<control type="label">
+					<description>Recent Title label</description>
+					<posx>10</posx>
+					<posy>18</posy>
+					<height>20</height>
+					<width>830</width>
+					<label>$INFO[Container(9000).ListItem.Label] $LOCALIZE[31980] </label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>HomeInfoOne</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Control.HasFocus(8014)</visible>
+				</control>
+				<control type="label">
+					<description>Title label</description>
+					<posx>10</posx>
+					<posy>18</posy>
+					<height>20</height>
+					<width>830</width>
+					<label>$INFO[Container(8014).ListItem.Label2] $INFO[Container(8014).ListItem.Label]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>HomeInfoOne</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>Control.HasFocus(8014)</visible>
+				</control>
 					<control type="panel" id="8014">
 						<include>DimensionsPosterPanel</include>	
 						<onup condition="Skin.HasSetting(HorizontalHomeScreen)">8014</onup>
@@ -791,7 +806,7 @@
 					<posy>18</posy>
 					<height>20</height>
 					<width>830</width>
-					<label>$INFO[Container(8016).ListItem.Label] $LOCALIZE[31981] </label>
+					<label>$INFO[Container(9000).ListItem.Label] $LOCALIZE[31981] </label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -806,7 +821,7 @@
 					<posy>18</posy>
 					<height>20</height>
 					<width>830</width>
-					<label>$INFO[Container(8016).ListItem.Label] $LOCALIZE[31980] </label>
+					<label>$INFO[Container(9000).ListItem.Label] $LOCALIZE[31980] </label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>

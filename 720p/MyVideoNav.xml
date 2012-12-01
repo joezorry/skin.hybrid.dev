@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<!--views>50,500,505,51,57,550,551,501,508,504,503,511,515,516,555,722,724,737,728,529</views-->
-	<views>50,500,505,555,560,501,508,728,732</views>
+	<views>50,500,505,555,560,501,508,724,728,732</views>
 	<onload condition="System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
 	<onload condition="System.HasAddon(script.metadata.actors)">RunScript(script.metadata.actors,backend)</onload> 
 	<controls>
@@ -17,6 +17,7 @@
 			<include>LiveTVView1</include> 	<!-- view id = 560 -->
 			<include>GenrePosterView</include> <!-- view id = 501 -->
 			<include>PosterFanArtView</include> <!-- view id = 508 -->
+			<include>Lowlist</include> 			<!-- view id = 724 -->
 			<include>Episode</include> 			<!-- view id = 728 -->
 			<include>FullWallView</include> <!-- view id = 732 -->
 			
@@ -33,7 +34,6 @@
 			
 			
 			<!--include>WallStreamView</include--> 		<!-- view id = 722 -->
-			<!--include>Lowlist</include--> 				<!-- view id = 724 -->
 			<!--include>MovieSetList</include--> 		<!-- view id = 737 -->
 			
 			<!--include>WideList2</include--> 			<!-- view id = 529 -->
@@ -108,7 +108,7 @@
 					<label>Toggle Cases</label>
 					<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
 					<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
-					<visible>Control.IsVisible(501) | Control.IsVisible(732)</visible>
+					<visible>Control.IsVisible(501) | Control.IsVisible(732) | Control.IsVisible(724)</visible>
 				</control>
 				<control type="radiobutton" id="94">
 					<description>Hide File List Poster</description>

@@ -187,19 +187,19 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
-			<texture background="true">$INFO[Container(8014).ListItem.ActualIcon]</texture>
+			<texture background="true">$INFO[Container(8014).ListItem.Thumb]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8014) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
-			<texture background="true">$INFO[Container(8015).ListItem.ActualIcon]</texture>
+			<texture background="true">$INFO[Container(8015).ListItem.Thumb]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8015) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include> 
-			<texture background="true">$INFO[Container(8016).ListItem.ActualIcon]</texture>
+			<texture background="true">$INFO[Container(8016).ListItem.Thumb]</texture>
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8016) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>

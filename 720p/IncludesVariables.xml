@@ -124,21 +124,18 @@
 	</variable>
 	<variable name="BannerThumb">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-		<!--value condition="!IsEmpty(ListItem.Title)">DefaultFallback/banner-fallback.png</value-->
 		<value condition="IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Icon]</value>
-		
-		
-		
 	</variable>
 	<variable name="PosterThumb">
+		<value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..)">$INFO[ListItem.Property(TVShowThumb)]</value>
 		<value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-		<!--value condition="!IsEmpty(ListItem.Title)">DefaultFallback/DefaultPoster.png</value-->
-		<value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
+		<value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
+		<value>DefaultFallback/DefaultPoster.png</value>
 	</variable>
 	<variable name="LogoThumb">
 		<value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Title)">$INFO[ListItem.path]logo.png</value>
-		<value condition="!IsEmpty(ListItem.Title)">DefaultFallback/banner-fallback.png</value>
+		<!--value condition="!IsEmpty(ListItem.Title)">DefaultFallback/banner-fallback.png</value-->
 	
 	
 	
@@ -276,7 +273,7 @@
 		<value>dv</value>
 	</variable>
 		<variable name="VideoListCase">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
+		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
 		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,bluray) | SubString(ListItem.FilenameAndPath,bdrip) | SubString(ListItem.FilenameAndPath,bd25) | SubString(ListItem.FilenameAndPath,bd50)]">bd</value>
 		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(ListItem.FilenameAndPath,hddvd)">hddvd</value>

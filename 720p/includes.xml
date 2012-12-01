@@ -24,6 +24,7 @@
 	<include file="ViewsFanArtPoster.xml" />
 	<include file="ViewsFullWall.xml" />
 	<include file="ViewsEpisodes.xml" />
+	<include file="ViewsLowlist.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesListItemCount.xml" />
 	<include file="IncludesCDWall.xml" />
@@ -91,11 +92,11 @@
 		<texture diffuse="Disks/disc_mask.png" background="true">Disks/disc.png</texture>
 	</include>
 	<include name="ViewMovieDiskDVD">
-		<texture fallback="Disks/disc-dvd.png" diffuse="Disks/disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="Disks/disc-dvd.png" diffuse="Disks/disc_mask.png" background="true">$INFO[ListItem.Art(discart)]</texture>
 		<visible>!stringcompare(ListItem.Label,..)</visible>
 	</include>
 	<include name="ViewMovieDiskBluRay">
-		<texture fallback="Disks/disc-bluray.png" diffuse="Disks/disc_mask.png" background="true">$INFO[ListItem.Path,,disc.png]</texture>
+		<texture fallback="Disks/disc-bluray.png" diffuse="Disks/disc_mask.png" background="true">$INFO[ListItem.Art(discart)]</texture>
 		<visible>!stringcompare(ListItem.Label,..)</visible>
 	</include>
 	<include name="SideBladeLeft">
