@@ -25,6 +25,7 @@
 	<include file="ViewsFullWall.xml" />
 	<include file="ViewsEpisodes.xml" />
 	<include file="ViewsLowlist.xml" />
+	<include file="ViewsMediaInfo.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesListItemCount.xml" />
 	<include file="IncludesCDWall.xml" />
