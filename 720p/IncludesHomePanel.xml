@@ -651,7 +651,7 @@
 	</include>
 	<include name="PlayListContentPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists) + !Skin.HasSetting(HideWatchPlaylist)</visible>
 			<control type="group">	<!-- Movies Playlist-->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)]|

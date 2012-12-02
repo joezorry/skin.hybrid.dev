@@ -944,7 +944,12 @@ msgctxt "#31694"
 msgid "Get Artwork"
 msgstr ""
 
-#empty strings from id 31695 to 31899
+msgctxt "#31695"
+msgid "Hide Hidden Content Menu Arrows"
+msgstr ""
+
+
+#empty strings from id 31696 to 31899
 
 msgctxt "#31900"
 msgid "Weather Maps"
