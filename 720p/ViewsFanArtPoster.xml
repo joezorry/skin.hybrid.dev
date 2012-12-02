@@ -199,7 +199,7 @@
 		<control type="grouplist">
 			<description>Media Codec Flagging Images</description>
 			<posx>220</posx>
-			<posy>415</posy>
+			<posy>400</posy>
 			<width>840</width>
 			<align>center</align>
 			<itemgap>5</itemgap>
@@ -209,6 +209,7 @@
 			<include>AspectCodecFlaggingConditions</include>
 			<include>VideoTypeHackFlaggingConditions</include>
 			<include>VideoMPAAFlaggingConditions</include>
+			<include>MediaStudioFlagging</include>
 		</control>
 	</include>	
 </includes>

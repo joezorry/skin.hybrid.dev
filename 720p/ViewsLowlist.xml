@@ -151,7 +151,20 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(724)</visible>
-				<include condition="!Skin.HasSetting(HideMainListLabel)">MainListLabel</include>	
+				<include condition="!Skin.HasSetting(HideMainListLabel)">MainListLabel</include>
+				<control type="label">
+					<posx>60</posx>
+					<posy>43</posy>
+					<width>1180</width>
+					<height>20</height>
+					<font>font10caps_title</font>
+					<textcolor>grey2</textcolor>
+					<scroll>true</scroll>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Tagline]</label>
+					<visible>!ListItem.IsFolder + Container.Content(Movies)</visible>
+				</control>
 				<control type="group">
 					<posx>40</posx>
 					<posy>190</posy>
@@ -214,17 +227,18 @@
 				<control type="grouplist">
 				<description>Media Codec Flagging Images</description>
 				<posx>10</posx>
-				<posy>80r</posy>
+				<posy>95r</posy>
 				<width>1260</width>
 				<align>center</align>
 				<itemgap>5</itemgap>
 				<orientation>horizontal</orientation>
-				<include>VideoMPAAFlaggingConditions</include>
 				<include>VideoCodecFlaggingConditions</include>
 				<include>AudioCodecFlaggingConditions</include>
 				<include>AspectCodecFlaggingConditions</include>
 				<include>VideoTypeHackFlaggingConditions</include>
-			</control>
+				<include>VideoMPAAFlaggingConditions</include>
+				<include>MediaStudioFlagging</include>
+				</control>
 				<control type="textbox">
 					<description>Description Value for Movie</description>
 					<posx>840</posx>
