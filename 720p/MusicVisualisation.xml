@@ -55,7 +55,6 @@
 				<texture flipy="true">HomeNowPlayingBack.png</texture>
 			</control>
 			<include>Clock</include>
-			<include>WeatherInfo</include>
 			<control type="image">
 				<posx>-150</posx>
 				<posy>250r</posy>

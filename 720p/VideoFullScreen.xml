@@ -391,7 +391,7 @@
 			<posy>100</posy>
 			<width>400</width>
 			<height>100</height>
-			<font>font13caps</font>
+			<font>font13_title</font>
 			<description>TV Channel Group Select Button</description>
 			<texturebg border="20">OverlayDialogBackground.png</texturebg>
 			<onleft>503</onleft>

@@ -152,20 +152,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(508)</visible>
-			<include condition="!Skin.HasSetting(HideMainListLabel)">MainListLabel</include>
-			<control type="label">
-				<posx>60</posx>
-				<posy>43</posy>
-				<width>1180</width>
-				<height>20</height>
-				<font>font10caps_title</font>
-				<textcolor>grey2</textcolor>
-				<scroll>true</scroll>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Tagline]</label>
-				<visible>!ListItem.IsFolder + Container.Content(Movies)</visible>
-			</control>	
+			<include>MainListLabel</include>
 			<control type="group">
 				<visible>!Skin.HasSetting(View508HideInfo) + !StringCompare(ListItem.Label,..) + !IsEmpty(ListItem.Plot) + !Container.OnNext + !Container.OnPrevious</visible>
 				<animation effect="fade" start="0" end="100" time="1600" delay="3000" >Visible</animation>
@@ -191,7 +178,7 @@
 			<width>850</width>
 			<height>265</height>
 			<align>justify</align>
-			<font>font16caps</font>
+			<font>font16_title</font>
 			<textcolor>white</textcolor>
 			<label>$VAR[ShowMediaPlot]</label>
 			<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>

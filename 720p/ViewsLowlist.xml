@@ -151,20 +151,7 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(724)</visible>
-				<include condition="!Skin.HasSetting(HideMainListLabel)">MainListLabel</include>
-				<control type="label">
-					<posx>60</posx>
-					<posy>43</posy>
-					<width>1180</width>
-					<height>20</height>
-					<font>font10caps_title</font>
-					<textcolor>grey2</textcolor>
-					<scroll>true</scroll>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[ListItem.Tagline]</label>
-					<visible>!ListItem.IsFolder + Container.Content(Movies)</visible>
-				</control>
+				<include>MainListLabel</include>
 				<control type="group">
 					<posx>40</posx>
 					<posy>190</posy>
