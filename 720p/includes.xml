@@ -28,6 +28,8 @@
 	<include file="ViewsMediaInfo.xml" />
 	<include file="ViewsHalfWall.xml" />
 	<include file="ViewsCoverFlow.xml" />
+	<include file="ViewsLogoVertical.xml" />
+	<include file="ViewsLogoHorizontal.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesListItemCount.xml" />
 	<include file="IncludesCDWall.xml" />
