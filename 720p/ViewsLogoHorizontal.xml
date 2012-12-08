@@ -3,17 +3,12 @@
 		<control type="group">
 			<visible>Control.IsVisible(731)</visible>
 			<include>VisibleFadeEffect</include>
-			<posx>0</posx>
-			<posy>0</posy>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture border="20">black-back.png</texture>
-				<colordiffuse>AAFFFFFF</colordiffuse>
-				<aspectratio>stretch</aspectratio>
+				<include>Dimensions_Fullscreen</include>
+ 				<aspectratio>stretch</aspectratio>
+				<texture>black-back.png</texture>
 			</control>
+			<include>MainListLabel</include>
 			<control type="wraplist" id="731">
 				<posx>25</posx>
 				<posy>110r</posy>
@@ -71,7 +66,7 @@
 						<width>29</width>
 						<height>29</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 						<animation effect="fade" start="60" end="60" time="0" condition="true">conditional</animation>
 						<visible>!Skin.HasSetting(HideWatchedStat)</visible>
 					</control>	
@@ -120,7 +115,7 @@
 						<width>29</width>
 						<height>29</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 						<visible>!Skin.HasSetting(HideWatchedStat)</visible>
 					</control>	
 				</focusedlayout>

@@ -952,7 +952,12 @@ msgctxt "#31696"
 msgid "Hide Seek Bar OSD During Fullscreen Playback"
 msgstr ""
 
-#empty strings from id 31697 to 31899
+msgctxt "#31697"
+msgid "ExtraFanArt"
+msgstr ""
+
+
+#empty strings from id 31698 to 31899
 
 msgctxt "#31900"
 msgid "Weather Maps"

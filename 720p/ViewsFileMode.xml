@@ -729,7 +729,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(TVShows) + Skin.HasSetting(View500ShowClearArt)" height="186" width="216">
@@ -773,7 +773,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + [!Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters) | !Skin.HasSetting(View500ShowClearArt)]" height="186" width="216">
@@ -826,7 +826,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + [!Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters) | !Skin.HasSetting(View500ShowClearArt)]" height="186" width="216">
@@ -879,7 +879,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</focusedlayout>
 				<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) + !Skin.HasSetting(View500ShowClearArt)]" height="279" width="216">
@@ -910,7 +910,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters) + !Skin.HasSetting(View500ShowClearArt)]" height="276" width="216">
@@ -941,7 +941,7 @@
 						<width>30</width>
 						<height>30</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</focusedlayout>
 			</control>
@@ -1026,7 +1026,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</itemlayout>
 				<focusedlayout height="110" width="540">
@@ -1070,7 +1070,7 @@
 						<width>35</width>
 						<height>35</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
+						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/,]</texture>
 					</control>
 				</focusedlayout>
 			</control>
