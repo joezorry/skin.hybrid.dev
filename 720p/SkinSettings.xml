@@ -3879,7 +3879,6 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(6)</visible>
 				</control>
-				<!--
 				<control type="grouplist" id="9007">
 					<visible>Container(9000).Hasfocus(7)</visible>
 					<posx>290</posx>
@@ -3925,12 +3924,7 @@
 						<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						<pulseonselect>false</pulseonselect>
 					</control>
-				-->	
-
-					
-					
-					
-				<!--/control-->
+				</control>
 			</control>
 		</control>
 		<include>BehindDialogFadeOut</include>

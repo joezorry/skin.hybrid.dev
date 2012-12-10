@@ -140,44 +140,6 @@
 		<value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<!--value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Path)">$INFO[ListItem.path]logo.png</value-->
 		<value>DefaultFallback/LogoFallback.png</value>
-	
-	
-	
-	
-	
-	</variable>
-	<variable name="AgeLimit">
-		<value condition="SubString(Listitem.mpaa,TV-G)">TV-G</value>
-		<value condition="SubString(Listitem.mpaa,TV-PG)">TV-PG</value>
-		<value condition="SubString(Listitem.mpaa,TV-14)">TV-14</value>
-		<value condition="SubString(Listitem.mpaa,TV-Y7)">TV-Y7</value>
-		<value condition="SubString(Listitem.mpaa,TV-Y7-FV)">TV-Y7-FV</value>
-		<value condition="SubString(Listitem.mpaa,TV-Y)">TV-Y</value>
-		<value condition="SubString(Listitem.mpaa,TV-MA)">TV-MA</value>
-		<value condition="SubString(listitem.mpaa,UK:U) + !SubString(listitem.mpaa,UK:UC)">gb/U</value>
-		<!--value condition="SubString(listitem.mpaa,UK:UC)">gb/bbfc_UC</value-->
-		<value condition="SubString(listitem.mpaa,UK:PG) + !SubString(listitem.mpaa,Rated PG-13)">gb/PG</value>
-		<value condition="SubString(listitem.mpaa,UK:12) + !SubString(listitem.mpaa,UK:12A)">gb/12</value>
-		<value condition="SubString(Listitem.mpaa,UK:12A)">gb/12A</value>
-		<value condition="SubString(Listitem.mpaa,UK:15)">gb/15</value>
-		<value condition="SubString(Listitem.mpaa,UK:18) + !SubString(listitem.mpaa,UK:R18)">gb/18</value>
-		<value condition="SubString(Listitem.mpaa,UK:R18)">gb/R18</value>
-		<value condition="SubString(listitem.mpaa,UK:E)">gb/Exempt</value>
-		<value condition="SubString(Listitem.mpaa,FSK o.A.)">de/0</value>
-		<value condition="SubString(Listitem.mpaa,FSK 6)">de/6</value>
-		<value condition="SubString(Listitem.mpaa,FSK 12)">de/12</value>
-		<value condition="SubString(Listitem.mpaa,FSK 16)">de/16</value>
-		<value condition="SubString(Listitem.mpaa,FSK 18)">de/18</value>
-		<value condition="SubString(Listitem.mpaa,Rated o.A.)">de/0</value>
-		<value condition="SubString(Listitem.mpaa,Rated 6)">de/6</value>
-		<value condition="SubString(Listitem.mpaa,Rated 12)">de/12</value>
-		<value condition="SubString(Listitem.mpaa,Rated 16)">de/16</value>
-		<value condition="SubString(Listitem.mpaa,Rated 18)">de/18</value>
-		<value condition="SubString(listitem.mpaa,Rated G)">G</value>
-		<value condition="SubString(listitem.mpaa,Rated PG) + !SubString(listitem.mpaa,Rated PG-13)">PG</value>
-		<value condition="SubString(listitem.mpaa,Rated PG-13)">PG-13</value>
-		<value condition="SubString(Listitem.mpaa,Rated R)">R</value>
-		<value condition="SubString(Listitem.mpaa,Rated NC)">NC-17</value>
 	</variable>
 	<variable name="videocodec">
 		<value condition="[SubString(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]">divx</value>
@@ -215,7 +177,14 @@
 	</variable>
 	<variable name="UsrMPAACountry" type="text">
 		<value condition="!IsEmpty(Skin.String(MPAACountryCert))">$INFO[Skin.String(MPAACountryCert)]</value>
-		<value>Unset</value>
+		<value>$LOCALIZE[31700]</value>
+	</variable>
+		<variable name="AgeLimit">
+		<value condition="SubString(listitem.mpaa,Rated G)">G</value>
+		<value condition="SubString(listitem.mpaa,Rated PG) + !SubString(listitem.mpaa,Rated PG-13)">PG</value>
+		<value condition="SubString(listitem.mpaa,Rated PG-13)">PG-13</value>
+		<value condition="SubString(Listitem.mpaa,Rated R)">R</value>
+		<value condition="SubString(Listitem.mpaa,Rated NC)">NC-17</value>
 	</variable>
 	<variable name="PartlyWatched">
 		<value condition="[Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml)] + IntegerGreaterThan(Container(450).listItem.Property(PercentPlayed),0) + !IntegerGreaterThan(Container(450).listItem.Property(PercentPlayed),19)">OverlayPartlywatched1</value>
