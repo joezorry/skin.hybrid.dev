@@ -1,0 +1,110 @@
+<includes>
+	<include name="MPAARatings">
+		<control type="grouplist">
+			<description>Media MPAA Flagging Images</description>
+			<posx>425r</posx>
+			<posy>85r</posy>
+			<width>300</width>
+			<align>right</align>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+			<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
+			<control type="image">
+				<description>Rated bbfc_u</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/U.png</texture>
+				<visible>substring(listitem.mpaa,UK:U)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_pg</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/PG.png</texture>
+				<visible>substring(listitem.mpaa,UK:PG)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_12</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/12.png</texture>
+				<visible>substring(listitem.mpaa,UK:12) + !substring(listitem.mpaa,UK:12A)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_12</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/12A.png</texture>
+				<visible>substring(listitem.mpaa,UK:12A)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_15</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/15.png</texture>
+				<visible>substring(listitem.mpaa,UK:15)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_18</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/18.png</texture>
+				<visible>substring(listitem.mpaa,UK:18)</visible>
+			</control>
+			<control type="image">
+				<description>Rated bbfc_18</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/UK/R18.png</texture>
+				<visible>substring(listitem.mpaa,UK:R18)</visible>
+			</control>
+			<control type="image">
+				<description>Rated G</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/USA/G.png</texture>
+				<visible>substring(listitem.mpaa,Rated G)</visible>
+			</control>
+			<control type="image">
+				<description>Rated PG</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/USA/PG.png</texture>
+				<visible>substring(listitem.mpaa,Rated PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
+			</control>
+			<control type="image">
+				<description>Rated PG-13</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/USA/PG-13.png</texture>
+				<visible>substring(listitem.mpaa,Rated PG-13)</visible>
+			</control>
+			<control type="image">
+				<description>Rated R</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/USA/R.png</texture>
+				<visible>substring(Listitem.mpaa,Rated R)</visible>
+			</control>
+			<control type="image">
+				<description>Rated NC-17</description>
+				<width>220</width>
+				<height>80</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture>MediaFlags/ratings/USA/NC-17.png</texture>
+				<visible>substring(Listitem.mpaa,Rated NC)</visible>
+			</control>
+		</control>	
+	</include>
+</includes>

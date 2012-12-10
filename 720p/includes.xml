@@ -32,6 +32,7 @@
 	<!--include file="ViewsLogoHorizontal.xml" /-->
 	<include file="ViewsWideList.xml" />
 	<include file="IncludesCodecFlagging.xml" />
+	<include file="IncludesMPAAFlagging.xml" />
 	<include file="IncludesListItemCount.xml" />
 	<include file="IncludesCDWall.xml" />
 	<include file="IncludesBackgroundEffect.xml" />

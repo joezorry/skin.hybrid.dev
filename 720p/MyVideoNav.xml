@@ -42,6 +42,7 @@
 			
 			<!--include>WideList2</include--> 			<!-- view id = 529 -->
 	</control>
+		<include>MPAARatings</include>
 		<include>CommonPageCount</include>
 		<include>MediaViewReturnButtons</include>
 		<include>BehindDialogFadeOut</include>
