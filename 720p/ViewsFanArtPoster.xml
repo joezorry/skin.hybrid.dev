@@ -115,7 +115,6 @@
 							<width>40</width>
 							<height>40</height>
 							<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-							
 							<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
 						</control>
 						<control type="image">
@@ -127,10 +126,6 @@
 							<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
 						</control>
 					</control>
-					
-					
-					
-					
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
@@ -145,7 +140,7 @@
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>508</onup>
 				<ondown>61</ondown>
-				<showonepage>false</showonepage>
+				<showonepage>true</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(508)</visible>
 			</control>

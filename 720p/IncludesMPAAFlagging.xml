@@ -2,7 +2,7 @@
 	<include name="MPAARatings">
 		<control type="grouplist">
 			<description>USA Media MPAA Flagging Images</description>
-			<posx>425r</posx>
+			<posx>450r</posx>
 			<posy>50r</posy>
 			<width>300</width>
 			<align>right</align>
@@ -53,7 +53,7 @@
 		</control>	
 		<control type="grouplist">
 			<description>UK Media MPAA Flagging Images</description>
-			<posx>425r</posx>
+			<posx>450r</posx>
 			<posy>50r</posy>
 			<width>300</width>
 			<align>right</align>
@@ -120,7 +120,7 @@
 		</control>
 		<control type="grouplist">
 			<description>German Media MPAA Flagging Images</description>
-			<posx>425r</posx>
+			<posx>450r</posx>
 			<posy>50r</posy>
 			<width>300</width>
 			<align>right</align>
@@ -171,7 +171,7 @@
 		</control>
 		<control type="grouplist">
 			<description>Australia Media MPAA Flagging Images</description>
-			<posx>425r</posx>
+			<posx>450r</posx>
 			<posy>50r</posy>
 			<width>300</width>
 			<align>right</align>
@@ -228,6 +228,5 @@
 				<visible>substring(listitem.mpaa,Rated X)</visible>
 			</control>
 		</control>
-		
 	</include>
 </includes>

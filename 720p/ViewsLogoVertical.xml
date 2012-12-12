@@ -301,23 +301,6 @@
 						<label>$INFO[ListItem.Plot,[B][COLOR=blue]$LOCALIZE[207]: [/COLOR][/B]]</label>
 						<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
 					</control>
-					<!--
-					<control type="grouplist">
-						<description>Media Codec Flagging Images</description>
-						<posx>0</posx>
-						<posy>440</posy>
-						<width>800</width>
-						<align>right</align>
-						<itemgap>5</itemgap>
-						<orientation>horizontal</orientation>
-						<include>MediaStudioFlagging</include>
-						<include>VideoMPAAFlaggingConditions</include>
-						<include>VideoCodecFlaggingConditions</include>
-						<include>AudioCodecFlaggingConditions</include>
-						<include>AspectCodecFlaggingConditions</include>
-						<include>VideoTypeHackFlaggingConditions</include>
-					</control>
-					-->
 					<control type="grouplist">
 						<description>Media Codec Flagging Images</description>
 						<posx>250</posx>
@@ -333,7 +316,6 @@
 						<include>AudioCodecFlaggingConditions</include>
 						<include>AspectCodecFlaggingConditions</include>
 					</control>					
-
 				</control>	
 				<control type="image">
 					<posx>0</posx>
@@ -435,17 +417,6 @@
 						<label>$INFO[ListItem.Plot,[B][COLOR=blue]$LOCALIZE[207]: [/COLOR][/B]]</label>
 						<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
 					</control>
-					<!--control type="grouplist">
-						<description>Media Codec Flagging Images</description>
-						<posx>0</posx>
-						<posy>440</posy>
-						<width>800</width>
-						<align>right</align>
-						<itemgap>5</itemgap>
-						<orientation>horizontal</orientation>
-						<include>MediaStudioFlagging</include>
-						<include>VideoMPAAFlaggingConditions</include>
-					</control-->	
 				</control>	
 				<control type="image">
 					<posx>0</posx>
@@ -563,23 +534,6 @@
 						<label>$INFO[ListItem.Plot,[B][COLOR=blue]$LOCALIZE[207]: [/COLOR][/B]]</label>
 						<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
 					</control>
-					<!--
-					<control type="grouplist">
-						<description>Media Codec Flagging Images</description>
-						<posx>0</posx>
-						<posy>440</posy>
-						<width>800</width>
-						<align>right</align>
-						<itemgap>5</itemgap>
-						<orientation>horizontal</orientation>
-						<include>VideoCodecFlaggingConditions</include>
-						<include>AudioCodecFlaggingConditions</include>
-						<include>AspectCodecFlaggingConditions</include>
-						<include>VideoTypeHackFlaggingConditions</include>
-						<include>MediaStudioFlagging</include>
-						<include>VideoMPAAFlaggingConditions</include>
-					</control>
-					-->
 					<control type="grouplist">
 						<description>Media Codec Flagging Images</description>
 						<posx>260</posx>

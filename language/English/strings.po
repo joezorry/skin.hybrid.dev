@@ -220,10 +220,6 @@ msgctxt "#31103"
 msgid "Show \"Paused\" in picture slide show"
 msgstr ""
 
-msgctxt "#31104"
-msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]"
-msgstr ""
-
 #empty string with id 31105
 
 msgctxt "#31106"

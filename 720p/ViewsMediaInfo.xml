@@ -1,5 +1,5 @@
 <includes>	
-<include name="MediaListView">
+	<include name="MediaListView">
 		<control type="group">
 			<visible>Control.IsVisible(515)</visible>
 			<include>VisibleFadeEffect</include>
@@ -201,7 +201,6 @@
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
-					<!--include>AspectCodecFlaggingConditions</include-->
 				</control>
 				<control type="image">
 					<posx>560</posx>

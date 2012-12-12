@@ -59,14 +59,14 @@
 				<font>-</font>
 				<aligny>-</aligny>
 				<onclick>back</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floorbackFO.png</texturefocus>
+				<texturenofocus border="5">floorbackNF.png</texturenofocus>
 				<onleft>4</onleft>
 				<onright>62</onright>
 				<onup>4</onup>
 				<ondown>4</ondown>
 			</control>
-			<control type="image">
+			<!--control type="image">
 				<description>Back Icon</description>
 				<posx>115r</posx>
 				<posy>50r</posy>
@@ -74,7 +74,7 @@
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_back.png</texture>
-			</control>
+			</control-->
 			<control type="button" id="62">
 				<description>Home push button</description>
 				<posx>65r</posx>
@@ -85,14 +85,14 @@
 				<font>-</font>
 				<aligny>-</aligny>
 				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floorhomeFO.png</texturefocus>
+				<texturenofocus border="5">floorhomeNF.png</texturenofocus>
 				<onleft>61</onleft>
 				<onright>4</onright>
 				<onup>4</onup>
 				<ondown>4</ondown>
 			</control>
-			<control type="image">
+			<!--control type="image">
 				<description>Home Icon</description>
 				<posx>60r</posx>
 				<posy>50r</posy>
@@ -100,7 +100,7 @@
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_home.png</texture>
-			</control>
+			</control-->
 
 			<control type="button" id ="4">
 				<description>Enable Login screen</description>

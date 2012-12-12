@@ -1,5 +1,5 @@
 <includes>	
-<include name="WideList">
+	<include name="WideList">
 		<control type="group">
 			<visible>Control.IsVisible(529)</visible>
 			<include>VisibleFadeEffect</include>

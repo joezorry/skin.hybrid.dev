@@ -53,8 +53,8 @@
 				<aligny>-</aligny>
 				<onclick>Dialog.Close(2120)</onclick>
 				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floorhomeFO.png</texturefocus>
+				<texturenofocus border="5">floorhomeNF.png</texturenofocus>
 				<onleft>61</onleft>
 				<onright>450</onright>
 				<onup>450</onup>
