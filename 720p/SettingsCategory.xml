@@ -49,8 +49,8 @@
 			</control>
 			<control type="button" id="61">
 				<description>Back push button</description>
-				<posx>120r</posx>
-				<posy>55r</posy>
+				<posx>100r</posx>
+				<posy>50r</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>1036</label>
@@ -64,19 +64,10 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
-			<!--control type="image">
-				<description>Back Icon</description>
-				<posx>115r</posx>
-				<posy>50r</posy>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
-			</control-->
 			<control type="button" id="62">
 				<description>Home push button</description>
-				<posx>65r</posx>
-				<posy>55r</posy>
+				<posx>55r</posx>
+				<posy>50r</posy>
 				<width>45</width>
 				<height>45</height>
 				<label>31003</label>
@@ -90,15 +81,6 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 			</control>
-			<!--control type="image">
-				<description>Home Icon</description>
-				<posx>60r</posx>
-				<posy>50r</posy>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_home.png</texture>
-			</control-->
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<posx>10</posx>
