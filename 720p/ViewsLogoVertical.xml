@@ -275,12 +275,26 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Director,[B][COLOR=blue]$LOCALIZE[20339]: [/COLOR][/B]]</label>
 					</control>
+					<control type="label">
+						<posx>320</posx>
+						<posy>40</posy>
+						<width>400</width>
+						<height>30</height>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
+						<visible>!IsEmpty(ListItem.Duration)</visible>
+					</control>
 					<control type="textbox">
 						<description>Description Value The Movie</description>
 						<posx>320</posx>
-						<posy>40</posy>
+						<posy>70</posy>
 						<width>480</width>
-						<height>378</height>
+						<height>335</height>
 						<font>font13</font>
 						<align>justify</align>
 						<textcolor>white</textcolor>

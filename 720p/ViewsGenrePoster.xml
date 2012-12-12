@@ -362,6 +362,20 @@
 				<aspectratio align="left">keep</aspectratio>
 				<texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
 			</control>
+			<control type="label">
+				<posx>190</posx>
+				<posy>482</posy>
+				<width>300</width>
+				<height>32</height>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<aligny>bottom</aligny>
+				<label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
+				<visible>!IsEmpty(ListItem.Duration)</visible>
+			</control>
 			<control type="grouplist">
 				<description>Media Genre Flagging</description>
 				<posx>100</posx>
