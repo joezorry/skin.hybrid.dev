@@ -8,6 +8,7 @@
 			<align>right</align>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
+			<animation effect="slide" end="45,0" time="50" tween="back" easing="out" condition="IsEmpty(ListItem.Trailer) | Control.IsVisible(500) | Control.IsVisible(514) | Control.IsVisible(529) | Control.IsVisible(732)" reversible="true">Conditional</animation> 
 			<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
 			<visible>IsEmpty(Skin.String(MPAACountryCert)) | stringcompare(Skin.String(MPAACountryCert),$LOCALIZE[31700])</visible>
 			<control type="image">
@@ -59,6 +60,7 @@
 			<align>right</align>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
+			<animation effect="slide" end="45,0" time="50" tween="back" easing="out" condition="IsEmpty(ListItem.Trailer) | Control.IsVisible(500) | Control.IsVisible(514) | Control.IsVisible(529) | Control.IsVisible(732)" reversible="true">Conditional</animation> 
 			<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
 			<visible>stringcompare(Skin.String(MPAACountryCert),$LOCALIZE[31701])</visible>
 			<control type="image">
@@ -126,6 +128,7 @@
 			<align>right</align>
 			<itemgap>0</itemgap>
 			<orientation>horizontal</orientation>
+			<animation effect="slide" end="45,0" time="50" tween="back" easing="out" condition="IsEmpty(ListItem.Trailer) | Control.IsVisible(500) | Control.IsVisible(514) | Control.IsVisible(529) | Control.IsVisible(732)" reversible="true">Conditional</animation> 
 			<visible>Container.Content(Movies) + !stringcompare(ListItem.Label,..)</visible>
 			<visible>stringcompare(Skin.String(MPAACountryCert),$LOCALIZE[31702])</visible>
 			<control type="image">
