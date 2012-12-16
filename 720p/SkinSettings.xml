@@ -3254,7 +3254,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
+						<onclick>Skin.ToggleSetting(StopAutoScroll)</onclick>
 						<selected>Skin.HasSetting(StopAutoScroll)</selected>
 					</control>
 					<control type="radiobutton" id="515">

@@ -83,11 +83,17 @@
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(510)</visible>
 			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>-440</posy>
+				<include>MainListLabel</include>
+			</control>
 		</control>
 	</include>
 	<include name="PictureThumbView">
 		<control type="group">
 			<visible>Control.IsVisible(514)</visible>
+			<include>MainListLabel</include>
 			<control type="panel" id="514">
 				<posx>60</posx>
 				<posy>75</posy>
@@ -163,19 +169,6 @@
 			<control type="group">
 				<posx>570</posx>
 				<posy>80</posy>
-				<control type="label">
-					<description>Title txt</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>640</width>
-					<height>15</height>
-					<label>$INFO[ListItem.Label]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font24_title</font>
-					<textcolor>white</textcolor>
-					<shadowcolor>black</shadowcolor>
-				</control>
 				<control type="image">
 					<posx>0</posx>
 					<posy>30</posy>
