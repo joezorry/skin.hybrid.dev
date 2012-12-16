@@ -2729,19 +2729,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(HorizontalHomeScreen)</enable>
 					</control>
-					<control type="button" id="403">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31689]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(CustomFocusOffset)][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetNumeric(CustomFocusOffset)</onclick>
-					</control>
-					<control type="radiobutton" id="404">
+					<control type="radiobutton" id="403">
 						<description>enable submenu advise</description>
 						<width>750</width>
 						<height>40</height>
@@ -2754,7 +2742,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>					
-					<control type="radiobutton" id="405">
+					<control type="radiobutton" id="404">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>
@@ -2767,7 +2755,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="406">
+					<control type="radiobutton" id="405">
 						<description>Enable Now Playing</description>
 						<width>750</width>
 						<height>40</height>
@@ -2780,7 +2768,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="407">
+					<control type="radiobutton" id="406">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2792,7 +2780,7 @@
 						<onclick>Skin.ToggleSetting(HideBackHomePlaying)</onclick>
 						<selected>Skin.HasSetting(HideBackHomePlaying)</selected>
 					</control>
-					<control type="radiobutton" id="408">
+					<control type="radiobutton" id="407">
 						<description>RainDrop Effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -2805,7 +2793,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="409">
+					<control type="label" id="408">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2815,7 +2803,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="410">
+					<control type="button" id="409">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2829,7 +2817,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.1.Label)) | Skin.HasSetting(StickyHomeMenuAction)</visible>
 					</control>	
-					<control type="button" id="411">
+					<control type="button" id="410">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2843,7 +2831,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
 					</control>	
-					<control type="button" id="412">
+					<control type="button" id="411">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2857,7 +2845,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
 					</control>
-					<control type="button" id="413">
+					<control type="button" id="412">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2871,7 +2859,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
 					</control>
-					<control type="button" id="414">
+					<control type="button" id="413">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2885,7 +2873,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
 					</control>
-					<control type="button" id="415">
+					<control type="button" id="414">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2899,7 +2887,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
 					</control>						
-					<control type="button" id="416">
+					<control type="button" id="415">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2913,7 +2901,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
 					</control>
-					<control type="button" id="417">
+					<control type="button" id="416">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2927,7 +2915,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
 					</control>	
-					<control type="button" id="418">
+					<control type="button" id="417">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2941,7 +2929,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
 					</control>	
-					<control type="button" id="419">
+					<control type="button" id="418">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2955,7 +2943,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
 					</control>
-					<control type="button" id="420">
+					<control type="button" id="419">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2969,7 +2957,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!Skin.HasSetting(HideHomeMenuSystem)</visible>
 					</control>
-					<control type="label" id="421">
+					<control type="label" id="420">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2980,7 +2968,7 @@
 						<aligny>center</aligny>
 					</control>
 					<!--
-					<control type="radiobutton" id="422">
+					<control type="radiobutton" id="421">
 						<description>Do Not Allow randomandlastitems.script To Run</description>
 						<width>750</width>
 						<height>40</height>
@@ -2994,7 +2982,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="radiobutton" id="423">
+					<control type="radiobutton" id="422">
 						<description>randomandlastitems.script uses last not random</description>
 						<width>750</width>
 						<height>40</height>
@@ -3008,7 +2996,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)</enable>
 					</control>
-					<control type="radiobutton" id="424">
+					<control type="radiobutton" id="423">
 						<description>randomandlastitems.script only shows unwatched items</description>
 						<width>750</width>
 						<height>40</height>
@@ -3023,7 +3011,7 @@
 						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)</enable>
 					</control>
 					-->
-					<control type="radiobutton" id="425">
+					<control type="radiobutton" id="424">
 						<description>Home Panel - Use Fanart as Thumb</description>
 						<width>750</width>
 						<height>40</height>
@@ -3036,7 +3024,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="426">
+					<control type="radiobutton" id="425">
 						<description>Hide Home Panel Fanart</description>
 						<width>750</width>
 						<height>40</height>
