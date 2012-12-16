@@ -144,6 +144,15 @@
 					<selected>Skin.HasSetting(View732HideInfo)</selected>
 					<visible>Control.IsVisible(732)</visible>
 				</control>
+				<control type="radiobutton" id="99">
+					<description>Hide Genre Icons in 501</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>$LOCALIZE[31699]</label>
+					<onclick>Skin.ToggleSetting(Hide501GenreFlags)</onclick>
+					<selected>Skin.HasSetting(Hide501GenreFlags)</selected>
+					<visible>Control.IsVisible(501)</visible>
+				</control>
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>

@@ -39,8 +39,6 @@
 			<animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(Favourites)">conditional</animation>
 			<include>AddonsHomePanel</include>
 			<include>HomeWeatherForecast</include>
-			
-			
 			<include>PlayListContentPanel</include>
 			<include>RecentMoviePanel</include>
 			<include>RecentTVShowPanel</include>

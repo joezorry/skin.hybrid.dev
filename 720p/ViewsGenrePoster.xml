@@ -385,6 +385,7 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<include>MultiVideoGenreFlagging</include>
+				<visible>!Skin.HasSetting(Hide501GenreFlags) + !StringCompare(ListItem.Label,..)</visible>
 			</control>
 			<control type="grouplist">
 				<description>Media Genre Flagging</description>
@@ -395,6 +396,19 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<include>GenreText</include>
+				<visible>!Skin.HasSetting(Hide501GenreFlags) + !StringCompare(ListItem.Label,..)</visible>
+			</control>
+			<control type="textbox">
+				<posx>100</posx>
+				<posy>550</posy>
+				<width>1080</width>
+				<height>100</height>
+				<font>font12_title</font>
+				<align>justify</align>
+				<textcolor>white</textcolor>
+				<label>$VAR[ShowMediaPlot]</label>
+				<autoscroll time="4000" delay="4000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+				<visible>Skin.HasSetting(Hide501GenreFlags) + !StringCompare(ListItem.Label,..)</visible>
 			</control>
 		</control>
 	</include>

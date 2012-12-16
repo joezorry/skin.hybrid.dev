@@ -994,6 +994,10 @@ msgctxt "#31698"
 msgid "Media Certification Country"
 msgstr ""
 
+msgctxt "#31699"
+msgid "Hide Genre Icons"
+msgstr ""
+
 msgctxt "#31700"
 msgid "United States"
 msgstr ""
