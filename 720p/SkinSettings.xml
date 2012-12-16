@@ -3470,7 +3470,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HidePauseInfo)</onclick>
 						<selected>!Skin.HasSetting(HidePauseInfo)</selected>
-						<enable>!Skin.HasSetting(HideSeekBarOSD)</enable>
 					</control>
 					<control type="radiobutton" id="534">
 						<width>750</width>
