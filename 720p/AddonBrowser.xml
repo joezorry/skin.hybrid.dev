@@ -3,8 +3,21 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,500,555,550,551</views>
 	<controls>
-		<include>CommonBackground</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">special://skin/backgrounds/homescreen/settings.jpg</texture>
+			<include>BackgroundFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
+		</control>
+		<include condition="Skin.HasSetting(InitialSetUpRun)">CommonBackground</include>
 		<include>MediaContentBackground</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+ 			<aspectratio>stretch</aspectratio>
+			<texture>black-back.png</texture>
+		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>		
 			<include>CommonRootView</include> <!-- view id = 50 -->

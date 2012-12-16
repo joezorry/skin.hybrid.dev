@@ -3,7 +3,15 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>HomeMainMenuInitialSetup</include>
-		<include>CommonBackground</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">special://skin/backgrounds/homescreen/settings.jpg</texture>
+			<include>BackgroundFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
+		</control>
+		<include condition="Skin.HasSetting(InitialSetUpRun)">CommonBackground</include>
 		<include>MediaContentBackground</include>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -100,7 +108,7 @@
 						<posy>21</posy>
 						<width>380</width>
 						<height>40</height>
-						<font>font45caps_title</font>
+						<font>font45_title</font>
 						<textcolor>grey3</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -114,7 +122,7 @@
 						<posx>380</posx>
 						<width>400</width>
 						<height>62</height>
-						<font>font45caps_title</font>
+						<font>font45_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -206,7 +214,6 @@
 				<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 				<texture background="true" diffuse="AddonCaseMask.png">$INFO[Container(9000).ListItem.ActualIcon]</texture>
-				<colordiffuse>48FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>500</posx>
@@ -217,10 +224,19 @@
 				<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 				<texture background="true">AddonCase.png</texture>
-				<colordiffuse>48FFFFFF</colordiffuse>
 			</control>
 		</control>
 		<include>BehindDialogFadeOut</include>
+		<control type="image">
+			<description>LOGO</description>
+			<posx>10</posx>
+			<posy>80r</posy>
+			<width>220</width>
+			<height>80</height>
+			<aspectratio>keep</aspectratio>
+			<texture>SkinLogo/Hybrid_Logo.png</texture>
+			<animation effect="slide" end="0,100" time="500" tween="back" easing="out" condition="Window.IsVisible(infodialog) | Window.IsVisible(volumebar)" reversible="true">Conditional</animation> 
+		</control>
 		<include>Clock</include>
 	</controls>
 </window>

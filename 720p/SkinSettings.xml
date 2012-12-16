@@ -1,8 +1,21 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
-		<include>CommonBackground</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">special://skin/backgrounds/homescreen/settings.jpg</texture>
+			<include>BackgroundFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
+		</control>
+		<include condition="Skin.HasSetting(InitialSetUpRun)">CommonBackground</include>
 		<include>MediaContentBackground</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+ 			<aspectratio>stretch</aspectratio>
+			<texture>black-back.png</texture>
+		</control>
 		<control type="group">
 			<posx>90</posx>
 			<posy>30</posy>
@@ -14,28 +27,32 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-			<control type="image">
-				<posx>5</posx>
+			<control type="label">
+				<posx>190</posx>
 				<posy>5</posy>
-				<width>1090</width>
-				<height>630</height>
-				<texture border="15">ContentPanel.png</texture>
+				<width>900</width>
+				<height>35</height>
+				<font>font30_title</font>
+				<textcolor>MainLabel</textcolor>
+				<scroll>true</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<include>Window_OpenClose_Animation</include>
+				<label>[UPPERCASE]$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label][/UPPERCASE]</label>
 			</control>
-			<control type="image">
-				<posx>5</posx>
-				<posy>625</posy>
-				<width>1090</width>
-				<height>64</height>
-				<texture border="15">ContentPanelMirror.png</texture>
-			</control>
-			<control type="image">
-				<description>LOGO</description>
-				<posx>30</posx>
-				<posy>15</posy>
-				<width>220</width>
-				<height>80</height>
-				<aspectratio>keep</aspectratio>
-				<texture>SkinLogo/Hybrid_Logo.png</texture>
+			<control type="label">
+				<posx>190</posx>
+				<posy>50</posy>
+				<width>900</width>
+				<height>20</height>
+				<font>font12_title</font>
+				<textcolor>grey2</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>false</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<include>Window_OpenClose_Animation</include>
+				<label>$INFO[Container(9000).ListItem.Label] $INFO[Container(9000).ListItem.Label2]</label>
 			</control>
 			<control type="button" id="61">
 				<description>Back push button</description>
@@ -72,77 +89,77 @@
 				<ondown>9000</ondown>
 			</control>
 			<control type="list" id="9000">
-				<posx>10</posx>
-				<posy>90</posy>
-				<width>260</width>
-				<height>527</height>
+				<posx>-20</posx>
+				<posy>120</posy>
+				<width>430</width>
+				<height>600</height>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<pagecontrol>-</pagecontrol>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="75" width="260">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>260</width>
-						<height>76</height>
-						<texture border="5">MenuItemNF.png</texture>
-					</control>
+				<!--animation effect="fade" start="0" end="100" time="200">Visible</animation-->
+				
+				<!--
+				<animation type="Focus">
+ <effect type="fade" start="60" end="100" time="200"/>
+ <effect type="zoom" end="100,100" center="auto" time="200" delay="200"/>
+</animation>
+	
+				<animation type="UnFocus">
+ <effect type="fade" start="100" end="60" time="200"/>
+ <effect type="zoom" end="80,80" center="auto" time="200" delay="200"/>
+</animation>
+-->
+	
+				
+				<!--
+				<animation effect="zoom" start="0,0,0,0" end="0,0,0,0" time="250">Focus</animation>
+				<animation effect="zoom" start="-21,-3,228,324" end="0,24,188,267" time="250">UnFocus</animation>
+				-->
+				
+				<animation type="Focus" reversible="false">
+					<effect type="zoom" start="80" end="100" center="auto" time="200" />
+					<effect type="fade" start="80" end="100" time="200" />
+				</animation>
+				<animation type="UnFocus" reversible="false">
+					<effect type="zoom" start="100" end="80" center="auto" time="200" />
+					<effect type="fade" start="100" end="80" time="200" />
+				</animation>
+				
+				
+				
+				<itemlayout height="42" width="380">
 					<control type="label">
-						<posx>250</posx>
-						<posy>15</posy>
+						<posx>380</posx>
+						<posy>21</posy>
 						<width>380</width>
-						<height>25</height>
-						<font>font24_title</font>
+						<height>40</height>
+						<font>font30_title</font>
 						<textcolor>grey3</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>250</posx>
-						<posy>42</posy>
-						<width>870</width>
-						<height>25</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+						<animation effect="zoom" start="65" end="65" center="380,51" time="0" condition="true">Conditional</animation>
+					
+				
+					
 					</control>
 				</itemlayout>
-				<focusedlayout height="75" width="260">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>260</width>
-						<height>81</height>
-						<texture border="5">MenuItemFO.png</texture>
-						<animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
-					</control>
+				<focusedlayout height="62" width="430">
 					<control type="label">
-						<posx>250</posx>
-						<posy>15</posy>
-						<width>380</width>
-						<height>25</height>
-						<font>font24_title</font>
+						<posy>21</posy>
+						<posx>380</posx>
+						<width>400</width>
+						<height>62</height>
+						<font>font45_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
-					</control>
-					<control type="label">
-						<posx>250</posx>
-						<posy>42</posy>
-						<width>870</width>
-						<height>25</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<align>right</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label2]</label>
+`						<animation effect="zoom" start="65" end="125" center="380,51" time="200">Focus</animation>
+						<animation effect="zoom" start="125" end="65" center="380,51" time="200">UnFocus</animation>
 					</control>
 				</focusedlayout>
 				<content>
@@ -183,39 +200,19 @@
 					</item>
 				</content>
 			</control>
-			<control type="image">
-				<posx>268</posx>
-				<posy>10</posy>
-				<width>790</width>
-				<height>618</height>
-				<texture border="5">black-back2.png</texture>
-			</control>
-			<control type="image">
-				<posx>268</posx>
-				<posy>10</posy>
-				<width>804</width>
-				<height>100</height>
-				<aspectratio>stretch</aspectratio>
-				<texture>GlassTitleBar.png</texture>
-			</control>
-			<control type="label">
-				<description>header label</description>
-				<posx>300</posx>
-				<posy>20</posy>
-				<width>740</width>
-				<height>30</height>
-				<font>font16</font>
-				<label>$LOCALIZE[20077] - $INFO[Container(9000).ListItem.Label]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
 			<control type="group" id="9010">
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9001).HasFocus() | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9001).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -405,10 +402,10 @@
 					</control>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
+					<posx>1160</posx>
+					<posy>110</posy>
 					<width>25</width>
-					<height>530</height>
+					<height>510</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -422,8 +419,16 @@
 				</control>
 				<control type="grouplist" id="9002">
 					<visible>Container(9000).Hasfocus(2)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9002).HasFocus()  | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9002).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -994,10 +999,10 @@
 					</control>	
 				</control>	
 				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
+					<posx>1160</posx>
+					<posy>110</posy>
 					<width>25</width>
-					<height>530</height>
+					<height>510</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1008,10 +1013,20 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
-				</control>				
-				<control type="group">
-					<posx>290</posx>
-					<posy>60</posy>
+				</control>			
+				<control type="group" id="9009">
+					<animation type="Conditional" condition="ControlGroup(9009).HasFocus()">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9009).HasFocus()">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
+					<width>750</width>
+					<height>530</height>
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<control type="label">
 						<posx>0</posx>
@@ -1290,7 +1305,7 @@
 						<posx>35</posx>
 						<posy>135</posy>
 						<width>680</width>
-						<height>425</height>
+						<height>405</height>
 						<texture>black-back.png</texture>
 					</control>
 					<control type="group">
@@ -2643,7 +2658,7 @@
 							[Container(9003).Hasfocus(15) + Skin.HasSetting(GlobalLiveBackdrop) + IsEmpty(Skin.String(PhotoBrowserBackdrop))]
 						</visible>
 					</control>
-					<control type="label">
+					<!--control type="label">
 						<posx>95</posx>
 						<posy>530</posy>
 						<width>560</width>
@@ -2655,12 +2670,20 @@
 						<haspath>yes</haspath>
 						<label fallback="21895">$INFO[Container(9003).ListItem.Thumb]</label>
 						<visible>!Skin.HasSetting(GlobalMenuBackdrop)</visible>
-					</control>
+					</control-->
 				</control>
 				<control type="grouplist" id="9004">
 					<visible>Container(9000).Hasfocus(4)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9004).HasFocus() | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9004).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -3028,10 +3051,10 @@
 					</control>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
+					<posx>1160</posx>
+					<posy>110</posy>
 					<width>25</width>
-					<height>530</height>
+					<height>510</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -3042,11 +3065,19 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
-				</control>
+				</control>			
 				<control type="grouplist" id="9005">
 					<visible>Container(9000).Hasfocus(5)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9005).HasFocus() | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9005).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -3611,10 +3642,10 @@
 					</content>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
+					<posx>1160</posx>
+					<posy>110</posy>
 					<width>25</width>
-					<height>530</height>
+					<height>510</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -3625,11 +3656,19 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(5)</visible>
-				</control>
+				</control>			
 				<control type="grouplist" id="9006">
 					<visible>Container(9000).Hasfocus(6)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9006).HasFocus() | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9006).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -3834,10 +3873,10 @@
 					</control>
 				</control>
 				<control type="scrollbar" id="60">
-					<posx>1060</posx>
-					<posy>60</posy>
+					<posx>1160</posx>
+					<posy>110</posy>
 					<width>25</width>
-					<height>530</height>
+					<height>510</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -3848,11 +3887,19 @@
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(6)</visible>
-				</control>
+				</control>		
 				<control type="grouplist" id="9007">
 					<visible>Container(9000).Hasfocus(7)</visible>
-					<posx>290</posx>
-					<posy>60</posy>
+					<animation type="Conditional" condition="ControlGroup(9007).HasFocus() | Control.HasFocus(60)">
+						<effect type="zoom" start="80" end="100" center="auto" time="200" />
+						<effect type="fade" start="80" end="100" time="200" />
+					</animation>
+					<animation type="Conditional" condition="!ControlGroup(9007).HasFocus() + !Control.HasFocus(60)">
+						<effect type="zoom" start="100" end="80" center="auto" time="200" />
+						<effect type="fade" start="100" end="80" time="200" />
+					</animation>					
+					<posx>390</posx>
+					<posy>100</posy>
 					<width>750</width>
 					<height>530</height>
 					<itemgap>-1</itemgap>
@@ -3898,6 +3945,16 @@
 			</control>
 		</control>
 		<include>BehindDialogFadeOut</include>
+		<control type="image">
+			<description>LOGO</description>
+			<posx>10</posx>
+			<posy>80r</posy>
+			<width>220</width>
+			<height>80</height>
+			<aspectratio>keep</aspectratio>
+			<texture>SkinLogo/Hybrid_Logo.png</texture>
+			<animation effect="slide" end="0,100" time="500" tween="back" easing="out" condition="Window.IsVisible(infodialog) | Window.IsVisible(volumebar)" reversible="true">Conditional</animation> 
+		</control>
 		<include>Clock</include>
 	</controls>
 </window>
