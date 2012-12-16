@@ -13,9 +13,8 @@
 	<include file="IncludesHomePanelContent.xml" />
 	<include file="IncludesHomeWeather.xml" />
 	<include file="IncludesGenreFlagging.xml" />
-	<include file="ViewsVideoLibrary.xml" />
-	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
+	<include file="ViewsThumbnails.xml" />
 	<include file="ViewsPictures.xml" />
 	<include file="ViewsAddonBrowser.xml" />
 	<include file="ViewsLiveTV.xml" />

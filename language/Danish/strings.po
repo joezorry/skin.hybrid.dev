@@ -4,13 +4,14 @@
 # Addon version: 1.0.1
 # Addon Provider: Mudislander
 # Translators:
+# Jonas Nielsen <jonas9elsen@hotmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2012-12-11 17:48+0000\n"
-"Last-Translator: TeamXBMC <xbmctranslations@gmail.com>\n"
+"PO-Revision-Date: 2012-12-16 15:14+0000\n"
+"Last-Translator: Jonas Nielsen <jonas9elsen@hotmail.com>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/xbmc-skins/language/da/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,21 +21,21 @@ msgstr ""
 
 msgctxt "Addon Summary"
 msgid "Hybrid a customizable skin"
-msgstr ""
+msgstr "Hybrid er et tilpasningsvenligt skin"
 
 msgctxt "Addon Description"
 msgid ""
 "Hybrid is a customizable skin incorporating many of the now popular tweaks, "
 "addons and scripts."
-msgstr ""
+msgstr "Hybrid er et tilpasninsvenligt skin, som indarbejder mange af tidens populære tweaks, add-ons og scripts."
 
 msgctxt "Addon Disclaimer"
 msgid "You break it - You get to keep the pieces"
-msgstr ""
+msgstr "Du smadrer det - Du får lov at beholde stumperne"
 
 msgctxt "#31000"
 msgid "Change Your"
-msgstr "Ændre din"
+msgstr "Ændr din"
 
 msgctxt "#31001"
 msgid "Love"
@@ -46,7 +47,7 @@ msgstr "Hader"
 
 msgctxt "#31003"
 msgid "Power Options"
-msgstr "Strømstyringsindstillinger"
+msgstr "Strømstyring"
 
 msgctxt "#31004"
 msgid "Working..."
@@ -54,27 +55,27 @@ msgstr "Arbejder..."
 
 msgctxt "#31005"
 msgid "Hide Information"
-msgstr "Skjul information"
+msgstr "Skjul Information"
 
 msgctxt "#31006"
 msgid "View Options"
-msgstr "Vis indstillinger"
+msgstr "Visnining-Indstillinger"
 
 msgctxt "#31007"
 msgid "Plugins"
-msgstr "Plugins"
+msgstr "Plugin's"
 
 msgctxt "#31008"
 msgid "Fullscreen"
-msgstr "Fuldskærm"
+msgstr "Fuld skærm"
 
 msgctxt "#31009"
 msgid "Total Duration"
-msgstr "Total varighed"
+msgstr "Total Varighed"
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr "Nyligt tilføjet"
+msgstr "Nyligt Tilføjede"
 
 msgctxt "#31021"
 msgid "Video - Files"
@@ -94,15 +95,15 @@ msgstr "Side"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "Objekter"
+msgstr "Emner"
 
 msgctxt "#31026"
 msgid "Misc Options"
-msgstr "Div. indstillinger"
+msgstr "Div. Indstillinger"
 
 msgctxt "#31027"
 msgid "Location"
-msgstr "Placering"
+msgstr "Lokalitet"
 
 msgctxt "#31029"
 msgid "Fanart"
@@ -114,11 +115,11 @@ msgstr "Komplet liste"
 
 msgctxt "#31031"
 msgid "Pic Thumbs"
-msgstr "Miniaturebilleder af billeder"
+msgstr "Minibilleder"
 
 msgctxt "#31032"
 msgid "Image Wrap"
-msgstr "Billedevæg"
+msgstr "Billedvæg"
 
 msgctxt "#31033"
 msgid "Info"
@@ -126,7 +127,7 @@ msgstr "Info"
 
 msgctxt "#31040"
 msgid "Now Playing"
-msgstr "Spiller nu"
+msgstr "Spiller Nu"
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -138,7 +139,7 @@ msgstr "PAUSE"
 
 msgctxt "#31044"
 msgid "FAST FORWARD"
-msgstr "HURTIGT FREMAD"
+msgstr "SPOL FREM"
 
 msgctxt "#31045"
 msgid "REWIND"
@@ -150,11 +151,11 @@ msgstr "Lydegenskaber"
 
 msgctxt "#31047"
 msgid "Current Preset"
-msgstr "Nuværende standard"
+msgstr "Nuværende Standard"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr "Standard til visualisering"
+msgstr "Forudindstillinger til Visualisering"
 
 msgctxt "#31049"
 msgid "End Time"
@@ -190,15 +191,15 @@ msgstr "Nuværende afspilningsliste"
 
 msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
-msgstr "Denne fil er stakket. Vælg den del, der skal afspilles fra"
+msgstr "Denne fil er kombineret. Vælg den del, der skal afspilles fra"
 
 msgctxt "#31061"
 msgid "Current Selected"
-msgstr "Nuværende udvalgte"
+msgstr "Nuværende valgte"
 
 msgctxt "#31101"
 msgid "Home screen options"
-msgstr "Indstillinger til hjemmevinduet"
+msgstr "Indstillinger til Hjemmeskærmen"
 
 msgctxt "#31102"
 msgid "Background"
@@ -206,7 +207,7 @@ msgstr "Baggrund"
 
 msgctxt "#31103"
 msgid "Show \"Paused\" in picture slide show"
-msgstr "Vis \"PAUSERET\" i  billeddiasshow"
+msgstr "Vis \"PAUSE\" i  billeddiasshow"
 
 msgctxt "#31104"
 msgid ""
@@ -226,15 +227,15 @@ msgstr "Skjul vigende læsning fra videofilnavne [COLOR=grey3](Blu-ray, HD-DVD)[
 
 msgctxt "#31108"
 msgid "Hide Main Menu Buttons"
-msgstr "Skjul hovedmenuknapperne"
+msgstr "Skjul Hovedmenuknapper"
 
 msgctxt "#31109"
 msgid "Media backgrounds"
-msgstr "Baggrunde til hovedsiden"
+msgstr "Baggrunde til Hovedsiden"
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
-msgstr "Skift baggrund på hjem-knappen"
+msgstr "Skift Baggrund til Medietypen"
 
 msgctxt "#31111"
 msgid "Hide"
@@ -250,7 +251,7 @@ msgstr "Enkelt billede"
 
 msgctxt "#31114"
 msgid "Multi Image"
-msgstr "Adskillige billeder"
+msgstr "Flere Billeder"
 
 msgctxt "#31115"
 msgid "Customizer"
@@ -258,15 +259,15 @@ msgstr "Tilpasningsprogram"
 
 msgctxt "#31116"
 msgid "Show Recently added Albums"
-msgstr "Vis nyligt tilføjne albummer"
+msgstr "Vis Nyligt Tilføjede Albummer"
 
 msgctxt "#31117"
 msgid "Show Recently added Videos"
-msgstr "Vis nyligt tilføjne videoer"
+msgstr "Vis Nyligt Tilføjede Videoer"
 
 msgctxt "#31118"
 msgid "Home Page Programs Submenu"
-msgstr "Undermenu til programmer på startskærmen"
+msgstr "Undermenu til Programmer på Hjemmeskærmen"
 
 msgctxt "#31119"
 msgid "Hide Background Fanart"
@@ -282,19 +283,19 @@ msgstr "Vejrside"
 
 msgctxt "#31123"
 msgid "Use \"Posters\" instead of \"Banners\" for TV Shows"
-msgstr "Brug \"plakater\" istedet for \"bannere\" for tv serier"
+msgstr "Brug \"Plakater\" i stedet for \"Bannere\" til TV-serier"
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
-msgstr "Vis baggrund \"spiller nu\" video"
+msgstr "Vis \"Spiller Nu\" Video i baggrunden"
 
 msgctxt "#31125"
 msgid "Show Background \"Now Playing\" Visualization"
-msgstr "Vis baggrund \"spiller nu\" visualisering"
+msgstr "Vis \"Spiller Nu\" visualisering i baggrunden"
 
 msgctxt "#31126"
 msgid "Play TV theme songs in video library (TvTunes add-on)"
-msgstr "Afspil tv-serie temasange i videobiblioteket (TvTunes add-on)"
+msgstr "Afspil temasange til TV-serier videobiblioteket (TvTunes add-on)"
 
 msgctxt "#31127"
 msgid "TvTunes"
@@ -302,31 +303,31 @@ msgstr "TvTunes"
 
 msgctxt "#31128"
 msgid "Lyrics"
-msgstr "Sangtekst"
+msgstr "Sangtekster"
 
 msgctxt "#31129"
 msgid "Hide Fanart in full screen visualization"
-msgstr "Skjul fankunst i fuldskærmsvisualisering"
+msgstr "Skjul Fankunst i fuldskærmsvisualisering"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Add-on til Sangtekster"
 
 msgctxt "#31133"
 msgid "Subtitle Add-on"
-msgstr ""
+msgstr "Add-on til Undertekster"
 
 msgctxt "#31134"
 msgid "Home Page Videos Submenu"
-msgstr "Undermenu til videoer på startskærmen"
+msgstr "Undermenu til Videoer på Hjemmeskærmen"
 
 msgctxt "#31135"
 msgid "Home Page Music Submenu"
-msgstr "Undermenu til musik på startskærmen"
+msgstr "Undermenu til Musik på Hjemmeskærmen"
 
 msgctxt "#31136"
 msgid "Home Page Pictures Submenu"
-msgstr "Undermenu til billeder på startskærmen"
+msgstr "Undermenu til Billeder på Hjemmeskærmen"
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -366,11 +367,11 @@ msgstr "Fundet"
 
 msgctxt "#31207"
 msgid "Find More Items"
-msgstr "Find flere elementer"
+msgstr "Find flere Emner"
 
 msgctxt "#31208"
 msgid "Upcoming Episodes"
-msgstr "Kommende episoder"
+msgstr "Kommende Episoder"
 
 msgctxt "#31300"
 msgid "Current Temp"
@@ -386,7 +387,7 @@ msgstr "Menu"
 
 msgctxt "#31303"
 msgid "Data provider"
-msgstr "Data leverandør"
+msgstr "Dataleverandør"
 
 msgctxt "#31304"
 msgid "Picture"
@@ -402,7 +403,7 @@ msgstr "Skub ud"
 
 msgctxt "#31307"
 msgid "Hide Fanart"
-msgstr "Skjul fankunst"
+msgstr "Skjul Fankunst"
 
 msgctxt "#31308"
 msgid "Movie Details"
@@ -418,19 +419,19 @@ msgstr "Spornummer"
 
 msgctxt "#31311"
 msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
-msgstr "Fankunstsbillede[CR][CR]Ikke tingængelig[CR][CR]Tryk på en knap for at vælge"
+msgstr "Fankunstsbillede[CR][CR]Ikke tingængeligt[CR][CR]Tryk på en knap for at vælge"
 
 msgctxt "#31312"
 msgid "Current Scraper"
-msgstr "Nuværende scraper"
+msgstr "Nuværende Scraper"
 
 msgctxt "#31313"
 msgid "Choose a Scraper"
-msgstr "Vælg en scraper"
+msgstr "Vælg en Scraper"
 
 msgctxt "#31314"
 msgid "Content Scanning Options"
-msgstr "Indholdsskanningsindstillinger"
+msgstr "Valgmuligheder for Skanning af Indhold"
 
 msgctxt "#31315"
 msgid "Basic"
@@ -438,15 +439,15 @@ msgstr "Simpel"
 
 msgctxt "#31317"
 msgid "Set Fanart Path"
-msgstr "Vælg sti til fankunst"
+msgstr "Vælg sti til Fankunst"
 
 msgctxt "#31318"
 msgid "Small Fanart"
-msgstr "Lille fankunst"
+msgstr "Lille Fankunst"
 
 msgctxt "#31319"
 msgid "Selected Profile"
-msgstr "Valgt profil"
+msgstr "Valgt Profil"
 
 msgctxt "#31320"
 msgid "Last Logged In"
@@ -454,7 +455,7 @@ msgstr "Sidst logget ind"
 
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
-msgstr "Sangvalg til karaoke"
+msgstr "Sangvælger til Karaoke"
 
 msgctxt "#31322"
 msgid "Aired"
@@ -462,15 +463,15 @@ msgstr "Sendt"
 
 msgctxt "#31323"
 msgid "Latest Movies"
-msgstr "Seneste film"
+msgstr "Seneste Film"
 
 msgctxt "#31324"
 msgid "Latest Episodes"
-msgstr "Seneste episoder"
+msgstr "Seneste Episoder"
 
 msgctxt "#31325"
 msgid "Playlist Options"
-msgstr "Indstillinger til afspilningsliste"
+msgstr "Indstillinger til Afspilningsliste"
 
 msgctxt "#31326"
 msgid "Created"
@@ -482,7 +483,7 @@ msgstr "Opløsning"
 
 msgctxt "#31328"
 msgid "Recently Added"
-msgstr "Nyligt tilføjet"
+msgstr "Nyligt tilføjede"
 
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
@@ -494,7 +495,7 @@ msgstr "Klik på en knap for at afspille[CR][CR]Filmtrailer"
 
 msgctxt "#31331"
 msgid "Album Details"
-msgstr "Album detaljer"
+msgstr "Albumdetaljer"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -506,15 +507,15 @@ msgstr "Stop"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr "Spol frem"
+msgstr "Spol Frem"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr "Spol tilbage"
+msgstr "Spol Tilbage"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr "Film menu"
+msgstr "Filmmenu"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
@@ -530,63 +531,63 @@ msgstr "Skinnets standard uden store bogstaver"
 
 msgctxt "#31392"
 msgid "Arial based"
-msgstr "Arial baseret"
+msgstr "Arialbaseret"
 
 msgctxt "#31400"
 msgid ""
 "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language "
 "and region · Change file listing options[CR]Set up a screensaver"
-msgstr "[B]KONFIGURER UDSEENDESINDSTILLINGER[/B][CR][CR]Skift skin · Vælg sprog og region · Ændre fil oversigtsindstillinger[CR]Indstil en pauseskærm"
+msgstr "[B]KONFIGURER UDSEENDE[/B][CR][CR]Skift skin · Vælg sprog og region · Indstil filoversigt[CR]Opsæt en pauseskærm"
 
 msgctxt "#31401"
 msgid ""
 "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video"
 " playback options · Change video listing options[CR]Set subtitle fonts"
-msgstr "[B]KONFIGURER VIDEOINDSTILLINGER[/B][CR][CR]Administrer dit videobibliotek · Vælg videoafspilningsindstillinger · Ændre video oversigtsindstillinger[CR]Vælg undertekstsskrifttyper"
+msgstr "[B]KONFIGURER VIDEOINDSTILLINGER[/B][CR][CR]Administrer dit videobibliotek · Indstil videoafspilning · Indstil videooversigt[CR]Vælg skrifttype til undertekster"
 
 msgctxt "#31402"
 msgid ""
 "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music"
 " playback options · Change music listing options[CR]Setup song submission · "
 "Set karaoke options"
-msgstr "[B]KONFIGURER MUSIKINDSTILLINGER[/B][CR][CR]Administrer dit musikbibliotek · Vælg musikafspilningsindstillinger · Ændre musik oversigtsindstillinger[CR]Opsæt sangindsendelse · Vælg karaokeindstillinger"
+msgstr "[B]KONFIGURER MUSIKINDSTILLINGER[/B][CR][CR]Administrer dit musikbibliotek · Vælg indstillinger for musikafspilning · Indstil musikoversigt[CR]Opsæt sangindsendelse · Vælg karaokeindstillinger"
 
 msgctxt "#31403"
 msgid ""
 "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · "
 "Configure slideshows"
-msgstr "[B]KONFIGURER BILLEDINSTILLINGER[/B][CR][CR]Ændre billed oversigstindstillinger · Konfigurer diasshow"
+msgstr "[B]KONFIGURER BILLEDINSTILLINGER[/B][CR][CR]Indstil billedoversigt · Konfigurer diasshows"
 
 msgctxt "#31404"
 msgid ""
 "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather"
 " information"
-msgstr "[B]KONFIGURER VEJRINDSTILLINGER[/B][CR][CR]Du kan vælge tre byer, der skal hentes vejrudsigter for"
+msgstr "[B]KONFIGURER VEJRINDSTILLINGER[/B][CR][CR]Vælg op til tre byer der skal hentes vejrudsigter for"
 
 msgctxt "#31406"
 msgid ""
 "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · "
 "Configure audio output · Setup remote controls[CR]Set power saving options ·"
 " Enable debugging · Setup master lock"
-msgstr "[B]KONFIGURER SYSTEMINDSTILLINGER[/B][CR][CR]Indstil og kalibrer skærmene · Opsæt lydudgang · Opsæt fjernbetjeninger[CR]Opsæt strømstyringsindstillinger · Aktiver fejllogning · Opsæt hovedlås"
+msgstr "[B]KONFIGURER SYSTEMINDSTILLINGER[/B][CR][CR]Indstil og kalibrer skærme · Opsæt lydudgang · Opsæt fjernbetjeninger[CR]Opsæt strømstyring · Aktiver fejlfinding· Opret hovedlås"
 
 msgctxt "#31407"
 msgid ""
 "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Hybrid skin · Add and remove"
 " home menu items[CR]Change skin backgrounds"
-msgstr ""
+msgstr "[B]KONFIGURER INDSTILLINGER FOR SKIN [/B][CR][CR]Tilpas Hybrid · Tilføj og fjern elementer i hovedmenuen[CR]Skift baggrunde"
 
 msgctxt "#31408"
 msgid ""
 "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for "
 "and install Add-ons from xbmc.org[CR]Modify Add-on settings"
-msgstr ""
+msgstr "[B]KONFIGURER ADD-ONS[/B][CR][CR]Håndter dine installerede Add-ons · Gennemse og installer Add-ons fra xbmc.org[CR]Tilpas Add-on indstillinger"
 
 msgctxt "#31409"
 msgid ""
 "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change fullscreen info · Manage EPG data"
 " settings"
-msgstr "[B]KONFIGURER TV INDSTILLINGER[/B][CR][CR]Ændre fuldskærmsinfo · Administrer EPG dataindstillinger"
+msgstr "[B]KONFIGURER TV-INDSTILLINGER[/B][CR][CR]Tilpas fuldskærmsinfo · Administrer EPG-dataindstillinger"
 
 msgctxt "#31410"
 msgid ""
@@ -612,19 +613,19 @@ msgstr "TV"
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr "Tilføj gruppe"
+msgstr "Tilføj Gruppe"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr "Omdøb gruppe"
+msgstr "Omdøb Gruppe"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr "Slet gruppe"
+msgstr "Slet Gruppe"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "Tilgængelige[CR]Grupper"
 
 msgctxt "#31509"
 msgid "Channel Group"
@@ -640,15 +641,15 @@ msgstr "Kanalindstillinger"
 
 msgctxt "#31600"
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 msgctxt "#31601"
 msgid "Adventure"
-msgstr ""
+msgstr "Eventyr"
 
 msgctxt "#31602"
 msgid "Animation"
-msgstr ""
+msgstr "Animation"
 
 msgctxt "#31603"
 msgid "Biography"
@@ -656,7 +657,7 @@ msgstr "Biografi"
 
 msgctxt "#31604"
 msgid "Children"
-msgstr ""
+msgstr "Børn"
 
 msgctxt "#31605"
 msgid "Comedy"
@@ -664,11 +665,11 @@ msgstr "Komedie"
 
 msgctxt "#31606"
 msgid "Crime"
-msgstr ""
+msgstr "Krimi"
 
 msgctxt "#31607"
 msgid "Disaster"
-msgstr ""
+msgstr "Katastrofe"
 
 msgctxt "#31608"
 msgid "Documentary"
@@ -680,35 +681,35 @@ msgstr "Drama"
 
 msgctxt "#31610"
 msgid "Family"
-msgstr ""
+msgstr "Familie"
 
 msgctxt "#31611"
 msgid "Fantasy"
-msgstr ""
+msgstr "Fantasy"
 
 msgctxt "#31612"
 msgid "History"
-msgstr ""
+msgstr "Historie"
 
 msgctxt "#31613"
 msgid "Holiday"
-msgstr ""
+msgstr "Ferie"
 
 msgctxt "#31614"
 msgid "Horror"
-msgstr ""
+msgstr "Gyser"
 
 msgctxt "#31615"
 msgid "Indie"
-msgstr ""
+msgstr "Indie"
 
 msgctxt "#31616"
 msgid "Musical"
-msgstr ""
+msgstr "Musical"
 
 msgctxt "#31617"
 msgid "Mystery"
-msgstr ""
+msgstr "Mysterium"
 
 msgctxt "#31618"
 msgid "Romance"
@@ -716,7 +717,7 @@ msgstr "Romantik"
 
 msgctxt "#31619"
 msgid "Sci-Fi"
-msgstr ""
+msgstr "Sci-Fi"
 
 msgctxt "#31620"
 msgid "Short"
@@ -724,71 +725,71 @@ msgstr "Kort"
 
 msgctxt "#31621"
 msgid "Sport"
-msgstr ""
+msgstr "Sport"
 
 msgctxt "#31622"
 msgid "Suspense"
-msgstr ""
+msgstr "Suspence"
 
 msgctxt "#31623"
 msgid "Thriller"
-msgstr ""
+msgstr "Thriller"
 
 msgctxt "#31624"
 msgid "War"
-msgstr ""
+msgstr "Krig"
 
 msgctxt "#31625"
 msgid "Western"
-msgstr ""
+msgstr "Western"
 
 msgctxt "#31635"
 msgid "Genre Posters"
-msgstr ""
+msgstr "Genreplakater"
 
 msgctxt "#31650"
 msgid "Show Fanart"
-msgstr ""
+msgstr "Vis Fankunst"
 
 msgctxt "#31651"
 msgid "Use External Genre Icons - media/MovieGenre/*.png"
-msgstr ""
+msgstr "Anvend Eksterne Genreikoner - media/MovieGenre/*.png"
 
 msgctxt "#31652"
 msgid "Hide Music CD Disk & Case"
-msgstr ""
+msgstr "Skjul Disk og Kassette for Musik-CD'er"
 
 msgctxt "#31653"
 msgid "Dynamic Global Backgrounds"
-msgstr ""
+msgstr "Dynamiske Globale Baggrunde"
 
 msgctxt "#31654"
 msgid "Movie DataBase Fanart"
-msgstr ""
+msgstr "Fankunst til Filmdatabase"
 
 msgctxt "#31655"
 msgid "Music DataBase Fanart"
-msgstr ""
+msgstr "Fankunst til Musikdatabase"
 
 msgctxt "#31656"
 msgid "Weather Fanart"
-msgstr ""
+msgstr "Fankunst til Vejret"
 
 msgctxt "#31657"
 msgid "Live Cases"
-msgstr ""
+msgstr "Live Kassetter"
 
 msgctxt "#31658"
 msgid "Browse PreSet Media Streams"
-msgstr ""
+msgstr "Gennemse forudindstillede Medie-streams"
 
 msgctxt "#31659"
 msgid "Enable User Genre Backgrounds"
-msgstr ""
+msgstr "Aktiver brugerdefinerede baggrunde til Genrer"
 
 msgctxt "#31660"
 msgid "Streams"
-msgstr ""
+msgstr "Streams"
 
 msgctxt "#31661"
 msgid "Movie Sets"
@@ -800,7 +801,7 @@ msgstr "TV-serier"
 
 msgctxt "#31663"
 msgid "Shows"
-msgstr ""
+msgstr "Programmer"
 
 msgctxt "#31664"
 msgid "Trailers"
@@ -808,69 +809,69 @@ msgstr "Trailere"
 
 msgctxt "#31665"
 msgid "UpTime"
-msgstr ""
+msgstr "Oppetid"
 
 msgctxt "#31666"
 msgid "Outlook - "
-msgstr ""
+msgstr "Udsigt -"
 
 msgctxt "#31667"
 msgid "Up One Level"
-msgstr ""
+msgstr "Ét niveau op"
 
 msgctxt "#31668"
 msgid "Enable Global Backgrounds"
-msgstr ""
+msgstr "Aktiver Globale Baggrunde"
 
 msgctxt "#31669"
 msgid "Concerts"
-msgstr ""
+msgstr "Koncerter"
 
 msgctxt "#31670"
 msgid "Common"
-msgstr ""
+msgstr "Almindelig"
 
 msgctxt "#31671"
 msgid "DB"
-msgstr ""
+msgstr "DB"
 
 msgctxt "#31672"
 msgid "Hide RainDrop Effect"
-msgstr ""
+msgstr "Skjul Regndråbe-effekt"
 
 msgctxt "#31673"
 msgid "Default Submenu Items"
-msgstr ""
+msgstr "Standardelementer i Undermenu"
 
 msgctxt "#31674"
 msgid "Hide -  Default Submenu Items"
-msgstr ""
+msgstr "Skjul-  Standelementer i Undermenu"
 
 msgctxt "#31676"
 msgid "OpenELEC OS"
-msgstr ""
+msgstr "OpenELEC OS"
 
 msgctxt "#31677"
 msgid "Use Vertical Menu System"
-msgstr ""
+msgstr "Anvend Vertikalt Menusystem"
 
 msgctxt "#31678"
 msgid ""
 "[COLOR=selected][B]Warning!![/B][/COLOR] - Reset Skin Values to Initial "
 "Install Defaults"
-msgstr ""
+msgstr "[COLOR=valgt][B]Advarsel!![/B][/COLOR] - Nulstil skin-værdier til oprindelige standarder"
 
 msgctxt "#31679"
 msgid "Reset"
-msgstr ""
+msgstr "Nulstil"
 
 msgctxt "#31680"
 msgid "User Data"
-msgstr ""
+msgstr "Brugerdata"
 
 msgctxt "#31681"
 msgid "Hide Thumbnails"
-msgstr ""
+msgstr "Skjul Miniaturebilleder"
 
 msgctxt "#31682"
 msgid "Tags"
@@ -878,69 +879,69 @@ msgstr "Mærker"
 
 msgctxt "#31683"
 msgid "Nodes"
-msgstr ""
+msgstr "Noder"
 
 msgctxt "#31684"
 msgid "Browser Backdrop"
-msgstr ""
+msgstr "Baggrund til Browser"
 
 msgctxt "#31685"
 msgid "Global"
-msgstr ""
+msgstr "Absolut"
 
 msgctxt "#31686"
 msgid "Hide Now Playing Background"
-msgstr ""
+msgstr "Skjul baggrund til 'Afspiller Nu'"
 
 msgctxt "#31687"
 msgid "Hide List Top Label"
-msgstr ""
+msgstr "Skjul Navn på listetop"
 
 msgctxt "#31688"
 msgid "Next Recording Not Set"
-msgstr ""
+msgstr "Næste Optagelser ikke fastlagt"
 
 msgctxt "#31689"
 msgid ""
 "Offset Menu Startup Focus Position    [COLOR=grey3](Internal Focus is "
 "2)[/COLOR]"
-msgstr ""
+msgstr "Skift startfokus i Menu    [COLOR=grey3](Internt Focus er 2)[/COLOR]"
 
 msgctxt "#31690"
 msgid "Auto Show Horizontal SubMenu"
-msgstr ""
+msgstr "Vis horisontal Undermenu automatisk"
 
 msgctxt "#31691"
 msgid "Hide TVShow Episode Screenshots"
-msgstr ""
+msgstr "Skjul stillbilleder til Afsnit af TV-serier"
 
 msgctxt "#31692"
 msgid "Allow Drive Search for Extra Fanart"
-msgstr ""
+msgstr "Tillad søgning på harddisk efter Ekstra Fankunst"
 
 msgctxt "#31693"
 msgid "Show Media Now Playing"
-msgstr ""
+msgstr "Vis Medie der Afspilles Nu"
 
 msgctxt "#31694"
 msgid "Get Artwork"
-msgstr ""
+msgstr "Hent Illustrationer"
 
 msgctxt "#31695"
 msgid "Hide Hidden Content Menu Arrows"
-msgstr ""
+msgstr "Skjul skjulte pile i kontekstmenu"
 
 msgctxt "#31696"
 msgid "Hide Seek Bar OSD During Fullscreen Playback"
-msgstr ""
+msgstr "Skjul søgebar OSD under afspilning i Fuldskærm"
 
 msgctxt "#31697"
 msgid "ExtraFanArt"
-msgstr ""
+msgstr "ExtraFanArt"
 
 msgctxt "#31698"
 msgid "Media Certification Country"
-msgstr ""
+msgstr "Mediecertifikation-land"
 
 msgctxt "#31700"
 msgid "United States"
@@ -948,7 +949,7 @@ msgstr "USA"
 
 msgctxt "#31701"
 msgid "Great Britian"
-msgstr ""
+msgstr "Storbritannien"
 
 msgctxt "#31702"
 msgid "Germany"
@@ -1000,107 +1001,107 @@ msgstr "Henter vejrudsigtsinfo..."
 
 msgctxt "#31910"
 msgid "Menu Item - 1 - Remembers Last Submenu Action Used"
-msgstr ""
+msgstr "Menuelement - 1 - Husker sidste handling i Undermenu"
 
 msgctxt "#31911"
 msgid "Use Item Fanart as Panel Thumb (Not TVShows)"
-msgstr ""
+msgstr "Anvend Fankunst til Emne som Panelbilleder (Ikke TV-serier)"
 
 msgctxt "#31912"
 msgid "User Defined Button"
-msgstr ""
+msgstr "Brugerdefinerede Knapper"
 
 msgctxt "#31913"
 msgid "Home Button Action"
-msgstr ""
+msgstr "Handling til Hjemmeknap"
 
 msgctxt "#31914"
 msgid "Home Panel Options"
-msgstr ""
+msgstr "Indstillinger for Hjemmepanel"
 
 msgctxt "#31915"
 msgid "Random Script Only Shows UnWatched Items"
-msgstr ""
+msgstr "Tilfældige scripts viser kun Ikke sete Emner"
 
 msgctxt "#31916"
 msgid "Allow Random Script Suggestions"
-msgstr ""
+msgstr "Tillad tilfældige Script-forslag"
 
 msgctxt "#31917"
 msgid "Random Concerts"
-msgstr ""
+msgstr "Tilfældige Koncerter"
 
 msgctxt "#31918"
 msgid "Recent Concerts"
-msgstr ""
+msgstr "Aktuelle Koncerter"
 
 msgctxt "#31919"
 msgid "Random Albums"
-msgstr ""
+msgstr "Tilfældiger Albummeer"
 
 msgctxt "#31920"
 msgid "Suggested Albums"
-msgstr ""
+msgstr "Foreslåede Albummer"
 
 msgctxt "#31921"
 msgid "Recent Albums"
-msgstr ""
+msgstr "Aktuelle Albummer"
 
 msgctxt "#31922"
 msgid "Random Episodes"
-msgstr ""
+msgstr "Tilfældige Afsnit"
 
 msgctxt "#31923"
 msgid "Suggested Episodes"
-msgstr ""
+msgstr "Foreslåede Afsnit"
 
 msgctxt "#31924"
 msgid "Recent Episodes"
-msgstr ""
+msgstr "Aktuelle Afsnit"
 
 msgctxt "#31925"
 msgid "Random Movies"
-msgstr ""
+msgstr "Tilfældige Film"
 
 msgctxt "#31926"
 msgid "Suggested Movies"
-msgstr ""
+msgstr "Foreslåede Film"
 
 msgctxt "#31927"
 msgid "Recent Movies"
-msgstr ""
+msgstr "Aktuelle Film"
 
 msgctxt "#31928"
 msgid "Home Media Panel Type"
-msgstr ""
+msgstr "Paneltype til Hjemmemedier"
 
 msgctxt "#31929"
 msgid "Use Fanart from Directory - Artist/extrafanart/"
-msgstr ""
+msgstr "Anvend Fankunst fra Mappe - Kunstner/extrafanart/"
 
 msgctxt "#31930"
 msgid "Use Disk Cases"
-msgstr ""
+msgstr "Anvend Disk-kassetter"
 
 msgctxt "#31931"
 msgid "Animated Cases"
-msgstr ""
+msgstr "Animerede Kassetter"
 
 msgctxt "#31932"
 msgid "Use Season Art - TVShow/season */fanart.jpg"
-msgstr ""
+msgstr "Anvend Sæsonkunst - TV-Serie/sæson */fanart.jpg"
 
 msgctxt "#31933"
 msgid "Up One Level"
-msgstr ""
+msgstr "Èt niveau op"
 
 msgctxt "#31934"
 msgid "Wide List"
-msgstr ""
+msgstr "Bred Liste"
 
 msgctxt "#31935"
 msgid "information"
-msgstr ""
+msgstr "information"
 
 msgctxt "#31936"
 msgid "Filmography"
@@ -1108,7 +1109,7 @@ msgstr "Filmografi"
 
 msgctxt "#31937"
 msgid "Select Submenu Set"
-msgstr ""
+msgstr "Vælg Undermenu"
 
 msgctxt "#31938"
 msgid "None"
@@ -1116,87 +1117,87 @@ msgstr "Ingen"
 
 msgctxt "#31939"
 msgid "Home Menu Submenu Type"
-msgstr ""
+msgstr "Type af Undermenu til Hjemmemenu"
 
 msgctxt "#31940"
 msgid "Rip CD"
-msgstr ""
+msgstr "Rip CD"
 
 msgctxt "#31941"
 msgid "User Submenu Item"
-msgstr ""
+msgstr "Brugerdefineret Element til Undermenu"
 
 msgctxt "#31942"
 msgid "has been watched"
-msgstr ""
+msgstr "er blevet set"
 
 msgctxt "#31943"
 msgid "have been watched"
-msgstr ""
+msgstr "er blevet set"
 
 msgctxt "#31944"
 msgid "Movies in set of which"
-msgstr ""
+msgstr "Film i sæt som"
 
 msgctxt "#31945"
 msgid "Movie Set View"
-msgstr ""
+msgstr "Filmsæt-visning"
 
 msgctxt "#31946"
 msgid "Panel Transparency"
-msgstr ""
+msgstr "Gennemsigtighed af Panel"
 
 msgctxt "#31947"
 msgid "Movie Set Info"
-msgstr ""
+msgstr "Info om Filmsæt"
 
 msgctxt "#31948"
 msgid "Watch it Later"
-msgstr ""
+msgstr "Se senere"
 
 msgctxt "#31949"
 msgid "Show Library Stats"
-msgstr ""
+msgstr "Vis Bibliotek-statistik"
 
 msgctxt "#31950"
 msgid "Home Menu Items"
-msgstr ""
+msgstr "Elementer i Hjemmemenu"
 
 msgctxt "#31951"
 msgid "Menu Item"
-msgstr ""
+msgstr "Menuelement"
 
 msgctxt "#31952"
 msgid "Select Menu Option Type"
-msgstr ""
+msgstr "Vælg type af Menupunkt"
 
 msgctxt "#31953"
 msgid "Clear Menu Option"
-msgstr ""
+msgstr "Fjern Menupunkt"
 
 msgctxt "#31954"
 msgid "XBMC"
-msgstr ""
+msgstr "XBMC"
 
 msgctxt "#31955"
 msgid "Installed"
-msgstr ""
+msgstr "Installeret"
 
 msgctxt "#31956"
 msgid "Streaming Media"
-msgstr ""
+msgstr "Streamer Medie"
 
 msgctxt "#31957"
 msgid "NB! No Favourites Found"
-msgstr ""
+msgstr "OBS! Ingen Favoritter Fundet"
 
 msgctxt "#31958"
 msgid "User"
-msgstr ""
+msgstr "Bruger"
 
 msgctxt "#31959"
 msgid "Suggested"
-msgstr ""
+msgstr "Foreslået"
 
 msgctxt "#31960"
 msgid "Random"
@@ -1208,11 +1209,11 @@ msgstr "Biograf"
 
 msgctxt "#31962"
 msgid "DB Edit"
-msgstr ""
+msgstr "Tilpas DB"
 
 msgctxt "#31963"
 msgid "Enable Album Art Background Wall"
-msgstr ""
+msgstr "Aktivér Baggrundsvæg med albumkunst"
 
 msgctxt "#31964"
 msgid "Next Tracks"
@@ -1220,35 +1221,35 @@ msgstr "Næste numre"
 
 msgctxt "#31965"
 msgid "Home Media Panel"
-msgstr ""
+msgstr "Panel til Hjemmemedier"
 
 msgctxt "#31966"
 msgid "Allow Watchlist Script Suggestions"
-msgstr ""
+msgstr "Tillad forslag fra sete-script"
 
 msgctxt "#31967"
 msgid "Allow Playlist Script Suggestions"
-msgstr ""
+msgstr "Tillad forslag fra afspilningsliste-script"
 
 msgctxt "#31968"
 msgid "Playlist Script Shows Recent not Random Items"
-msgstr ""
+msgstr "Afspilningsliste-script viser Nye i stedet for Tilfældige Emner"
 
 msgctxt "#31969"
 msgid "Playlist Script Only Shows UnWatched Items"
-msgstr ""
+msgstr "Afspilningliste-script viser kun Ikke sete Emner"
 
 msgctxt "#31970"
 msgid "Show Story Plot on Pause"
-msgstr ""
+msgstr "Vis Handling ved Pause"
 
 msgctxt "#31971"
 msgid "TVshows use Logos not ClearArt"
-msgstr ""
+msgstr "TV-serier anvender Logoer i stedet for ClearArt"
 
 msgctxt "#31972"
 msgid "Hide Cases"
-msgstr ""
+msgstr "Skjul Kasetter"
 
 msgctxt "#31973"
 msgid "Low List"
@@ -1256,19 +1257,19 @@ msgstr "Lav liste"
 
 msgctxt "#31974"
 msgid "Show Logos"
-msgstr ""
+msgstr "Vis Logoer"
 
 msgctxt "#31975"
 msgid "Show ClearArt"
-msgstr ""
+msgstr "Vis ClearArt"
 
 msgctxt "#31976"
 msgid "Hide Genre Icons"
-msgstr ""
+msgstr "Skjul Genreikoner"
 
 msgctxt "#31977"
 msgid "Show ExtraFanArt"
-msgstr ""
+msgstr "Vis ExtraFanArt"
 
 msgctxt "#31978"
 msgid "Play"
@@ -1276,11 +1277,11 @@ msgstr "Afspil"
 
 msgctxt "#31979"
 msgid "Browse not Play - Favourite Playlist Added to Main Menu"
-msgstr ""
+msgstr "Gennemse og Afspil ikke - Favorit Afspilningsliste tilføjet til Hovedmenu"
 
 msgctxt "#31980"
 msgid "Recently Added Items"
-msgstr ""
+msgstr "Nyligt tilføjede Emner"
 
 msgctxt "#31981"
 msgid "Random Items"
@@ -1288,36 +1289,36 @@ msgstr "Tilfældigt udvalg"
 
 msgctxt "#31982"
 msgid "AddOns"
-msgstr ""
+msgstr "Add-ons"
 
 msgctxt "#31983"
 msgid "Show SubTitle Country Flag"
-msgstr ""
+msgstr "Vis landeflag på Undertekster"
 
 msgctxt "#31984"
 msgid "Media Views - Global"
-msgstr ""
+msgstr "Medievisninger - Absolut"
 
 msgctxt "#31985"
 msgid ""
 "Use External Watch Status Icons [COLOR=grey3](Media Thumbnails Only)[/COLOR]"
-msgstr ""
+msgstr "Anvend eksterne ikoner til Set-status [COLOR=grey3](Kun Medie-miniaturebilleder)[/COLOR]"
 
 msgctxt "#31986"
 msgid "Allow External \"UnWatched\" Icon"
-msgstr ""
+msgstr "Tillad eksterne ikoner til \"Ikke sete\" "
 
 msgctxt "#31987"
 msgid "Wallstream"
-msgstr ""
+msgstr "Vægstream"
 
 msgctxt "#31988"
 msgid "Darken Watched"
-msgstr ""
+msgstr "Formørk Sete"
 
 msgctxt "#31989"
 msgid "Latest Albums"
-msgstr ""
+msgstr "Seneste Albummer"
 
 msgctxt "#31990"
 msgid "Skin Settings"
@@ -1325,28 +1326,28 @@ msgstr "Skin indstillinger"
 
 msgctxt "#31991"
 msgid "Stop Background Fanart Animation"
-msgstr ""
+msgstr "Stop Fankunst-animation i baggrunden"
 
 msgctxt "#31994"
 msgid "Hide Home Panel FanArt"
-msgstr ""
+msgstr "Skjul Fankunst på Hjemmepanel"
 
 msgctxt "#31995"
 msgid "Enable Return Home Button"
-msgstr ""
+msgstr "Aktivér Hjemmeknap"
 
 msgctxt "#31996"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Aktivér Kiosk-tilstand"
 
 msgctxt "#31997"
 msgid "Right List"
-msgstr ""
+msgstr "Højre Liste"
 
 msgctxt "#31998"
 msgid "Global Background"
-msgstr ""
+msgstr "Absolut Baggrund"
 
 msgctxt "#31999"
 msgid "Home Panel Addons"
-msgstr ""
+msgstr "Add-ons til Hjemmepanel"

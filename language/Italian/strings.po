@@ -4,13 +4,14 @@
 # Addon version: 1.0.1
 # Addon Provider: Mudislander
 # Translators:
+#   <ironcyborg@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2012-12-11 17:48+0000\n"
-"Last-Translator: TeamXBMC <xbmctranslations@gmail.com>\n"
+"PO-Revision-Date: 2012-12-16 14:57+0000\n"
+"Last-Translator: ironcyborg <ironcyborg@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/xbmc-skins/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,7 +31,7 @@ msgstr ""
 
 msgctxt "Addon Disclaimer"
 msgid "You break it - You get to keep the pieces"
-msgstr ""
+msgstr "Chi rompe... I cocci sono suoi"
 
 msgctxt "#31000"
 msgid "Change Your"
@@ -310,11 +311,11 @@ msgstr "Nascondi le Fanart nella visualizzazione a tutto schermo"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Add-on testi canzoni"
 
 msgctxt "#31133"
 msgid "Subtitle Add-on"
-msgstr ""
+msgstr "Add-on sottotitoli"
 
 msgctxt "#31134"
 msgid "Home Page Videos Submenu"
@@ -640,15 +641,15 @@ msgstr "Opzioni Canale"
 
 msgctxt "#31600"
 msgid "Action"
-msgstr ""
+msgstr "Azione"
 
 msgctxt "#31601"
 msgid "Adventure"
-msgstr ""
+msgstr "Avventura"
 
 msgctxt "#31602"
 msgid "Animation"
-msgstr ""
+msgstr "Animazione"
 
 msgctxt "#31603"
 msgid "Biography"
@@ -656,7 +657,7 @@ msgstr "Biografia"
 
 msgctxt "#31604"
 msgid "Children"
-msgstr ""
+msgstr "Bambini"
 
 msgctxt "#31605"
 msgid "Comedy"
@@ -664,11 +665,11 @@ msgstr "Commedia"
 
 msgctxt "#31606"
 msgid "Crime"
-msgstr ""
+msgstr "Crimine"
 
 msgctxt "#31607"
 msgid "Disaster"
-msgstr ""
+msgstr "Catastrofico"
 
 msgctxt "#31608"
 msgid "Documentary"
@@ -680,35 +681,35 @@ msgstr "Dramma"
 
 msgctxt "#31610"
 msgid "Family"
-msgstr ""
+msgstr "Famiglia"
 
 msgctxt "#31611"
 msgid "Fantasy"
-msgstr ""
+msgstr "Fantasy"
 
 msgctxt "#31612"
 msgid "History"
-msgstr ""
+msgstr "Storico"
 
 msgctxt "#31613"
 msgid "Holiday"
-msgstr ""
+msgstr "Vacanze"
 
 msgctxt "#31614"
 msgid "Horror"
-msgstr ""
+msgstr "Horror"
 
 msgctxt "#31615"
 msgid "Indie"
-msgstr ""
+msgstr "Indipendente"
 
 msgctxt "#31616"
 msgid "Musical"
-msgstr ""
+msgstr "Musical"
 
 msgctxt "#31617"
 msgid "Mystery"
-msgstr ""
+msgstr "Mistero"
 
 msgctxt "#31618"
 msgid "Romance"
@@ -716,7 +717,7 @@ msgstr "Romantico"
 
 msgctxt "#31619"
 msgid "Sci-Fi"
-msgstr ""
+msgstr "Fantascienza"
 
 msgctxt "#31620"
 msgid "Short"
@@ -724,23 +725,23 @@ msgstr "Breve"
 
 msgctxt "#31621"
 msgid "Sport"
-msgstr ""
+msgstr "Sport"
 
 msgctxt "#31622"
 msgid "Suspense"
-msgstr ""
+msgstr "Suspense"
 
 msgctxt "#31623"
 msgid "Thriller"
-msgstr ""
+msgstr "Thriller"
 
 msgctxt "#31624"
 msgid "War"
-msgstr ""
+msgstr "Guerra"
 
 msgctxt "#31625"
 msgid "Western"
-msgstr ""
+msgstr "Western"
 
 msgctxt "#31635"
 msgid "Genre Posters"
@@ -748,7 +749,7 @@ msgstr ""
 
 msgctxt "#31650"
 msgid "Show Fanart"
-msgstr ""
+msgstr "Mostra Fanart"
 
 msgctxt "#31651"
 msgid "Use External Genre Icons - media/MovieGenre/*.png"
@@ -772,7 +773,7 @@ msgstr ""
 
 msgctxt "#31656"
 msgid "Weather Fanart"
-msgstr ""
+msgstr "Fanart Meteo"
 
 msgctxt "#31657"
 msgid "Live Cases"
@@ -824,7 +825,7 @@ msgstr ""
 
 msgctxt "#31669"
 msgid "Concerts"
-msgstr ""
+msgstr "Concerti"
 
 msgctxt "#31670"
 msgid "Common"
@@ -936,7 +937,7 @@ msgstr ""
 
 msgctxt "#31697"
 msgid "ExtraFanArt"
-msgstr ""
+msgstr "Extrafanart"
 
 msgctxt "#31698"
 msgid "Media Certification Country"
@@ -1284,7 +1285,7 @@ msgstr ""
 
 msgctxt "#31981"
 msgid "Random Items"
-msgstr ""
+msgstr "Oggetti random"
 
 msgctxt "#31982"
 msgid "AddOns"
