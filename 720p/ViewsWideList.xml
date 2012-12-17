@@ -178,7 +178,7 @@
 						<font>font13</font> 	
 						<textcolor>white</textcolor> 	
 						<shadowcolor>black</shadowcolor> 	
-						<label>$LOCALIZE[31933]</label> 
+						<label>$LOCALIZE[31667]</label> 
 						<visible>StringCompare(ListItem.Label,..)</visible> 	
 					</control>
 					<control type="label"> 	
@@ -405,7 +405,7 @@
 						<font>font13</font> 	
 						<textcolor>white</textcolor> 	
 						<shadowcolor>black</shadowcolor> 	
-						<label>$LOCALIZE[31933]</label> 	
+						<label>$LOCALIZE[31667]</label> 	
 						<visible>StringCompare(ListItem.Label,..)</visible> 	
 					</control> 	
 					<control type="label"> 	
