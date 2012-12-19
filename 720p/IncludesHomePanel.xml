@@ -298,7 +298,7 @@
 					<posy>18</posy>
 					<height>20</height>
 					<width>830</width>
-					<label>$LOCALIZE[31323]</label>
+					<label>$LOCALIZE[31918]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -326,7 +326,7 @@
 	</include>
 	<include name="RandomMoviePanel">  
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMovies) + !Skin.HasSetting(UseFanartThumbPanel) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMovies) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -861,8 +861,7 @@
 					<include>PlayListEpisodes</include>
 				</control>	
 			</control>
-			<!--
-			<control type="group">	--><!-- Music Playlist --><!-- 
+			<control type="group">	<!-- Music Playlist -->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Music)]|
 					[Container(9000).HasFocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Music)]|
@@ -992,7 +991,6 @@
 					</control>	
 				</control>
 			</control>
-			-->
 		</control>	
 	</include>
 	<include name="AddonsHomePanel">
@@ -1246,7 +1244,7 @@
 		</focusedlayout>
 	</include>
 	<include name="MusicCDThumbLayout">
-		<itemlayout height="145" width="172">
+		<itemlayout height="165" width="182">
 			<control type="image">
 				<description>Cover image</description>
 				<posx>13</posx>
@@ -1268,7 +1266,7 @@
 				<visible>!IsEmpty(ListItem.Label)</visible>
 			</control>	
 		</itemlayout>
-		<focusedlayout height="145" width="172">
+		<focusedlayout height="165" width="182">
 			<control type="group">
 				<animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
 				<control type="image">

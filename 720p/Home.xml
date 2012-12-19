@@ -4,7 +4,6 @@
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="IsEmpty(Skin.String(WeatherFanartDir))">Skin.SetString(WeatherFanartDir,special://skin/backgrounds/weather/)</onload>
 	<onload condition="IsEmpty(Skin.String(UsrGenreFanartDir))">Skin.SetString(UsrGenreFanartDir,special://skin/backgrounds/moviegenre/)</onload>
-	<onload condition="Library.HasContent(Movies) + IsEmpty(Skin.String(HomeScreenMoviesBackGround))">Skin.SetString(HomeScreenMoviesBackGround,special://masterprofile/Thumbnails/Video/Fanart/)</onload>
 	<onload condition="IsEmpty(Skin.String(MediaPanelTrans))">Skin.SetString(MediaPanelTrans,5FFFFFFF)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist) + !IsEmpty(Skin.String(HomeItem.1.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[RandomOrLastAction],limit=10,unwatched=$VAR[RandomOrLastUnWatched],resume=False,propertie=HomePlayListOne)</onload>
