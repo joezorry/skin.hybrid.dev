@@ -1,6 +1,7 @@
 [B]1.0.1[/B][I]Dec 2012[/I]
-- Bugfix Library Info Setting not Hiding on HomeScreen
-- Bugfix artist.slideshow over riding CDWall in Music Viz
+- Bugfix, Musicviz - extrafanArt showing over CDWall
+- BugFix, Setting for Hide LibraryStats/Info
+- BugFix, Static CDWall taking over from Dynamic wall  
 
 [B]1.0.0[/B][I]Dec 2012[/I]
 - Initial Commit of Development Version
