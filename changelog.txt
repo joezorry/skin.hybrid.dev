@@ -1,2 +1,6 @@
+[B]1.0.1[/B][I]Dec 2012[/I]
+- Bugfix Library Info Setting not Hiding on HomeScreen
+- Bugfix artist.slideshow over riding CDWall in Music Viz
+
 [B]1.0.0[/B][I]Dec 2012[/I]
 - Initial Commit of Development Version
