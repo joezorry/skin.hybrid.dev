@@ -1,4 +1,5 @@
 [B]1.0.1[/B][I]Dec 2012[/I]
+- Added ability for individual fanart settings in HomePanel
 - Bugfix, Musicviz - extrafanArt showing over CDWall
 - BugFix, Setting for Hide LibraryStats/Info
 - BugFix, Static CDWall taking over from Dynamic wall  
