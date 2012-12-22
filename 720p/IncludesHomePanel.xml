@@ -1,7 +1,7 @@
 <includes>
 	<include name="RecentMoviePanel"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + !IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMovies) + !IsEmpty(Window(Home).Property(RecentMovie.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -56,7 +56,7 @@
 	</include>
 	<include name="RecentMoviePanelFanArt"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMoviesFanArt) + !IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentMoviesFanArt) + !IsEmpty(Window(Home).Property(RecentMovie.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -96,7 +96,7 @@
 	</include>	
 	<include name="RecentTVShowPanel"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentEpisodes) + !IsEmpty(Window(Home).Property(RecentEpisode.1.TVshowTitle))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentEpisodes) + !IsEmpty(Window(Home).Property(RecentEpisode.1.TVshowTitle)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -151,7 +151,7 @@
 	</include>
 	<include name="RecentAlbumsPanel"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + !IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbums) + !IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -206,7 +206,7 @@
 	</include>
 	<include name="RecentAlbumsPanelFanArt"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbumsFanArt) + !IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentAlbumsFanArt) + !IsEmpty(Window(Home).Property(RecentAlbum.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -246,7 +246,7 @@
 	</include>
 	<include name="RecentConcertsPanel"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentConcerts) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentConcerts) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -301,7 +301,7 @@
 	</include>
 	<include name="RecentConcertsPanelFanArt"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentConcertsFanArt) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RecentConcertsFanArt) + !IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -341,7 +341,7 @@
 	</include>
 	<include name="RandomMoviePanel">  
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMovies) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMovies) + !IsEmpty(Window.Property(RandomMovie.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -396,7 +396,7 @@
 	</include>
 	<include name="RandomMoviePanelFanArt">  
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMoviesFanArt) + !IsEmpty(Window.Property(RandomMovie.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomMoviesFanArt) + !IsEmpty(Window.Property(RandomMovie.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -436,7 +436,7 @@
 	</include>	
 	<include name="RandomTVShowPanel"> 
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomEpisodes) + !IsEmpty(Window(Home).Property(RandomEpisode.1.TVshowTitle))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomEpisodes) + !IsEmpty(Window(Home).Property(RandomEpisode.1.TVshowTitle)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -491,7 +491,7 @@
 	</include>
 	<include name="RandomAlbumPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomAlbums) + !IsEmpty(Window.Property(RandomAlbum.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomAlbums) + !IsEmpty(Window.Property(RandomAlbum.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -546,7 +546,7 @@
 	</include>
 	<include name="RandomAlbumPanelFanArt">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomAlbumsFanArt) + !IsEmpty(Window.Property(RandomAlbum.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomAlbumsFanArt) + !IsEmpty(Window.Property(RandomAlbum.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -586,7 +586,7 @@
 	</include>
 	<include name="RandomConcertsPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcerts) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcerts) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -641,7 +641,7 @@
 	</include>
 	<include name="RandomConcertsPanelFanArt">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertsFanArt) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title))</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),RandomConcertsFanArt) + !IsEmpty(Window.Property(RandomMusicVideo.1.Title)) + !Container(9000).Scrolling</visible>
 			<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
 			<animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
@@ -681,7 +681,7 @@
 	</include>	
 	<include name="PlayListContentPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists) + !Skin.HasSetting(HideWatchPlaylist)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists) + !Skin.HasSetting(HideWatchPlaylist) + !Container(9000).Scrolling</visible>
 			<control type="group">	<!-- Movies Playlist-->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)]|
@@ -925,7 +925,7 @@
 	</include>
 	<include name="PlayListContentPanelFanArt">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),PlaylistsFanArt) + !Skin.HasSetting(HideWatchPlaylist)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),PlaylistsFanArt) + !Skin.HasSetting(HideWatchPlaylist) + !Container(9000).Scrolling</visible>
 			<control type="group">	<!-- Movies Playlist-->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)]|
@@ -1137,7 +1137,7 @@
 	</include>
 	<include name="AddonsHomePanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),AddOns)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),AddOns) + !Container(9000).Scrolling</visible>
 			<visible>
 				!IsEmpty(Skin.String(HomeAddon.1.Label)) | !IsEmpty(Skin.String(HomeAddon.2.Label)) | !IsEmpty(Skin.String(HomeAddon.3.Label)) |
 				!IsEmpty(Skin.String(HomeAddon.4.Label)) | !IsEmpty(Skin.String(HomeAddon.5.Label)) | !IsEmpty(Skin.String(HomeAddon.6.Label)) | !IsEmpty(Skin.String(HomeAddon.7.Label)) |

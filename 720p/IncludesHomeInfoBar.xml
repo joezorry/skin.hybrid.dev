@@ -3,22 +3,22 @@
 		<control type="group">
 			<posx>420</posx>
 			<posy>35r</posy>
-			<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" end="0,40" time="300" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus | Control.HasFocus(9002) | Window.IsVisible(Favourites) | [StringCompare(Container(9000).ListItem.Property(LibStats),None) + !system.getbool(lookandfeel.enablerssfeeds) + IsEmpty(MusicPlayer.offset(1).Artist)]">Conditional</animation>		
-			<animation effect="slide" end="0,40" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>		
+			<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out">WindowClose</animation>
+			<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" end="0,40" time="200" tween="quadratic" easing="out" condition="ControlGroup(9001).HasFocus | Control.HasFocus(9002) | Window.IsVisible(Favourites) | [StringCompare(Container(9000).ListItem.Property(LibStats),None) + !system.getbool(lookandfeel.enablerssfeeds) + IsEmpty(MusicPlayer.offset(1).Artist)]">Conditional</animation>		
+			<animation effect="slide" end="0,40" time="200" tween="quadratic" easing="out" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>		
 			<include>HomeInfoBarContent</include>	
-			<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>!Skin.HasSetting(HorizontalHomeScreen) + !Container(9000).Scrolling</visible>
 		</control>
 		<control type="group">
 			<posx>420</posx>
 			<posy>580</posy>
-			<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
-			<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="[StringCompare(Container(9000).ListItem.Property(LibStats),None) + !system.getbool(lookandfeel.enablerssfeeds) + IsEmpty(MusicPlayer.offset(1).Artist)] | Window.IsVisible(Favourites)">Conditional</animation>
-			<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>		
+			<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out">WindowClose</animation>
+			<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="[StringCompare(Container(9000).ListItem.Property(LibStats),None) + !system.getbool(lookandfeel.enablerssfeeds) + IsEmpty(MusicPlayer.offset(1).Artist)] | Window.IsVisible(Favourites)">Conditional</animation>
+			<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>		
 			<include>HomeInfoBarContent</include>	
-			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+			<visible>Skin.HasSetting(HorizontalHomeScreen) + !Container(9000).Scrolling</visible>
 		</control>
 	</include>	
 	<include name="HomeInfoBarContent">	
@@ -32,7 +32,7 @@
 				<colordiffuse>AAFFFFFF</colordiffuse>
 				<texture border="32,0,0,0">RssFeed/Rss_Back.png</texture>
 				<visible>system.getbool(lookandfeel.enablerssfeeds) | !Skin.HasSetting(HideHomeStats)</visible>
-			</control>
+			</control>		
 			<control type="rss">
 				<description>RSS feed Vertical</description>
 				<posx>35</posx>
@@ -44,10 +44,10 @@
 				<textcolor>StatsName</textcolor>
 				<titlecolor>StatsName</titlecolor>
 				<headlinecolor>StatsAmnt</headlinecolor>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!StringCompare(Container(9000).ListItem.Property(LibStats),None) | !IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + StringCompare(Container(9000).ListItem.Property(LibStats),None) + IsEmpty(MusicPlayer.offset(1).Artist)">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!StringCompare(Container(9000).ListItem.Property(LibStats),None) | !IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + StringCompare(Container(9000).ListItem.Property(LibStats),None) + IsEmpty(MusicPlayer.offset(1).Artist)">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!StringCompare(Container(9000).ListItem.Property(LibStats),None) | !IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + StringCompare(Container(9000).ListItem.Property(LibStats),None) + IsEmpty(MusicPlayer.offset(1).Artist)">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!StringCompare(Container(9000).ListItem.Property(LibStats),None) | !IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + StringCompare(Container(9000).ListItem.Property(LibStats),None) + IsEmpty(MusicPlayer.offset(1).Artist)">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats) + system.getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>
 			<control type="rss">
@@ -67,10 +67,10 @@
 				<description>Video Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Videos)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -115,10 +115,10 @@
 				<description>Movie Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Movies)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -163,10 +163,10 @@
 				<description>TVShow Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),TVShows)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -211,10 +211,10 @@
 				<description>Concerts Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Concerts)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -259,10 +259,10 @@
 				<description>Music Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Music)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -307,10 +307,10 @@
 				<description>Playlist Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Playlists)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -355,10 +355,10 @@
 				<description>System Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Settings)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -403,10 +403,10 @@
 				<description>DVD Disk Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),PlayDisc)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -444,10 +444,10 @@
 				<visible>!IsEmpty(Weather.Conditions) + Weather.IsFetched</visible>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Weather)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -468,10 +468,10 @@
 				<description>Now Playing Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),NowPlaying)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -523,10 +523,10 @@
 				<description>System UpTime Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="label">
 					<posx>45</posx>
@@ -547,10 +547,10 @@
 				<description>LiveTV PVR Stats Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio | !StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) + StringCompare(Container(9000).ListItem.Property(LibStats),LiveTV)]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="grouplist">
 					<posx>45</posx>
@@ -591,10 +591,10 @@
 				<description>Next 5 Songs Display</description>
 				<posx>50</posx>
 				<posy>5</posy>
-				<animation effect="slide" end="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
-				<animation effect="slide" start="0,35" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio]">conditional</animation>
-				<animation effect="slide" end="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
-				<animation effect="slide" start="880,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio]">conditional</animation>
+				<animation effect="slide" end="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
+				<animation effect="slide" start="0,35" time="200" tween="quadratic" easing="out" condition="!Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio]">conditional</animation>
+				<animation effect="slide" end="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist)]">conditional</animation>
+				<animation effect="slide" start="880,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HorizontalHomeScreen) + [!IsEmpty(MusicPlayer.offset(1).Artist) + Player.HasAudio]">conditional</animation>
 				<visible>!Skin.HasSetting(HideHomeStats)</visible>
 				<control type="fadelabel">
 					<description>Next 5 Songs</description>
