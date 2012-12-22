@@ -35,14 +35,21 @@
 			<include>AddonsHomePanel</include>
 			<include>HomeWeatherForecast</include>
 			<include>PlayListContentPanel</include>
+			<include>PlayListContentPanelFanArt</include>
 			<include>RecentMoviePanel</include>
+			<include>RecentMoviePanelFanArt</include>
 			<include>RecentTVShowPanel</include>
 			<include>RecentAlbumsPanel</include>
+			<include>RecentAlbumsPanelFanArt</include>
 			<include>RecentConcertsPanel</include>
+			<include>RecentConcertsPanelFanArt</include>
 			<include>RandomMoviePanel</include>
+			<include>RandomMoviePanelFanArt</include>
 			<include>RandomTVShowPanel</include>
 			<include>RandomAlbumPanel</include>
+			<include>RandomAlbumPanelFanArt</include>
 			<include>RandomConcertsPanel</include>
+			<include>RandomConcertsPanelFanArt</include>
 		</control>	
 		<control type="group">
 			<animation effect="slide" end="-450,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
