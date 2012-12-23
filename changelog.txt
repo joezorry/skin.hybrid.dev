@@ -1,5 +1,8 @@
 [B]1.0.2[/B][I]Dec 2012[/I]
 - New Dependency script.favourites.4.0.7
+- Added New & Updated lang Files
+- SysInfo, Profiles & FileManager Files Updated
+- Added VideoOSD Overlay for PseudoTV
 
 [B]1.0.1[/B][I]Dec 2012[/I]
 - Added ability for individual fanart settings in HomePanel
