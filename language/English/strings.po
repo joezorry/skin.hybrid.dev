@@ -39,7 +39,15 @@ msgctxt "#31008"
 msgid "Fullscreen"
 msgstr ""
 
-#empty strings from id 31009 to 31020
+#empty strings from id 31009 to 31018
+
+msgctxt "#31019"
+msgid "HD Movies"
+msgstr ""
+
+msgctxt "#31020"
+msgid "Movies In Progress"
+msgstr ""
 
 msgctxt "#31021"
 msgid "Video - Files"
