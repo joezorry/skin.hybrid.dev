@@ -142,6 +142,25 @@
 				<visible>!IsEmpty(listitem.premiered)</visible>
 			</control>
 		</control>
+		<control type="group">			
+			<include>Window_OpenClose_Animation</include>
+			<visible>Window.IsVisible(MyPVR)</visible>		
+			<control type="label">
+				<posx>190</posx>
+				<posy>50</posy>
+				<width>900</width>
+				<height>20</height>
+				<font>font12_title</font>
+				<textcolor>grey2</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>false</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<include>Window_OpenClose_Animation</include>
+				<label>$INFO[ListItem.Title]</label>
+				<visible>!Control.IsVisible(17)</visible>
+			</control>
+		</control>
 	</include>
 	<include name="ViewMovieDiskDefault">
 		<texture diffuse="Disks/disc_mask.png" background="true">Disks/disc.png</texture>
