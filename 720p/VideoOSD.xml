@@ -7,6 +7,8 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<control type="group">
+		<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 		<control type="slider" id="87">
 			<description>Seek Slider</description>
 			<posx>430</posx>
@@ -425,6 +427,7 @@
 				<animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
 			</control>
 			<!-- LiveTV -->
+		</control>
 		</control>
 	</controls>
  </window>

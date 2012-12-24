@@ -3520,15 +3520,29 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>$LOCALIZE[31911]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideXBMCIntro)</onclick>
+						<onclick>Skin.Reset(EnableStartupPlaylist)</onclick> 
+						<selected>!Skin.HasSetting(HideXBMCIntro)</selected>
+					</control>
+					<control type="radiobutton" id="543">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>21398</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetBool(HideXBMCIntro)</onclick> 
 						<onclick>Skin.ToggleSetting(EnableStartupPlaylist)</onclick>
 						<selected>Skin.HasSetting(EnableStartupPlaylist)</selected>
 					</control>
-					<control type="button" id="543">
+					<control type="button" id="544">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>

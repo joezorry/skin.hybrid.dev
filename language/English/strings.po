@@ -847,7 +847,11 @@ msgctxt "#31910"
 msgid "Menu Item - 1 - Remembers Last Submenu Action Used"
 msgstr ""
 
-#empty strings from id 31911 to 31913
+msgctxt "#31911"
+msgid "Enable XBMC Intro Movie"
+msgstr ""
+
+#empty strings from id 31912 to 31913
 
 msgctxt "#31914"
 msgid "Home Panel Options"
