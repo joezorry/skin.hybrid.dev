@@ -206,7 +206,24 @@
 		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,68) + !IntegerGreaterThan(ListItem.PercentPlayed,81)">OverlayPartlywatched6</value>
 		<value condition="IntegerGreaterThan(ListItem.PercentPlayed,81)">OverlayPartlywatched7</value>
 	</variable>
+	<variable name="GlobalSearchResults">
+		<value condition="Container(9000).Hasfocus(1)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(111).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(111).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(111).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(2)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(121).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(121).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(121).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(3)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(131).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(131).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(131).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(4)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(141).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(141).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(141).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(5)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(151).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(151).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(151).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(6)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(161).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(161).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(161).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(7)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(171).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(171).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(171).NumPages,/,[/COLOR])]</value>
+		<value condition="Container(9000).Hasfocus(8)">$LOCALIZE[31007] [COLOR=blue]$INFO[Container(181).NumItems][/COLOR] $VAR[CommonCountItems] $INFO[Container(181).CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container(181).NumPages,/,[/COLOR])]</value>
+	</variable>
 	<variable name="CommonCountItems">
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(1)">$LOCALIZE[342]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(2)">$LOCALIZE[31662]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(4)">$LOCALIZE[20360]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(5)">$LOCALIZE[31669]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(6)">$LOCALIZE[133]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(7)">$LOCALIZE[132]</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(8)">$LOCALIZE[134]</value>
 		<value condition="SubString(Container.FolderPath,plugin://plugin.video.live.streams)">$LOCALIZE[31660]</value>
 		<value condition="Container.Content(movies) + stringcompare(Container.FolderPath,videodb://1/7/)">$LOCALIZE[31661]</value>
 		<value condition="Container.Content(movies) + !stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)">$LOCALIZE[342]</value>
@@ -229,6 +246,12 @@
 		<value>$LOCALIZE[31025]</value>
 	</variable>
 	<variable name="CommonCountIcons">
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(1)">CommonCount/MovieCount.png</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(2)">CommonCount/TVShowCount.png</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(4)">CommonCount/TVShowCount.png</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(5)">CommonCount/MusicArtistsCount.png</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(6)">CommonCount/MusicAlbumsCount.png</value>
+		<value condition="Window.IsActive(script-globalsearch-main.xml) + Container(9000).Hasfocus(7)">CommonCount/MusicSongsCount.png</value>
 		<value condition="SubString(Container.FolderPath,plugin://plugin.video.live.streams)">CommonCount/MusicRecentlyPlayedCount.png</value>
 		<value condition="Container.Content(movies) + !stringcompare(Container.FolderPath,plugin://plugin.video.apple.movie.trailers.lite/)">CommonCount/MovieCount.png</value>
 		<value condition="Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)">CommonCount/TVShowCount.png</value>

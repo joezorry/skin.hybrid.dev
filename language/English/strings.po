@@ -33,13 +33,19 @@ msgctxt "#31006"
 msgid "View Options"
 msgstr ""
 
-#empty string with id 31007
+msgctxt "#31007"
+msgid "Found"
+msgstr ""
 
 msgctxt "#31008"
 msgid "Fullscreen"
 msgstr ""
 
-#empty strings from id 31009 to 31018
+msgctxt "#31009"
+msgid "New Search"
+msgstr ""
+
+#empty strings from id 31010 to 31018
 
 msgctxt "#31019"
 msgid "HD Movies"

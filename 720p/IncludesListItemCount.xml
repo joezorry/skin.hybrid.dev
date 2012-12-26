@@ -3,6 +3,7 @@
 		<control type="group">
 			<animation effect="slide" end="350,0" time="500" tween="back" easing="out" condition="Window.IsVisible(infodialog) | Window.IsVisible(volumebar)" reversible="true">Conditional</animation> 
 			<include>CommonScrollLetter</include> 
+			<visible>!Window.IsActive(script-globalsearch-main.xml) | [Window.IsActive(script-globalsearch-main.xml) + !Container(9000).Hasfocus(10)]</visible>
 			<control type="image">
 				<posx>65</posx>
 				<posy>50r</posy>
@@ -91,7 +92,7 @@
 				<textcolor>80FFFFFF</textcolor>
 				<scroll>false</scroll>
 				<align>left</align>
-				<visible>!IntegerGreaterThan(Container.NumItems,1)</visible>
+				<visible>!IntegerGreaterThan(Container.NumItems,1) + !Window.IsActive(script-globalsearch-main.xml)</visible>
 			</control>
 			<control type="label">
 				<width min="50" max="400">auto</width>
@@ -101,7 +102,7 @@
 				<textcolor>80FFFFFF</textcolor>
 				<scroll>false</scroll>
 				<align>left</align>
-				<visible>IntegerGreaterThan(Container.NumItems,1)</visible>
+				<visible>IntegerGreaterThan(Container.NumItems,1) + !Window.IsActive(script-globalsearch-main.xml)</visible>
 			</control>
 			<control type="label">
 				<width min="50" max="400">auto</width>
@@ -111,7 +112,17 @@
 				<textcolor>80FFFFFF</textcolor>
 				<scroll>false</scroll>
 				<align>left</align>
-				<visible>IntegerGreaterThan(Container.NumPages,1)</visible>
+				<visible>IntegerGreaterThan(Container.NumPages,1) + !Window.IsActive(script-globalsearch-main.xml)</visible>
+			</control>
+			<control type="label">
+				<width min="50" max="800">auto</width>
+				<height>120</height>
+				<label>$VAR[GlobalSearchResults]</label>
+				<font>font12</font>
+				<textcolor>80FFFFFF</textcolor>
+				<scroll>false</scroll>
+				<align>left</align>
+				<visible>Window.IsActive(script-globalsearch-main.xml)</visible>
 			</control>
 		</control>	
 	</include>
