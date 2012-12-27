@@ -1,3 +1,13 @@
+[B]1.0.3[/B][I]Dec 2012[/I]
+- New Dependency script.randomandlastitems.2.0.0 [WIP]
+- BugFix Skinning Tool issues
+- Added support for script.globalsearch
+- Adjusted image sizes for genre backgrounds
+- Added few Instant Playlists to MainMenu Options
+- Added XBMC Intro Video to Startup
+- Tweaked LiveTV views
+- BugFix WhiteSpaces in LangFile
+
 [B]1.0.2[/B][I]Dec 2012[/I]
 - New Dependency script.favourites.4.0.7
 - Added New & Updated lang Files
