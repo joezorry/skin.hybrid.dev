@@ -1320,7 +1320,7 @@
 		<value condition="Container(9000).Hasfocus(9)">$INFO[Window(home).Property(HomePlayListNine.10.Fanart)]</value>
 		<value condition="Container(9000).Hasfocus(10)">$INFO[Window(home).Property(HomePlayListTen.10.Fanart)]</value>
 	</variable>
-	<variable name="UsrHomePlaylistStatCount" type="text">
+	<variable name="UsrHomePlaylistStatCount" type="text">		
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)">$LOCALIZE[342]:[COLOR StatsAmnt]  $INFO[Window(home).Property(HomePlayListOne.Count)][/COLOR]</value>
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Episode)">$LOCALIZE[20360]:[COLOR StatsAmnt] $INFO[Window(home).Property(HomePlayListOne.Count)][/COLOR]</value>
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Music)">$LOCALIZE[133]:[COLOR StatsAmnt] $INFO[Window(home).Property(HomePlayListOne.Artists)][/COLOR]</value>
@@ -1351,6 +1351,7 @@
 		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Movie)">$LOCALIZE[342]:[COLOR StatsAmnt]  $INFO[Window(home).Property(HomePlayListTen.Count)][/COLOR]</value>
 		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Episode)">$LOCALIZE[20360]:[COLOR StatsAmnt] $INFO[Window(home).Property(HomePlayListTen.Count)][/COLOR]</value>
 		<value condition="Container(9000).Hasfocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Music)">$LOCALIZE[133]:[COLOR StatsAmnt] $INFO[Window(home).Property(HomePlayListTen.Artists)][/COLOR]</value>
+		<value>$LOCALIZE[31010] - [COLOR StatsAmnt]$LOCALIZE[31011][/COLOR]</value>
 	</variable>
 	<variable name="UsrHomePlaylistUnWatched" type="text">
 		<value condition="Container(9000).Hasfocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)">$LOCALIZE[16101]:[COLOR StatsAmnt]  $INFO[Window(home).Property(HomePlayListOne.Unwatched)][/COLOR]</value>

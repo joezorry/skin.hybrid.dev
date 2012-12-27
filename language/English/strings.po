@@ -45,7 +45,15 @@ msgctxt "#31009"
 msgid "New Search"
 msgstr ""
 
-#empty strings from id 31010 to 31018
+msgctxt "#31010"
+msgid "Playlist Stats"
+msgstr ""
+
+msgctxt "#31011"
+msgid "UnAvailable"
+msgstr ""
+
+#empty strings from id 31012 to 31018
 
 msgctxt "#31019"
 msgid "HD Movies"
