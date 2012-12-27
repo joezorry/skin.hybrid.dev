@@ -623,7 +623,7 @@
 					<fadetime>IconCrossfadeTime</fadetime>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture background="true" fallback="DefaultNoImage.png">$INFO[ListItem.Art(clearlogo)]</texture>
-					<visible>Container.Content(songs)]</visible>
+					<visible>Container.Content(songs)</visible>
 				</control>				
 				<control type="image">
 					<description>Cover image</description>

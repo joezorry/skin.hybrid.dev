@@ -35,7 +35,7 @@
 					<width>330</width>
 					<label>31055</label>
 					<align>center</align>
-					<include>ButtonHomeSubCommonValues</include>
+					<include>HorizontalCommonSubMenu</include>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>8</onup>
@@ -48,7 +48,7 @@
 					<width>330</width>
 					<label>31056</label>
 					<align>center</align>
-					<include>ButtonHomeSubCommonValues</include>
+					<include>HorizontalCommonSubMenu</include>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>6</onup>
@@ -61,7 +61,7 @@
 					<width>330</width>
 					<label>31057</label>
 					<align>center</align>
-					<include>ButtonHomeSubCommonValues</include>
+					<include>HorizontalCommonSubMenu</include>
 					<onleft>50</onleft>
 					<onright>100</onright>
 					<onup>7</onup>

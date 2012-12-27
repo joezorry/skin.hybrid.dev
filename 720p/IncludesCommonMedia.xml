@@ -246,7 +246,7 @@
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalMenuBackdrop) + !IsEmpty(Skin.String(VideoBrowserBackdrop))]</visible>
+			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalMenuBackdrop) + !IsEmpty(Skin.String(VideoBrowserBackdrop))</visible>
 		</control>
 		<include condition="[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalLiveBackdrop) + IsEmpty(Skin.String(VideoBrowserBackdrop))">InteractiveCasesBackground</include>
 		<control type="multiimage">
@@ -331,7 +331,7 @@
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalMenuBackdrop) + !IsEmpty(Skin.String(MusicBrowserBackdrop))]</visible>
+			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalMenuBackdrop) + !IsEmpty(Skin.String(MusicBrowserBackdrop))</visible>
 		</control>
 		<include condition="[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalLiveBackdrop) + IsEmpty(Skin.String(MusicBrowserBackdrop))">InteractiveCasesBackground</include>
 		<control type="multiimage">
