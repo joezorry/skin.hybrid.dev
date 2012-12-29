@@ -53,7 +53,33 @@ msgctxt "#31011"
 msgid "UnAvailable"
 msgstr ""
 
-#empty strings from id 31012 to 31018
+msgctxt "#31012"
+msgid "Launcher"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Included 3rd Party Scripts"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Enable TvTunes Script"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Enable Watch it Later Script"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Enable Artist SlideShow Script"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Enable Favourites Script"
+msgstr ""
+
+msgctxt "#31018"
+msgid "Enable Playlist Items Script"
+msgstr ""
 
 msgctxt "#31019"
 msgid "HD Movies"

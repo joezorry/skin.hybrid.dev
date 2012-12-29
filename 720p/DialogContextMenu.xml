@@ -120,7 +120,7 @@
 				<include>ContextMenuButtonCommonValues</include>
 				<label>$LOCALIZE[31948]</label>
 				<onclick>RunPlugin(plugin://script.simpleplaylists/?mode=addCurrentUrl)</onclick>
-				<visible>System.HasAddon(script.simpleplaylists) + [Container.Content(Episodes) | Container.Content(Movies) | Container.Content(Songs)]</visible>
+				<visible>System.HasAddon(script.simpleplaylists)+ !Skin.HasSetting(DisableWatchItLater) + [Container.Content(Episodes) | Container.Content(Movies) | Container.Content(Songs)]</visible>
 			</control>
 			<control type="button" id="3002">
 				<description>SendClick 1002 button</description>
@@ -157,7 +157,7 @@
 				<include>ContextMenuButtonCommonValues</include>
 				<label>$LOCALIZE[31127]</label>
 				<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.Path]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
-				<visible>System.HasAddon(script.tvtunes) + Container.Content(TVShows)</visible>
+				<visible>System.HasAddon(script.tvtunes) + !Skin.HasSetting(DisableTvTunes) + Container.Content(TVShows)</visible>
 			</control>
 			<control type="button" id="3005">
 				<description>SendClick 1005 button</description>

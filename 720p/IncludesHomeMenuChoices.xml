@@ -222,7 +222,7 @@
 				<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
 				<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>System.HasAddon(script.favourites)</visible>
+				<visible>System.HasAddon(script.favourites) + !Skin.HasSetting(DisableScriptFavourites)</visible>
 	        </item>
 			<item id="18">
                 <description>Favourites Folder</description>
@@ -334,7 +334,7 @@
 				<onclick>Skin.SetFile(UsrSelectAddon,.strm,/)</onclick> 
 				<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[33002])</onclick>	
 				<onclick condition="!IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,PlayMedia(&quot;$INFO[Skin.String(UsrSelectAddon)]&quot;))</onclick>
-				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].FanArt,special://skin/backgrounds/homescreen/streaming.jpg)</onclick>
+				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].FanArt,special://skin/backgrounds/homescreen/musicvideos.jpg)</onclick>
 				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,None)</onclick>												
 				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Streaming)</onclick>
 				<onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,None)</onclick>

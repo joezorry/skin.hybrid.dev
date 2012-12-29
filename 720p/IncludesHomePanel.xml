@@ -681,7 +681,7 @@
 	</include>	
 	<include name="PlayListContentPanel">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists) + !Skin.HasSetting(HideWatchPlaylist)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),Playlists) + !Skin.HasSetting(DisableScriptPlayList)</visible>
 			<control type="group">	<!-- Movies Playlist-->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)]|
@@ -713,7 +713,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8014)</visible>
 				</control>
 				<control type="label">
@@ -728,7 +728,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8014)</visible>
 				</control>
 				<control type="label">
@@ -792,7 +792,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8016)</visible>
 				</control>
 				<control type="label">
@@ -807,7 +807,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8016)</visible>
 				</control>
 				<control type="label">
@@ -872,7 +872,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8017)</visible>
 				</control>
 				<control type="label">
@@ -887,7 +887,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8017)</visible>
 				</control>
 				<control type="label">
@@ -925,7 +925,7 @@
 	</include>
 	<include name="PlayListContentPanelFanArt">
 		<control type="group">
-			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),PlaylistsFanArt) + !Skin.HasSetting(HideWatchPlaylist)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(PanelType),PlaylistsFanArt) + !Skin.HasSetting(DisableScriptPlayList)</visible>
 			<control type="group">	<!-- Movies Playlist-->
 				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Movie)]|
@@ -957,7 +957,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 				</control>
 				<control type="label">
 					<description>Recent Title label</description>
@@ -971,7 +971,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 				</control>
 				<control type="panel" id="8015">
 					<include>DimensionsLandscapePanel</include>	
@@ -1020,7 +1020,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8016)</visible>
 				</control>
 				<control type="label">
@@ -1035,7 +1035,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 					<visible>!Control.HasFocus(8016)</visible>
 				</control>
 				<control type="label">
@@ -1100,7 +1100,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>!Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
 				</control>
 				<control type="label">
 					<description>Recent Title label</description>
@@ -1114,7 +1114,7 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Skin.HasSetting(UseLastNotRandom)</visible>
+					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
 				</control>
 				<control type="panel" id="8018">
 					<include>DimensionsLandscapePanel</include>	

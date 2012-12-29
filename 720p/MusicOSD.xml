@@ -8,6 +8,10 @@
 	</coordinates>
 	<controls>
 	<!--
+	
+	
+!! Need group for setting !Skin.HasSetting(DisableArtistSlideShow)	
+	
 		<control type="image" id="1001">
 			<description>Artist Biography background</description>
 			<posx>750</posx>
@@ -170,7 +174,7 @@
 			<textureslidernibfocus>OSD/osd_slider_nib.png</textureslidernibfocus>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
-			<visible>!SubString(Player.FolderPath,http://,Left)</visible>
+			<visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left)]</visible>		
 		</control>
 		<control type="group" id="100">
 			<posx>325</posx>

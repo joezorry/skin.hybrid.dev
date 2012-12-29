@@ -139,12 +139,12 @@
 				<content>
 					<item id="1">
 						<label>$LOCALIZE[10000] $LOCALIZE[31302]</label>
-						<label2>31950</label2>
+						<label2>$LOCALIZE[31025]</label2>
 						<onclick>-</onclick>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[1034]</label>
-						<label2>$LOCALIZE[1034] $LOCALIZE[31025]</label2>
+						<label2>$LOCALIZE[31025]</label2>
 						<onclick>-</onclick>
 					</item>
 					<item id="3">
@@ -168,8 +168,8 @@
 						<onclick>-</onclick>
 					</item>
 					<item id="7">
-						<label>$LOCALIZE[31679]</label>
-						<label2>$LOCALIZE[31680]</label2>
+						<label>$LOCALIZE[247]</label>
+						<label2> &amp; $LOCALIZE[31680]</label2>
 						<onclick>-</onclick>
 					</item>
 				</content>
@@ -2928,48 +2928,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="421">
-						<description>Do Not Allow randomandlastitems.script To Run</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31967]</label>
-						<onclick>Skin.ToggleSetting(HideWatchPlaylist)</onclick>
-						<selected>!Skin.HasSetting(HideWatchPlaylist)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>System.HasAddon(script.randomandlastitems)</enable>
-					</control>
-					<control type="radiobutton" id="422">
-						<description>randomandlastitems.script uses last not random</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31968]</label>
-						<onclick>Skin.ToggleSetting(UseLastNotRandom)</onclick>
-						<selected>Skin.HasSetting(UseLastNotRandom)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)</enable>
-					</control>
-					<control type="radiobutton" id="423">
-						<description>randomandlastitems.script only shows unwatched items</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31969]</label>
-						<onclick>Skin.ToggleSetting(UseUnWatchedPlaylist)</onclick>
-						<selected>Skin.HasSetting(UseUnWatchedPlaylist)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(HideWatchPlaylist)</enable>
-					</control>
 					<control type="radiobutton" id="424">
 						<description>Hide Home Panel Fanart</description>
 						<width>750</width>
@@ -3448,7 +3406,6 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.Reset(ShowArtistSlideShow)</onclick>
 						<onclick>Skin.ToggleSetting(ShowBackgroundAlbumWall)</onclick>
 						<selected>Skin.HasSetting(ShowBackgroundAlbumWall)</selected>
 					</control>
@@ -3471,19 +3428,6 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[24022] $LOCALIZE[557] $LOCALIZE[108]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.Reset(ShowBackgroundAlbumWall)</onclick>
-						<onclick>Skin.ToggleSetting(ShowArtistSlideShow)</onclick>
-						<selected>Skin.HasSetting(ShowArtistSlideShow)</selected>
-					</control>
-					<control type="radiobutton" id="539">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
 						<label>$LOCALIZE[31991]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -3492,7 +3436,7 @@
 						<onclick>Skin.ToggleSetting(NoAnimateFanArt)</onclick>
 						<selected>Skin.HasSetting(NoAnimateFanArt)</selected>
 					</control>
-					<control type="radiobutton" id="540">
+					<control type="radiobutton" id="539">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3504,7 +3448,7 @@
 						<onclick>Skin.ToggleSetting(HideCDArt)</onclick>
 						<selected>Skin.HasSetting(HideCDArt)</selected>
 					</control>
-					<control type="label" id="541">
+					<control type="label" id="540">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -3514,7 +3458,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="542">
+					<control type="radiobutton" id="541">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3527,7 +3471,7 @@
 						<onclick>Skin.Reset(EnableStartupPlaylist)</onclick> 
 						<selected>!Skin.HasSetting(HideXBMCIntro)</selected>
 					</control>
-					<control type="radiobutton" id="543">
+					<control type="radiobutton" id="542">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3540,7 +3484,7 @@
 						<onclick>Skin.ToggleSetting(EnableStartupPlaylist)</onclick>
 						<selected>Skin.HasSetting(EnableStartupPlaylist)</selected>
 					</control>
-					<control type="button" id="544">
+					<control type="button" id="543">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -3859,19 +3803,116 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
+						<label>$LOCALIZE[31013]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="701">
+						<description>Enable TvTunes</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31014]</label>
+						<onclick>Skin.ToggleSetting(DisableTvTunes)</onclick>
+						<selected>!Skin.HasSetting(DisableTvTunes)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="702">
+						<description>Enable Watch-It-Later</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31015]</label>
+						<onclick>Skin.ToggleSetting(DisableWatchItLater)</onclick>
+						<selected>!Skin.HasSetting(DisableWatchItLater)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="703">
+						<description>Enable Artist SlideShow</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31016]</label>
+						<onclick>Skin.ToggleSetting(DisableArtistSlideShow)</onclick>
+						<selected>!Skin.HasSetting(DisableArtistSlideShow)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="704">
+						<description>Enable Script Favourites</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31017]</label>
+						<onclick>Skin.ToggleSetting(DisableScriptFavourites)</onclick>
+						<selected>!Skin.HasSetting(DisableScriptFavourites)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="705">
+						<description>Enable Script RandomAndLastItems</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31018]</label>
+						<onclick>Skin.ToggleSetting(DisableScriptPlayList)</onclick>
+						<selected>!Skin.HasSetting(DisableScriptPlayList)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="706">
+						<description>randomandlastitems.script uses last not random</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>    $LOCALIZE[31968]</label>
+						<onclick>Skin.ToggleSetting(EnableRandomPlaylist)</onclick>
+						<selected>Skin.HasSetting(EnableRandomPlaylist)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(DisableScriptPlayList)</enable>
+					</control>
+					<control type="radiobutton" id="707">
+						<description>randomandlastitems.script only shows unwatched items</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>    $LOCALIZE[31969]</label>
+						<onclick>Skin.ToggleSetting(EnableUnWatchedPlaylist)</onclick>
+						<selected>Skin.HasSetting(EnableUnWatchedPlaylist)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>System.HasAddon(script.randomandlastitems) + !Skin.HasSetting(DisableScriptPlayList)</enable>
+					</control>
+					<control type="label" id="708">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
 						<label>$LOCALIZE[31679] $LOCALIZE[31680]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="image" id="701">
-						<width>750</width>
-						<height>450</height>
-						<aspectratio align="center">keep</aspectratio>
-						<texture>Warning-icon.png</texture>
-					</control>
-					<control type="button" id="702">
+					<control type="button" id="709">
 						<description>Reset Skin Values</description>
 						<width>750</width>
 						<height>40</height>
@@ -3882,8 +3923,7 @@
 						<textoffsetx>20</textoffsetx>
 						<textwidth>730</textwidth>
 						<label>$LOCALIZE[31678]</label>
-						<onclick>Skin.ResetSettings</onclick>
-						<onclick>ReloadSkin()</onclick>
+						<onclick>ActivateWindow(2121)</onclick>
 						<texturefocus border="5">button-focus.png</texturefocus>
 						<texturenofocus border="5">button-nofocus.png</texturenofocus>
 						<pulseonselect>false</pulseonselect>

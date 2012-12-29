@@ -95,11 +95,11 @@
 		<value>DefaultGenre/</value>
 	</variable>
 	<variable name="RandomOrLastAction" type="text">
-		<value condition="Skin.HasSetting(UseLastNotRandom)">Last</value>
+		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Last</value>
 		<value>Random</value>
 	</variable>
 	<variable name="RandomOrLastUnWatched" type="text">
-		<value condition="Skin.HasSetting(UseUnWatchedPlaylist)">True</value>
+		<value condition="Skin.HasSetting(EnableUnWatchedPlaylist)">True</value>
 		<value>False</value>
 	</variable>	
 	<variable name="RandomUnWatchedItems" type="text">

@@ -130,7 +130,7 @@
 		<control type="group">
 			<include>HomeSubMenuImage</include>
 			<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Favourites)</visible>
-			<visible>!Skin.HasSetting(HideDefaultSubItem) +  IntegerGreaterThan(Window(Home).Property(favourite.count),0)</visible>
+			<visible>!Skin.HasSetting(HideDefaultSubItem) + !Skin.HasSetting(DisableScriptFavourites) + IntegerGreaterThan(Window(Home).Property(favourite.count),0)</visible>
 		</control>
 		<control type="group">
 			<include>HomeSubMenuImage</include>
