@@ -1,4 +1,4 @@
-[B]1.0.4[/B][I]jan 2013[/I]
+[B]1.0.4[/B][I]Jan 2013[/I]
 - Added Toggles for included 3rd Party Scripts
 - Increased Install Default Menu Items inc Stream Radio105
 - Added Yes/No Dialog for Reset Data Option
@@ -6,6 +6,7 @@
 - Added Initial Support Advanced Launcher [WIP]
 - Adjusted Setting Images Sizes
 - BugFix Codecs on OSD Screens
+- BugFix When Setting Sticky Action Forgets Menu Item
 
 [B]1.0.3[/B][I]Dec 2012[/I]
 - New Dependency script.randomandlastitems.2.0.0 [WIP]
