@@ -5,6 +5,7 @@
 - Added New & Missing Homescreen Backgrounds
 - Added Initial Support Advanced Launcher [WIP]
 - Adjusted Setting Images Sizes
+- BugFix Codecs on OSD Screens
 
 [B]1.0.3[/B][I]Dec 2012[/I]
 - New Dependency script.randomandlastitems.2.0.0 [WIP]

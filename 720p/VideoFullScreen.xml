@@ -302,21 +302,21 @@
 						<width>50</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+						<texture>$INFO[VideoPlayer.VideoResolution,MediaFlags/resolution/,.png]</texture>
 					</control>
 					<control type="image" id="1">
 						<description>Audio Codec Image</description>
 						<width>85</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+						<texture>$INFO[VideoPlayer.AudioCodec,MediaFlags/codectype/,.png]</texture>
 					</control>
 					<control type="image" id="1">
 						<description>Audio Channels Image</description>
 						<width>50</width>
 						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
-						<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+						<texture>$INFO[VideoPlayer.AudioChannels,MediaFlags/audiochannels/,.png]</texture>
 					</control>
 				</control>
 				<control type="label" id="1">
