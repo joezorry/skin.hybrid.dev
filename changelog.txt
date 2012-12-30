@@ -6,7 +6,10 @@
 - Added Initial Support Advanced Launcher [WIP]
 - Adjusted Setting Images Sizes
 - BugFix Codecs on OSD Screens
+- Adjusted Video OSD hide U/S info when Streaming
 - BugFix When Setting Sticky Action Forgets Menu Item
+- Added more Preset Menu Choices incl Streaming,PseudoTV & Advanced Launcher
+- Converted MediaInfo & WideList Views for Advanced Launcher 
 
 [B]1.0.3[/B][I]Dec 2012[/I]
 - New Dependency script.randomandlastitems.2.0.0 [WIP]
