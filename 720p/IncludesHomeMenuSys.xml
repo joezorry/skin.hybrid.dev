@@ -225,7 +225,7 @@
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.5.Path))">Skin.SetString(HomeItem.5.Path,ActivateWindow(Videos,Root,return))</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.5.FanArt))">Skin.SetString(HomeItem.5.FanArt,special://skin/backgrounds/homescreen/movies.jpg)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.5.Type))">Skin.SetString(HomeItem.5.Type,Videos)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(HomeItem.6.Label))">Skin.SetString(HomeItem.6.Label,Radio 105)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(HomeItem.6.Label))">Skin.SetString(HomeItem.6.Label,$LOCALIZE[31134)]</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.6.Widget))">Skin.SetString(HomeItem.6.Widget,None)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.6.Sub))">Skin.SetString(HomeItem.6.Sub,None)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(HomeItem.6.Stats))">Skin.SetString(HomeItem.6.Stats,None)</onfocus>

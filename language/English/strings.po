@@ -283,7 +283,29 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr ""
 
-#empty strings from id 31134 to 31139
+msgctxt "#31134"
+msgid "Radio 105"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Monte Carlo"
+msgstr ""
+
+msgctxt "#31136"
+msgid "CNN International"
+msgstr ""
+
+msgctxt "#31137"
+msgid "Virgin"
+msgstr ""
+
+msgctxt "#31138"
+msgid "Tom & Jerry"
+msgstr ""
+
+msgctxt "#31139"
+msgid "PseudoTV"
+msgstr ""
 
 msgctxt "#31140"
 msgid "Music OSD"
