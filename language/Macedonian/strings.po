@@ -10,184 +10,160 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: Romanian (http://www.transifex.com/projects/p/xbmc-skins/language/ro/)\n"
+"Language-Team: Macedonian (http://www.transifex.com/projects/p/xbmc-skins/language/mk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+"Language: mk\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
 
 msgctxt "#31003"
 msgid "Power Options"
-msgstr "Opțiuni de alimentare"
+msgstr "Опции за напојување"
 
 msgctxt "#31004"
 msgid "Working..."
-msgstr "Procesare..."
+msgstr "Обработка..."
 
 msgctxt "#31005"
 msgid "Hide Information"
-msgstr "Ascunde detalii"
+msgstr "Сокриј инфо."
 
 msgctxt "#31006"
 msgid "View Options"
-msgstr "Opțiuni vizualizare"
+msgstr "Погледни опции"
 
 msgctxt "#31008"
 msgid "Fullscreen"
-msgstr "Pe tot ecranul"
-
-msgctxt "#31021"
-msgid "Video - Files"
-msgstr "Fișiere video"
+msgstr "Цел екран"
 
 msgctxt "#31022"
 msgid "Music - Files"
-msgstr "Fișiere audio"
+msgstr "Музика - Датотеки"
 
 msgctxt "#31023"
 msgid "Playing"
-msgstr "Redare"
+msgstr "Репродукција"
 
 msgctxt "#31024"
 msgid "Page"
-msgstr "Pagina"
+msgstr "Страна"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr "Elemente"
+msgstr "Ставки"
 
 msgctxt "#31026"
 msgid "Misc Options"
-msgstr "Opțiuni diverse"
+msgstr "Други опции"
 
 msgctxt "#31027"
 msgid "Location"
-msgstr "Locație"
+msgstr "Локација"
 
 msgctxt "#31029"
 msgid "Fanart"
-msgstr "Fanart"
+msgstr "Зан. слика"
 
 msgctxt "#31031"
 msgid "Pic Thumbs"
-msgstr "Detalii"
+msgstr "Сликички"
 
 msgctxt "#31032"
 msgid "Image Wrap"
-msgstr "Ciclu imagini"
+msgstr "Поредено"
 
 msgctxt "#31033"
 msgid "Info"
-msgstr "Informații"
+msgstr "Информации"
 
 msgctxt "#31040"
 msgid "Now Playing"
-msgstr "În redare"
+msgstr "Сега се репродуцира"
 
 msgctxt "#31042"
 msgid "PLAYING"
-msgstr "ÎN REDARE"
+msgstr "РЕПРОДУЦИРАЊЕ"
 
 msgctxt "#31043"
 msgid "PAUSED"
-msgstr "ÎN PAUZĂ"
+msgstr "ПАУЗИРАНО"
 
 msgctxt "#31044"
 msgid "FAST FORWARD"
-msgstr "DERULARE ÎNAINTE"
+msgstr "ПРЕМОТУВАЊЕ НАНАПРЕД"
 
 msgctxt "#31045"
 msgid "REWIND"
-msgstr "DERULARE ÎNAPOI"
+msgstr "ПРЕМОТУВАЊЕ"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr "Vizualizări predefinite"
+msgstr "Постојни визуализации"
 
 msgctxt "#31049"
 msgid "End Time"
-msgstr "Se termină la"
+msgstr "Време на завршување"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr "Sort.: Ascendent"
+msgstr "Подреди: Растечки"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr "Sort.: Descendent"
+msgstr "Подреди: Опаѓачки"
 
 msgctxt "#31055"
 msgid "Open playlist"
-msgstr "Deschide listă de redare"
+msgstr "Отвори список на реп."
 
 msgctxt "#31056"
 msgid "Save playlist"
-msgstr "Salvează lista de redare"
+msgstr "Сочувај список на реп."
 
 msgctxt "#31057"
 msgid "Close playlist"
-msgstr "Închide lista de redare"
+msgstr "Затвори список на реп."
 
 msgctxt "#31058"
 msgid "System music files"
-msgstr "Fișiere de muzică în sistem"
+msgstr "Системски музички датотеки"
 
 msgctxt "#31059"
 msgid "Current playlist"
-msgstr "Listă de redare curentă"
+msgstr "Сегашен список на реп."
 
 msgctxt "#31060"
 msgid "This file is stacked, select the part you want to play from."
-msgstr "Acest fișier este în stivă, selectați partea din care doriți să redați."
+msgstr "Оваа датотека е сложена, изаберете дел кој сакате да го репродуцирате."
 
 msgctxt "#31061"
 msgid "Current Selected"
-msgstr "Selectat curent"
+msgstr "Сегашен избор"
 
 msgctxt "#31101"
 msgid "Home screen options"
-msgstr "Opțiuni ecran principal"
+msgstr "Опции на почетен екран"
 
 msgctxt "#31103"
 msgid "Show \"Paused\" in picture slide show"
-msgstr "Arată „În pauză” la prezentare diapozitive"
+msgstr "Прикажи „Паузирано“ за време на репродукција на слика"
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
-msgstr "Opțiuni diverse"
-
-msgctxt "#31109"
-msgid "Media backgrounds"
-msgstr "Fundale media"
-
-msgctxt "#31110"
-msgid "Edit Background for Media Type"
-msgstr "Modificare fundal pentru"
+msgstr "Разни опции"
 
 msgctxt "#31111"
 msgid "Hide"
-msgstr "Ascunde"
+msgstr "Сокриј"
 
 msgctxt "#31112"
 msgid "Options"
-msgstr "Opțiuni"
-
-msgctxt "#31113"
-msgid "Single Image"
-msgstr "O singură imagine"
-
-msgctxt "#31114"
-msgid "Multi Image"
-msgstr "Mai multe imagini"
-
-msgctxt "#31115"
-msgid "Customizer"
-msgstr "Personalizator"
+msgstr "Опции"
 
 msgctxt "#31119"
 msgid "Hide Background Fanart"
-msgstr "Ascunde fundal (Fanart)"
+msgstr "Сокриј позадина"
 
 msgctxt "#31127"
 msgid "TvTunes"
@@ -195,231 +171,187 @@ msgstr "TvTunes"
 
 msgctxt "#31128"
 msgid "Lyrics"
-msgstr "Versuri"
+msgstr "Текстови на песни"
 
 msgctxt "#31140"
 msgid "Music OSD"
-msgstr "Meniu audio"
+msgstr "Музички OSD"
 
 msgctxt "#31141"
 msgid "Video OSD"
-msgstr "Meniu video"
+msgstr "Видео OSD"
 
 msgctxt "#31200"
 msgid "Shortcuts"
-msgstr "Scurtături"
+msgstr "Кратенки"
 
 msgctxt "#31203"
 msgid "Choose Your Song"
-msgstr "Alegeți-vă cântecul"
+msgstr "Изаберете ваша песна"
 
 msgctxt "#31205"
 msgid "Lyrics Source"
-msgstr "Sursă versuri"
+msgstr "Извор на текстови на песани"
 
 msgctxt "#31300"
 msgid "Current Temp"
-msgstr "Temperatură curentă"
+msgstr "Сегашна температура"
 
 msgctxt "#31301"
 msgid "Last Updated"
-msgstr "Ultima actualizare"
-
-msgctxt "#31302"
-msgid "Menu"
-msgstr "Meniu"
+msgstr "Последно ажурирање"
 
 msgctxt "#31303"
 msgid "Data provider"
-msgstr "Furnizor informații"
-
-msgctxt "#31305"
-msgid "No Disc Media Detected"
-msgstr "Niciun disc media detectat"
-
-msgctxt "#31306"
-msgid "Eject"
-msgstr "Scoate"
+msgstr "Провајдер на податоци"
 
 msgctxt "#31309"
 msgid "Memory Used:"
-msgstr "Utilizare memorie:"
+msgstr "Искористеност на меморија:"
 
 msgctxt "#31310"
 msgid "Track Number"
-msgstr "Număr pistă"
+msgstr "Број на нумера"
 
 msgctxt "#31311"
 msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
-msgstr "Imagine Fanart indisponibilă[CR][CR]Clic pe buton pentru setare"
+msgstr "Занимлива слика[CR]не  е доделена.[CR][CR]Кликнете на копчето за да[CR]ја доделите."
 
 msgctxt "#31312"
 msgid "Current Scraper"
-msgstr "Catalog curent"
+msgstr "Сегашен добавувач"
 
 msgctxt "#31313"
 msgid "Choose a Scraper"
-msgstr "Alegeți un catalog (scraper)"
+msgstr "Изаберете добавувач"
 
 msgctxt "#31314"
 msgid "Content Scanning Options"
-msgstr "Opțiuni de scanare conținut"
+msgstr "Опции на анализирање на содржина"
 
 msgctxt "#31319"
 msgid "Selected Profile"
-msgstr "Profil selectat"
+msgstr "Одбран профил"
 
 msgctxt "#31320"
 msgid "Last Logged In"
-msgstr "Ultima intrare"
+msgstr "Последна пријава"
 
 msgctxt "#31321"
 msgid "Karaoke Song Selector"
-msgstr "Selector cântec karaoke"
+msgstr "Бирач на караоке песни"
 
 msgctxt "#31322"
 msgid "Aired"
-msgstr "Difuzat pe"
-
-msgctxt "#31323"
-msgid "Latest Movies"
-msgstr "Ultimele filme"
-
-msgctxt "#31324"
-msgid "Latest Episodes"
-msgstr "Ultimele episoade"
+msgstr "Емитирано"
 
 msgctxt "#31325"
 msgid "Playlist Options"
-msgstr "Opțiuni listă de redare"
+msgstr "Опција на список за репродукција"
 
 msgctxt "#31326"
 msgid "Created"
-msgstr "Creat"
+msgstr "Креирано"
 
 msgctxt "#31327"
 msgid "Resolution"
-msgstr "Rezoluție"
+msgstr "Резолуција"
 
 msgctxt "#31328"
 msgid "Recently Added"
-msgstr "Adăugate recent"
+msgstr "Неодамна додадено"
 
 msgctxt "#31329"
 msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
-msgstr "[B]Planificare închidere activată![/B] [COLOR=grey2] Închidere sistem în[/COLOR]"
+msgstr "[B]Одбројување е поставено![/B] [COLOR=grey2] - Системот ќе се искучи за[/COLOR]"
 
 msgctxt "#31330"
 msgid "Click button to play[CR][CR]Movie trailer"
-msgstr "Clic pe buton pentru redare[CR][CR]secvențe din film (trailer)"
+msgstr "Кликнете на тастер за репродукција[CR][CR]на најава на филм"
 
 msgctxt "#31331"
 msgid "Album Details"
-msgstr "Detalii album"
+msgstr "Детали на албумот"
 
 msgctxt "#31351"
 msgid "Pause"
-msgstr "Pauză"
+msgstr "Пауза"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr "Stop"
+msgstr "Сопри"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr "Derulează înainte"
+msgstr "Премотај нанапред"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr "Derulează înapoi"
+msgstr "Премотај наназад"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr "Meniu film"
+msgstr "Филмско мени"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr "Descărcare subtitrare"
+msgstr "Превземи превод"
 
 msgctxt "#31390"
 msgid "Skin default"
-msgstr "Standard pentru costum"
+msgstr "Подразбирачка маска"
 
 msgctxt "#31392"
 msgid "Arial based"
-msgstr "Cu Arial la bază"
+msgstr "Arial основен"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr "Timpul Programat"
+msgstr "Закажано време"
 
 msgctxt "#31502"
 msgid "Live TV"
-msgstr "TV Live"
+msgstr "Live TV"
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr "Adaugă Grup"
+msgstr "Додади група"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr "Redenumește Grup"
+msgstr "Преимени група"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr "Șterge Grup"
+msgstr "Избриши група"
 
 msgctxt "#31509"
 msgid "Channel Group"
-msgstr "Canalul Grupului"
+msgstr "Група канали"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr "Setările Timpului"
+msgstr "Тајмер поставен"
 
 msgctxt "#31511"
 msgid "Channel Options"
-msgstr "Opțiunile Canalului"
+msgstr "Подесување на канали"
 
 msgctxt "#31603"
 msgid "Biography"
-msgstr "Biografie"
-
-msgctxt "#31605"
-msgid "Comedy"
-msgstr "Comedie"
-
-msgctxt "#31608"
-msgid "Documentary"
-msgstr "Documentar"
-
-msgctxt "#31609"
-msgid "Drama"
-msgstr "Drama"
-
-msgctxt "#31618"
-msgid "Romance"
-msgstr "Romantic"
-
-msgctxt "#31620"
-msgid "Short"
-msgstr "Scurt"
+msgstr "Биографија"
 
 msgctxt "#31664"
 msgid "Trailers"
-msgstr "Trailere"
-
-msgctxt "#31682"
-msgid "Tags"
-msgstr "Etichete"
+msgstr "Трејлери"
 
 msgctxt "#31700"
 msgid "United States"
-msgstr "Statele Unite"
+msgstr "United States"
 
 msgctxt "#31702"
 msgid "Germany"
-msgstr "Germania"
+msgstr "Germany"
 
 msgctxt "#31703"
 msgid "Australia"
@@ -427,16 +359,16 @@ msgstr "Australia"
 
 msgctxt "#31908"
 msgid "Chance of Precipitation"
-msgstr "Șansă de precipitații"
+msgstr "Можност за врнежи"
 
 msgctxt "#31909"
 msgid "Fetching forecast info..."
-msgstr "Preluare informații previziune..."
+msgstr "Превземање на прогноза..."
 
 msgctxt "#31938"
 msgid "None"
-msgstr "Niciuna"
+msgstr "Ништо"
 
 msgctxt "#31978"
 msgid "Play"
-msgstr "Redă"
+msgstr "Репродуцирај"
