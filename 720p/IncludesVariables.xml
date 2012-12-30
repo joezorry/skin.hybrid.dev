@@ -116,6 +116,7 @@
 		<value condition="!IsEmpty(ListItem.Year) + Container.Content(Movies)">$INFO[ListItem.label] ($INFO[ListItem.Year])</value>
 		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
 		<value condition="!IsEmpty(Window.Property(current.actor.agelong)) + [Container.Content(Actors) | Container.Content(Directors)]">$INFO[ListItem.label] ($INFO[Window.Property(current.actor.agelong)])</value>
+		<value condition="SubString(Container.FolderPath,program.advanced.launcher) !IsEmpty(ListItem.premiered)">$INFO[ListItem.label] ($INFO[ListItem.premiered])</value>
 		<value>$INFO[ListItem.label]</value>
 	</variable>	
 	<variable name="ShowMediaPlot">

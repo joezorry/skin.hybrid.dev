@@ -162,6 +162,25 @@
 				<visible>!Control.IsVisible(17)</visible>
 			</control>
 		</control>
+		<control type="group">			
+			<include>Window_OpenClose_Animation</include>
+			<visible>SubString(Container.FolderPath,program.advanced.launcher)</visible>		
+			<control type="label">
+				<posx>190</posx>
+				<posy>50</posy>
+				<width>900</width>
+				<height>20</height>
+				<font>font12_title</font>
+				<textcolor>grey2</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>false</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<include>Window_OpenClose_Animation</include>
+				<label>$INFO[ListItem.genre]</label>
+				<visible>!IsEmpty(ListItem.genre)</visible>
+			</control>
+		</control>
 	</include>
 	<include name="ViewMovieDiskDefault">
 		<texture diffuse="Disks/disc_mask.png" background="true">Disks/disc.png</texture>
@@ -544,7 +563,7 @@
 			<posy>50r</posy>
 			<animation effect="fade" time="250" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(home)">WindowClose</animation>
-			<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+			<visible>[Container.Content(Movies) | SubString(Container.FolderPath,program.advanced.launcher)] + !IsEmpty(ListItem.Trailer)</visible>
 			<visible>!Control.IsVisible(500) + !Control.IsVisible(514) + !Control.IsVisible(529) + !Control.IsVisible(732)</visible>
 			<control type="button" id="61">
 				<description>Trailer button</description>

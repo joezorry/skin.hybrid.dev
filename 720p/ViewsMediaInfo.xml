@@ -20,7 +20,7 @@
 				<viewtype label="$LOCALIZE[544]">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos)</visible>
+				<visible>SubString(Container.FolderPath,program.advanced.launcher) | Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos)</visible>
 				<itemlayout height="40" width="345">
 					<control type="image">
 						<posx>0</posx>
@@ -416,6 +416,67 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
+				</control>
+			</control>
+			<control type="group">
+				<posx>470</posx>
+				<posy>85</posy>
+				<visible>Control.IsVisible(515) + SubString(Container.FolderPath,program.advanced.launcher)</visible>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>750</width>
+					<height>420</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg" >$INFO[ListItem.fanart_image]</texture>
+				</control>
+				<control type="label">
+					<posx>10</posx>
+					<posy>395</posy>
+					<width>400</width>
+					<height>30</height>
+					<font>font24_title</font>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.studio]</label>
+					<visible>!StringCompare(ListItem.Label,..)</visible> 
+				</control>
+				<control type="textbox">
+					<description>Description Value for Video</description>
+					<posx>10</posx>
+					<posy>425</posy>
+					<width>400</width>
+					<height>105</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.plot]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+				</control>
+				<control type="image">
+					<posx>420</posx>
+					<posy>140</posy>
+					<width>330</width>
+					<height>440</height>	
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true"  fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[ListItem.thumbnailImage]</texture>
+					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordersize>8</bordersize>
+					<visible>!StringCompare(ListItem.Label,..)</visible> 
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>140</posy>
+					<width>180</width>
+					<height>440</height>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">$INFO[ListItem.icon]</texture>
+					<visible>StringCompare(ListItem.Label,..)</visible>
 				</control>
 			</control>
 		</control>
