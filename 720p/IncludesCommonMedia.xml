@@ -222,13 +222,6 @@
 			<fadetime>600</fadetime>
 			<visible>Control.HasFocus(8018) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
 		</control>
-		<!-- Home Panel Addons -->
-		<!--control type="image">
-			<include>Dimensions_Fullscreen</include> 
-			<texture background="true">$INFO[Container(8019).ListItem.ActualIcon]</texture>
-			<fadetime>600</fadetime>
-			<visible>Control.HasFocus(8019) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
-		</control-->
 		<include>MediaPlayingBackground</include>	
 	</include>
 	<include name="CommonVideoBackground">
@@ -360,33 +353,46 @@
 			<visible>!Skin.HasSetting(HideBackGroundFanart) + Skin.HasSetting(EnableXtraFanArt) + !StringCompare(ListItem.Label,..)</visible>
 		</control>
 	</include>
-	<include name="CommonWeatherBackground">
-		<control type="multiimage">
-			<include>Dimensions_Fullscreen</include> 
-			<imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Container(50).ListItem.Property(FanArt)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>!Skin.HasSetting(HideWeatherFanart)</visible>
-			<animation effect="fade" time="200">WindowClose</animation>
-		</control>
+	<include name="CommonProgramsBackground">
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
 			<imagepath background="true">$VAR[GlobalScreenBackground]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Skin.HasSetting(HideWeatherFanart) + Skin.HasSetting(GlobalMenuBackdrop)</visible>
+			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalMenuBackdrop)</visible>
 		</control>
-		<include condition="Skin.HasSetting(HideWeatherFanart) + Skin.HasSetting(GlobalLiveBackdrop)">InteractiveCasesBackground</include>
+		<include condition="[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + Skin.HasSetting(GlobalLiveBackdrop)">InteractiveCasesBackground</include>
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include> 
 			<imagepath background="true" >$VAR[CommonMenuItemBackground]</imagepath>
 			<timeperimage>8000</timeperimage>
 			<randomize>true</randomize>
 			<fadetime>FanartCrossfadeTime</fadetime>
-			<visible>Skin.HasSetting(HideWeatherFanart) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
+			<visible>[Skin.HasSetting(HideBackGroundFanart) | IsEmpty(ListItem.Art(fanart))] + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include> 
+			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			<include>BackgroundFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + !IsEmpty(ListItem.Art(fanart))</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+ 			<aspectratio>stretch</aspectratio>
+			<texture background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.fanart_image]</texture>
+			<include>BackgroundFade</include>
+			<fadetime>FanartCrossfadeTime</fadetime>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(HideBackGroundFanart) + !StringCompare(ListItem.Label,..) + SubString(Container.FolderPath,program.advanced.launcher)</visible>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+ 			<aspectratio>stretch</aspectratio>
+			<texture>black-back.png</texture>
+			<include>TransparentEffect</include>
 		</control>
 	</include>
 </includes>

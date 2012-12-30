@@ -429,7 +429,7 @@
 					<height>420</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg" >$INFO[ListItem.fanart_image]</texture>
+					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.fanart_image]</texture>
 				</control>
 				<control type="label">
 					<posx>10</posx>
