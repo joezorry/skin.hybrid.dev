@@ -156,7 +156,7 @@
 					<font>font12</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
+					<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(StopAutoScroll)</autoscroll>
 				</control>
 			</control>

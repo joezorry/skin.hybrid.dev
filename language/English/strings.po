@@ -117,7 +117,9 @@ msgctxt "#31027"
 msgid "Location"
 msgstr ""
 
-#empty string with id 31028
+msgctxt "#31028"
+msgid "Plot Unavailable"
+msgstr ""
 
 msgctxt "#31029"
 msgid "Fanart"

@@ -136,7 +136,7 @@
 						<font>font12</font> 	
 						<textcolor>grey</textcolor> 	
 						<shadowcolor>black</shadowcolor> 	
-						<label fallback="416">$INFO[ListItem.Plot]</label> 	
+						<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 						<align>justify</align> 	
 						<visible>[Container.Content(episodes) | SubString(Container.FolderPath,program.advanced.launcher)] + !StringCompare(ListItem.Label,..)</visible> 	
 					</control>
@@ -209,7 +209,7 @@
 						<width>40</width>
 						<height>40</height>
 						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-						<visible>Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>[Window.IsVisible(Videos) | SubString(Container.FolderPath,program.advanced.launcher)] + !IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<posx>530</posx> 	
@@ -217,7 +217,7 @@
 						<width>40</width>
 						<height>40</height>
 						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/]</texture>
-						<visible>Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>[Window.IsVisible(Videos) | SubString(Container.FolderPath,program.advanced.launcher)] + !IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image"> 	
 						<posx>202</posx> 	
@@ -362,7 +362,7 @@
 						<font>font12</font> 	
 						<textcolor>lightgrey</textcolor> 	
 						<shadowcolor>black</shadowcolor> 	
-						<label fallback="416">$INFO[ListItem.Plot]</label> 	
+						<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 						<autoscroll time="4000" delay="5000" repeat="15000"/> 	
 						<align>justify</align> 	
 						<visible>[Container.Content(episodes) | SubString(Container.FolderPath,program.advanced.launcher)] + !StringCompare(ListItem.Label,..)</visible> 	
@@ -436,15 +436,15 @@
 						<width>40</width>
 						<height>40</height>
 						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-						<visible>!Skin.HasSetting(UseStatusBanners) + Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
-					</control>
+						<visible>[Window.IsVisible(Videos) | SubString(Container.FolderPath,program.advanced.launcher)] + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(UseStatusBanners)</visible>
+						</control>
 					<control type="image">
 						<posx>530</posx> 	
 						<posy>7</posy> 	
 						<width>40</width>
 						<height>40</height>
 						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/]</texture>
-						<visible>!Skin.HasSetting(UseStatusBanners) + Window.IsVisible(Videos) + !IsEmpty(ListItem.Overlay)</visible>
+						<visible>[Window.IsVisible(Videos) | SubString(Container.FolderPath,program.advanced.launcher)] + !IsEmpty(ListItem.Overlay) + !Skin.HasSetting(UseStatusBanners)</visible>
 					</control>
 					<control type="image"> 	
 						<posx>202</posx> 	

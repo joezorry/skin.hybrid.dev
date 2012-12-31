@@ -177,8 +177,8 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<include>Window_OpenClose_Animation</include>
-				<label>$INFO[ListItem.genre]</label>
-				<visible>!IsEmpty(ListItem.genre)</visible>
+				<label>$INFO[ListItem.studio]</label>
+				<visible>!IsEmpty(ListItem.studio)</visible>
 			</control>
 		</control>
 	</include>

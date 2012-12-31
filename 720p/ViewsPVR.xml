@@ -1905,7 +1905,7 @@
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>-</pagecontrol>
-							<label>$INFO[ListItem.Plot]</label>
+							<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 						</control>
 						<control type="image">
 							<posx>970</posx>
@@ -2272,7 +2272,7 @@
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>-</pagecontrol>
-							<label>$INFO[ListItem.Plot]</label>
+							<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 						</control>
 						<control type="image">
 							<posx>970</posx>

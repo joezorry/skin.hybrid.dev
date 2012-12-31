@@ -243,7 +243,7 @@
 				<font>font12</font>
 				<align>justify</align>
 				<pagecontrol>60</pagecontrol>
-				<label fallback="161">$INFO[ListItem.Plot]</label>
+				<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 			</control>
 			<control type="grouplist" id="9000">
 				<posx>40</posx>

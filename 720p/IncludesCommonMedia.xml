@@ -382,7 +382,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
  			<aspectratio>stretch</aspectratio>
-			<texture background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.fanart_image]</texture>
+			<texture background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.Property(fanart_image)]</texture>
 			<include>BackgroundFade</include>
 			<fadetime>FanartCrossfadeTime</fadetime>
 			<include>Window_OpenClose_Animation</include>

@@ -429,43 +429,32 @@
 					<height>420</height>
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.fanart_image]</texture>
+					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="special://skin/backgrounds/homescreen/launcher.jpg">$INFO[ListItem.Property(fanart_image)]</texture>
 				</control>
 				<control type="label">
-					<posx>10</posx>
+					<posx>550</posx>
 					<posy>395</posy>
-					<width>400</width>
+					<width>540</width>
 					<height>30</height>
-					<font>font24_title</font>
+					<font>font13_title</font>
 					<textcolor>grey2</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<align>left</align>
+					<align>right</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.studio]</label>
+					<label>$INFO[ListItem.genre]</label>
 					<visible>!StringCompare(ListItem.Label,..)</visible> 
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
 					<posx>10</posx>
 					<posy>425</posy>
-					<width>400</width>
-					<height>105</height>
+					<width>540</width>
+					<height>145</height>
 					<font>font12</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.plot]</label>
+					<label fallback="31028">$INFO[ListItem.Plot]</label> 	
 					<autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
-				</control>
-				<control type="image">
-					<posx>420</posx>
-					<posy>140</posy>
-					<width>330</width>
-					<height>440</height>	
-					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true"  fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[ListItem.thumbnailImage]</texture>
-					<bordertexture border="8">ThumbShadow.png</bordertexture>
-					<bordersize>8</bordersize>
 					<visible>!StringCompare(ListItem.Label,..)</visible> 
 				</control>
 				<control type="image">
@@ -475,8 +464,17 @@
 					<height>440</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.icon]</texture>
-					<visible>StringCompare(ListItem.Label,..)</visible>
+					<texture background="true" diffuse="episodematte.png">$INFO[ListItem.thumbnailImage]</texture>
+					<visible>!IsEmpty(ListItem.thumbnailImage)</visible> 
+				</control>
+				<control type="image">
+					<posx>560</posx>
+					<posy>140</posy>
+					<width>180</width>
+					<height>440</height>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					<texture background="true" diffuse="episodematte.png">$INFO[ListItem.icon]</texture>
+					<visible>IsEmpty(ListItem.thumbnailImage)</visible>
 				</control>
 			</control>
 		</control>

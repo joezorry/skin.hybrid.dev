@@ -98,15 +98,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-4).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-4).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-4).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(-4).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -202,15 +193,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-3).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -299,16 +281,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-2).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -412,15 +385,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(3).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(3).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -509,16 +473,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(2).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -620,15 +575,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(1).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(1).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(1).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -722,25 +668,16 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(0).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(0).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(0).Icon]</texture>
-					<visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
-				</control>
+				</control>	
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>300</width>
+				<height>440</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(0).Icon]</texture>
+				<visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+			</control>
 			</control>
 				<control type="group">
 					<posx>490</posx>
@@ -828,15 +765,6 @@
 							<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 						</control>
 					</control>	
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>300</width>
-						<height>440</height>
-						<aspectratio aligny="bottom">keep</aspectratio>
-						<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).thumbnailImage]</texture>
-						<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-1).thumbnailImage)</visible>
-					</control>				
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -947,15 +875,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(4).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(4).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(4).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(4).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -1044,16 +963,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(3).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1155,15 +1065,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(2).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(2).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -1254,16 +1155,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-3).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1365,15 +1257,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-2).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -1462,16 +1345,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-1).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -1571,16 +1445,7 @@
 							<aspectratio aligny="top">stretch</aspectratio>
 							<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 						</control>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>300</width>
-						<height>440</height>
-						<aspectratio aligny="bottom">keep</aspectratio>
-						<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(0).thumbnailImage]</texture>
-						<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(0).thumbnailImage)</visible>
-					</control>				
+					</control>	
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -1677,15 +1542,6 @@
 							<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 						</control>
 					</control>	
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>300</width>
-						<height>440</height>
-						<aspectratio aligny="bottom">keep</aspectratio>
-						<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(1).thumbnailImage]</texture>
-						<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(1).thumbnailImage)</visible>
-					</control>				
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -1793,15 +1649,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-3).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -1891,15 +1738,6 @@
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
 				</control>	
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-2).thumbnailImage)</visible>
-				</control>				
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2001,15 +1839,6 @@
 					<width>300</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(-1).thumbnailImage)</visible>
-				</control>				
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
 					<texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).Icon]</texture>
 					<visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
 				</control>
@@ -2098,16 +1927,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(3).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(3).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2202,16 +2022,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(2).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(2).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2306,16 +2117,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(1).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(1).thumbnailImage)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2410,17 +2212,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(0).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(0).thumbnailImage)</visible>
-					<visible>Control.HasFocus(555)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2516,17 +2308,7 @@
 						<aspectratio aligny="top">stretch</aspectratio>
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/ClearCase.png</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[Container(555).ListItem(0).thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(Container(555).ListItem(0).thumbnailImage)</visible>
-					<visible>!Control.HasFocus(555)</visible>
-				</control>				
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2542,7 +2324,7 @@
 		<control type="wraplist" id="555">
 			<include>Window_OpenClose_Animation</include>
 			<description>Fake list to control coverflow movement</description>
-			<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
+			<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
 			<posx>490</posx>
 			<posy>150</posy>
 			<width>306</width>
@@ -2633,17 +2415,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="ClearCase/dv.png">$INFO[ListItem.FileExtension,ClearCase/,.png]</texture>
 					</control>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>440</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[ListItem.thumbnailImage]</texture>
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) + !IsEmpty(ListItem.thumbnailImage)</visible>
-					<visible>!Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
-				</control>
+				</control>	
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -2725,35 +2497,6 @@
 					<label>    $INFO[ListItem.Director,[B][COLOR=blue]$LOCALIZE[20339]: [/COLOR][/B]]</label>
 				</control>
 			</control>	
-		</control>
-		<control type="group">
-			<include>Window_OpenClose_Animation</include>
-			<visible>Control.IsVisible(555) + !StringCompare(ListItem.label,..) + SubString(Container.FolderPath,program.advanced.launcher)</visible> 			
-			<control type="label">
-				<posx>0</posx>
-				<posy>85</posy>
-				<width>1280</width>
-				<height>55</height>
-				<font>font24_title</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>false</scroll>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.genre]</label>
-			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>600</posy>
-				<width>1280</width>
-				<height>25</height>
-				<align>center</align>
-				<font>font13</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>false</scroll>
-				<label>$INFO[ListItem.studio]</label>
-			</control>
 		</control>
 	</include>
 </includes>	
