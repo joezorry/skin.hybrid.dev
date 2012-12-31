@@ -24,7 +24,7 @@
 				<scrolltime>300</scrolltime>
 				<focusposition>2</focusposition>
 				<preloaditems>5</preloaditems>
-				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
 				<itemlayout width="250" height="140">
 					<control type="image">
 						<visible>[Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
@@ -168,7 +168,7 @@
 				<visible>Control.IsVisible(730)</visible>
 			</control>
 			<control type="group">
-				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(MusicVideos)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
 				<posx>45</posx>
 				<posy>165</posy>
 				<control type="group">
@@ -227,6 +227,7 @@
 						<height>32</height>
 						<aspectratio align="left">keep</aspectratio>
 						<texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>40</posx>
@@ -261,6 +262,35 @@
 						<itemgap>0</itemgap>
 						<orientation>horizontal</orientation>
 						<include>GenreText</include>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
+					</control>
+					<control type="label">
+						<posx>320</posx>
+						<posy>10</posy>
+						<width>400</width>
+						<height>30</height>
+						<font>font13</font>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.genre,[B][COLOR=blue]$LOCALIZE[515]: [/COLOR][/B]]</label>
+						<visible>!IsEmpty(ListItem.genre) + SubString(Container.FolderPath,program.advanced.launcher)</visible>
+					</control>
+					<control type="label">
+						<posx>320</posx>
+						<posy>40</posy>
+						<width>400</width>
+						<height>30</height>
+						<font>font13</font>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<scroll>true</scroll>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.writer,[B][COLOR=blue]$LOCALIZE[31030]: [/COLOR][/B]]</label>
+						<visible>!IsEmpty(ListItem.writer) + SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="label">
 						<posx>320</posx>
@@ -274,6 +304,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Director,[B][COLOR=blue]$LOCALIZE[20339]: [/COLOR][/B]]</label>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="label">
 						<posx>320</posx>
@@ -288,6 +319,7 @@
 						<aligny>center</aligny>
 						<label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
 						<visible>!IsEmpty(ListItem.Duration)</visible>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="textbox">
 						<description>Description Value The Movie</description>
@@ -315,6 +347,7 @@
 						<include>VideoCodecFlaggingConditions</include>
 						<include>AudioChannelsFlaggingConditions</include>
 						<include>AudioCodecFlaggingConditions</include>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>					
 				</control>	
 				<control type="image">
