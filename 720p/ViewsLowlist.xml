@@ -15,7 +15,7 @@
 				<viewtype label="$LOCALIZE[31973]">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
+				<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
 				<visible>!Container.Content(LiveTV)</visible>
 				<itemlayout height="40" width="480">
 					<control type="image">
@@ -48,6 +48,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>435</posx>
@@ -55,7 +56,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+						<visible>!IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<posx>435</posx>
@@ -63,7 +64,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/]</texture>
-						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+						<visible>!IsEmpty(ListItem.Overlay)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40" width="480">
@@ -116,6 +117,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
+						<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 					</control>
 					<control type="image">
 						<posx>435</posx>
@@ -123,7 +125,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+						<visible>!IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
 						<posx>435</posx>
@@ -131,7 +133,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture diffuse="poster-diffuse.png">$INFO[ListItem.Overlay,MediaStatus/]</texture>
-						<visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
+						<visible>!IsEmpty(ListItem.Overlay)</visible>
 					</control>
 				</focusedlayout>
 			</control>
@@ -226,6 +228,7 @@
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
+					<visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Movie</description>
@@ -252,7 +255,21 @@
 					<align>right</align>
 					<aligny>top</aligny>
 					<label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
-					<visible>!IsEmpty(ListItem.Duration)</visible>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(Container.FolderPath,program.advanced.launcher)</visible>
+				</control>
+				<control type="label">
+					<posx>1270</posx>
+					<posy>615</posy>
+					<width>430</width>
+					<height>30</height>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<scroll>false</scroll>
+					<align>right</align>
+					<aligny>top</aligny>
+					<label>$INFO[ListItem.genre,[B][COLOR=blue]$LOCALIZE[515]: [/COLOR][/B]]</label>
+					<visible>!IsEmpty(ListItem.genre) + SubString(Container.FolderPath,program.advanced.launcher)</visible>
 				</control>
 			</control>
 		</control>
