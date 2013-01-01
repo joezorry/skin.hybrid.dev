@@ -11,7 +11,7 @@
                 <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
                 <animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-4).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-4).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -99,14 +99,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-4).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-4).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-4).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>180</posx>
                 <animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -194,14 +194,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>280</posx>
                 <animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -289,7 +289,7 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
@@ -298,7 +298,7 @@
                 <animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
                 <animation effect="rotatey" center="1320" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -386,14 +386,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>900</posx>
                 <animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -481,14 +481,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>800</posx>
                 <animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -576,7 +576,7 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(1).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
@@ -588,7 +588,7 @@
                     <animation effect="rotatey" center="1020" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
                     <animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
                     <control type="group">
-                        <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                        <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + Window.IsVisible(Videos)</visible>
                         <control type="image">
                             <posx>38</posx>
                             <posy>15</posy>
@@ -676,7 +676,7 @@
                         <height>440</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(0).Icon]</texture>
-                        <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                        <visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | !Window.IsVisible(Videos)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -684,7 +684,7 @@
                     <visible>Container.OnNext</visible>
                     <animation effect="rotatey" center="470" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
                     <control type="group">
-                        <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                        <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + Window.IsVisible(Videos)</visible>
                         <control type="image">
                             <posx>38</posx>
                             <posy>15</posy>
@@ -772,7 +772,7 @@
                         <height>440</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).Icon]</texture>
-                        <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                        <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                     </control>
                 </control>
             </control>
@@ -788,7 +788,7 @@
                 <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
                 <animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(4).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(4).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -876,14 +876,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(4).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(4).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(4).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>800</posx>
                 <animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -971,14 +971,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>700</posx>
                 <animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1066,7 +1066,7 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
@@ -1075,7 +1075,7 @@
                 <animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
                 <animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1163,14 +1163,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>80</posx>
                 <animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1258,14 +1258,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>180</posx>
                 <animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1353,7 +1353,7 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
@@ -1365,7 +1365,7 @@
                     <animation effect="rotatey" center="260" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
                     <animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                     <control type="group">
-                        <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                        <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + Window.IsVisible(Videos)</visible>
                         <control type="image">
                             <posx>38</posx>
                             <posy>15</posy>
@@ -1453,7 +1453,7 @@
                         <height>440</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(0).Icon]</texture>
-                        <visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                        <visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | !Window.IsVisible(Videos)</visible>
                     </control>
                 </control>
                 <control type="group">
@@ -1461,7 +1461,7 @@
                     <visible>Container.OnPrevious</visible>
                     <animation effect="rotatey" center="810" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
                     <control type="group">
-                        <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                        <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + Window.IsVisible(Videos)</visible>
                         <control type="image">
                             <posx>38</posx>
                             <posy>15</posy>
@@ -1549,7 +1549,7 @@
                         <height>440</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(1).Icon]</texture>
-                        <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                        <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                     </control>
                 </control>
             </control>
@@ -1562,7 +1562,7 @@
                 <posx>80</posx>
                 <animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1650,14 +1650,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>180</posx>
                 <animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1745,14 +1745,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>280</posx>
                 <animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(-1).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1840,14 +1840,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(-1).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(-1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>900</posx>
                 <animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(3).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -1935,14 +1935,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(3).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(3).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>800</posx>
                 <animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(2).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -2030,14 +2030,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(2).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(2).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>700</posx>
                 <animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(1).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <control type="image">
                         <posx>38</posx>
                         <posy>15</posy>
@@ -2125,13 +2125,13 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(1).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(1).Art(poster)) | !Window.IsVisible(Videos)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>490</posx>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <visible>Control.HasFocus(555)</visible>
                     <control type="image">
                         <posx>38</posx>
@@ -2220,14 +2220,14 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture diffuse="episodematte.png">$INFO[Container(555).ListItem(0).Icon]</texture>
-                    <visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(Container(555).ListItem(0).Art(poster)) | !Window.IsVisible(Videos)</visible>
                     <visible>Control.HasFocus(555)</visible>
                 </control>
             </control>
             <control type="group">
                 <posx>490</posx>
                 <control type="group">
-                    <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + [Container(555).Content(Movies) | Container(555).Content(MusicVideos) | Container(555).Content(TVShows) | Container(555).Content(Seasons)]</visible>
+                    <visible>!IsEmpty(Container(555).ListItem(0).Art(poster)) + Window.IsVisible(Videos)</visible>
                     <visible>!Control.HasFocus(555)</visible>
                     <control type="image">
                         <posx>38</posx>
@@ -2324,7 +2324,7 @@
         <control type="wraplist" id="555">
             <include>Window_OpenClose_Animation</include>
             <description>Fake list to control coverflow movement</description>
-            <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
+            <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
             <posx>490</posx>
             <posy>150</posy>
             <width>306</width>
@@ -2341,7 +2341,7 @@
             <itemlayout height="1" width="1"></itemlayout>
             <focusedlayout height="440" width="300">
                 <control type="group">
-                    <visible>!IsEmpty(ListItem.Art(poster)) + [Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                    <visible>!IsEmpty(ListItem.Art(poster)) + Window.IsVisible(Videos)</visible>
                     <visible>!Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
                     <control type="image">
                         <posx>38</posx>
@@ -2422,7 +2422,7 @@
                     <height>440</height>
                     <aspectratio aligny="bottom">keep</aspectratio>
                     <texture>$INFO[ListItem.Icon]</texture>
-                    <visible>IsEmpty(ListItem.Art(poster)) | [!Container(555).Content(Movies) + !Container(555).Content(MusicVideos) + !Container(555).Content(TVShows) + !Container(555).Content(Seasons)]</visible>
+                    <visible>IsEmpty(ListItem.Art(poster)) | !Window.IsVisible(Videos)</visible>
                     <visible>!Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
                 </control>
             </focusedlayout>
