@@ -1,4 +1,5 @@
 [B]1.0.4[/B][I]Jan 2013[/I]
+- Added CAPS Roboto Bold Font Edited  by uNiversal
 - Added Toggles for included 3rd Party Scripts
 - Increased Install Default Menu Items inc Stream Radio105
 - Added Yes/No Dialog for Reset Data Option
