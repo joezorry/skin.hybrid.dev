@@ -104,6 +104,15 @@
                     <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
+				<control type="radiobutton" id="91">
+                    <description>Animate movie Case in 501</description>
+                    <textwidth>170</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>$LOCALIZE[31111] $LOCALIZE[563]</label>
+                    <onclick>Skin.ToggleSetting(DisableStarRating)</onclick>
+                    <selected>Skin.HasSetting(DisableStarRating)</selected>
+                    <visible>Control.IsVisible(555) | Control.IsVisible(730)</visible>
+                </control>
                 <control type="radiobutton" id="92">
                     <description>Animate movie Case in 501</description>
                     <textwidth>170</textwidth>
@@ -121,6 +130,7 @@
                     <label>Toggle Cases</label>
                     <onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
                     <selected>Skin.HasSetting(UseDiscTypeCase)</selected>
+					<visible>!Skin.HasSetting(DisableMediaCases)</visible>
                     <visible>Control.IsVisible(501) | Control.IsVisible(514) | Control.IsVisible(732) | Control.IsVisible(724)</visible>
                 </control>
                 <control type="radiobutton" id="94">
