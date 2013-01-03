@@ -119,7 +119,7 @@
                     <label>$LOCALIZE[31111] $LOCALIZE[563]</label>
                     <onclick>Skin.ToggleSetting(DisableStarRating)</onclick>
                     <selected>Skin.HasSetting(DisableStarRating)</selected>
-                    <visible>Control.IsVisible(555) | Control.IsVisible(730)</visible>
+                    <visible>Control.IsVisible(555) | Control.IsVisible(730) | Control.IsVisible(514)</visible>
                 </control>
                 <control type="radiobutton" id="92">
                     <description>Animate movie Case in 501</description>
