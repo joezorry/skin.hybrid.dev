@@ -114,7 +114,6 @@
                     <aligny>center</aligny>
                 </control>
 				<control type="radiobutton" id="91">
-                    <description>Animate movie Case in 501</description>
                     <textwidth>170</textwidth>
                     <include>ButtonCommonValues</include>
                     <label>$LOCALIZE[31111] $LOCALIZE[563]</label>
@@ -139,7 +138,7 @@
                     <label>Toggle Cases</label>
                     <onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
                     <selected>Skin.HasSetting(UseDiscTypeCase)</selected>
-					<visible>!Skin.HasSetting(DisableMediaCases)</visible>
+					<visible>!Skin.HasSetting(DisableMediaCases) | Control.IsVisible(501)</visible>
                     <visible>Control.IsVisible(501) | Control.IsVisible(514) | Control.IsVisible(732) | Control.IsVisible(724)</visible>
                 </control>
                 <control type="radiobutton" id="94">
