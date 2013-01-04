@@ -247,7 +247,7 @@
                     <description>Media Codec Flagging Images</description>
                     <posx>260</posx>
                     <posy>95r</posy>
-                    <width>600</width>
+                    <width>570</width>
                     <align>center</align>
                     <itemgap>0</itemgap>
                     <orientation>horizontal</orientation>
@@ -272,10 +272,20 @@
                     <autoscroll time="3600" delay="6000" repeat="6000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                 </control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>840</posx>
+					<posy>600</posy>
+					<width>150</width>
+					<height>55</height>
+            		<aspectratio align="left">keep</aspectratio>
+					<texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
+					<visible>!StringCompare(ListItem.Label,..) + !SubString(Container.FolderPath,program.advanced.launcher)</visible>
+				</control>
                 <control type="label">
                     <posx>1270</posx>
                     <posy>615</posy>
-                    <width>430</width>
+                    <width>280</width>
                     <height>30</height>
                     <font>font13</font>
                     <textcolor>white</textcolor>

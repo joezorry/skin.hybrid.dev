@@ -126,6 +126,16 @@
                             <visible>!IsEmpty(ListItem.Overlay) + Window.IsVisible(Videos)</visible>
                         </control>
                     </control>
+					<control type="image">
+                        <posx>-3</posx>
+                        <posy>-1</posy>
+                        <width>130</width>
+                        <height>186</height>
+                        <aspectratio>stretch</aspectratio>
+                        <texture diffuse="ClearCase/EmptyCaseMask.png">black-back.png</texture>
+                        <colordiffuse>AAFFFFFF</colordiffuse>
+                        <visible>!StringCompare(ListItem.Label,..)</visible>
+                    </control>
                 </itemlayout>
                 <focusedlayout width="123" height="179">
                     <control type="group">
