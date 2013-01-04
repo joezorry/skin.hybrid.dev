@@ -530,7 +530,7 @@
             <onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
             <onclick>System.LogOff</onclick>
             <visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
-			<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+            <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
         </control>
         <control type="button" id="90706">
             <include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>

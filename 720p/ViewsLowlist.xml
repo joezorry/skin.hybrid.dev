@@ -155,8 +155,8 @@
             <control type="group">
                 <visible>Control.IsVisible(724)</visible>
                 <include>MainListLabel</include>
-				<control type="group">
-					<visible>SubString(Container.FolderPath,program.advanced.launcher) | StringCompare(ListItem.Label,..)</visible>
+                <control type="group">
+                    <visible>SubString(Container.FolderPath,program.advanced.launcher) | StringCompare(ListItem.Label,..)</visible>
                     <posx>40</posx>
                     <posy>190</posy>
                     <camera x="640" y="200" />
@@ -167,12 +167,12 @@
                         <width>260</width>
                         <height>480</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
-						<fadetime>IconCrossfadeTime</fadetime>
+                        <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
                     </control>
-				</control>
-					<control type="group">
-					<visible>!SubString(Container.FolderPath,program.advanced.launcher) + !StringCompare(ListItem.Label,..)</visible>
+                </control>
+                <control type="group">
+                    <visible>!SubString(Container.FolderPath,program.advanced.launcher) + !StringCompare(ListItem.Label,..)</visible>
                     <posx>40</posx>
                     <posy>190</posy>
                     <camera x="640" y="200" />
@@ -183,17 +183,17 @@
                         <width>260</width>
                         <height>480</height>
                         <aspectratio>stretch</aspectratio>
-                         <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
-						<visible>Skin.HasSetting(DisableMediaCases)</visible>
+                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
+                        <visible>Skin.HasSetting(DisableMediaCases)</visible>
                     </control>
-					<control type="image">
+                    <control type="image">
                         <posx>33</posx>
                         <posy>15</posy>
                         <width>217</width>
                         <height>445</height>
                         <aspectratio scalediffuse="false">strech</aspectratio>
                         <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
-						<visible>!Skin.HasSetting(DisableMediaCases)</visible>
+                        <visible>!Skin.HasSetting(DisableMediaCases)</visible>
                     </control>
                     <control type="image">
                         <posx>201</posx>
@@ -202,7 +202,7 @@
                         <height>48</height>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture>$INFO[ListItem.SubtitleLanguage,Language/,.png]</texture>
-						<animation effect="slide" start="0,0" end="10,18" delay="0" time="0" condition="Skin.HasSetting(DisableMediaCases)">conditional</animation>
+                        <animation effect="slide" start="0,0" end="10,18" delay="0" time="0" condition="Skin.HasSetting(DisableMediaCases)">conditional</animation>
                         <visible>!Skin.HasSetting(HideSubTitleFlags) + !IsEmpty(ListItem.SubtitleLanguage)</visible>
                     </control>
                     <control type="image">
@@ -211,7 +211,7 @@
                         <width>44</width>
                         <height>26</height>
                         <texture>movieset.png</texture>
-						<animation effect="slide" start="0,0" end="-30,18" delay="0" time="0" condition="Skin.HasSetting(DisableMediaCases)">conditional</animation>
+                        <animation effect="slide" start="0,0" end="-30,18" delay="0" time="0" condition="Skin.HasSetting(DisableMediaCases)">conditional</animation>
                         <visible>Container.Content(Movies) + ListItem.IsFolder + SubString(Container.Folderpath,videodb://,left)</visible>
                     </control>
                     <control type="image">
@@ -221,7 +221,7 @@
                         <height>480</height>
                         <aspectratio>stretch</aspectratio>
                         <texture fallback="ClearCase/dv.png">$VAR[VideoListCase,ClearCase/,.png]</texture>
-						<visible>!Skin.HasSetting(DisableMediaCases)</visible>
+                        <visible>!Skin.HasSetting(DisableMediaCases)</visible>
                     </control>
                     <control type="image">
                         <posx>33</posx>
@@ -231,19 +231,19 @@
                         <aspectratio aligny="top">stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
-						<visible>!Skin.HasSetting(DisableMediaCases)</visible>
+                        <visible>!Skin.HasSetting(DisableMediaCases)</visible>
                     </control>
-			        <control type="image">
+                    <control type="image">
                         <posx>0</posx>
                         <posy>477</posy>
                         <width>260</width>
                         <height>480</height>
                         <aspectratio>stretch</aspectratio>
                         <texture background="true" flipy="true" diffuse="diffuse_mirror2.png">ClearCase/dv.png</texture>
-						<visible>!Skin.HasSetting(DisableMediaCases)</visible>
+                        <visible>!Skin.HasSetting(DisableMediaCases)</visible>
                     </control>
                 </control>
-    			<control type="grouplist">
+                <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
                     <posx>260</posx>
                     <posy>95r</posy>
@@ -272,16 +272,16 @@
                     <autoscroll time="3600" delay="6000" repeat="6000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
                     <visible>!StringCompare(ListItem.Label,..)</visible>
                 </control>
-				<control type="image">
-					<description>Rating value</description>
-					<posx>840</posx>
-					<posy>600</posy>
-					<width>150</width>
-					<height>55</height>
-            		<aspectratio align="left">keep</aspectratio>
-					<texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
-					<visible>!StringCompare(ListItem.Label,..) + !SubString(Container.FolderPath,program.advanced.launcher)</visible>
-				</control>
+                <control type="image">
+                    <description>Rating value</description>
+                    <posx>840</posx>
+                    <posy>600</posy>
+                    <width>150</width>
+                    <height>55</height>
+                    <aspectratio align="left">keep</aspectratio>
+                    <texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
+                    <visible>!StringCompare(ListItem.Label,..) + !SubString(Container.FolderPath,program.advanced.launcher)</visible>
+                </control>
                 <control type="label">
                     <posx>1270</posx>
                     <posy>615</posy>

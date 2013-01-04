@@ -3082,8 +3082,8 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(DisableMediaCases)</onclick>
                         <selected>Skin.HasSetting(DisableMediaCases)</selected>
-                    </control>                    
-					<control type="radiobutton" id="509">
+                    </control>
+                    <control type="radiobutton" id="509">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
