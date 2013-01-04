@@ -298,53 +298,53 @@
         <value>dv</value>
     </variable>
     <variable name="LiveCaseOne">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.5.Thumb))">$INFO[Window(home).Property(RandomMovie.5.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.5.Thumb))">$INFO[Window(home).Property(LatestMovie.5.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.5.Art(poster)))">$INFO[Window(home).Property(RandomMovie.5.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.5.Art(poster)))">$INFO[Window(home).Property(RecentMovie.5.Art(poster))]</value>
         <value>fallbackposters/fallback5.jpg</value>
     </variable>
     <variable name="LiveCaseTwo">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.9.Thumb))">$INFO[Window(home).Property(RandomMovie.9.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.9.Thumb))">$INFO[Window(home).Property(LatestMovie.9.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.9.Art(poster)))">$INFO[Window(home).Property(RandomMovie.9.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.9.Art(poster)))">$INFO[Window(home).Property(RecentMovie.9.Art(poster))]</value>
         <value>fallbackposters/fallback9.jpg</value>
     </variable>
     <variable name="LiveCaseThree">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.8.Thumb))">$INFO[Window(home).Property(RandomMovie.8.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.8.Thumb))">$INFO[Window(home).Property(LatestMovie.8.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.8.Art(poster)))">$INFO[Window(home).Property(RandomMovie.8.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.8.Art(poster)))">$INFO[Window(home).Property(RecentMovie.8.Art(poster))]</value>
         <value>fallbackposters/fallback8.jpg</value>
     </variable>
     <variable name="LiveCaseFour">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.7.Thumb))">$INFO[Window(home).Property(RandomMovie.7.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.7.Thumb))">$INFO[Window(home).Property(LatestMovie.7.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.7.Art(poster)))">$INFO[Window(home).Property(RandomMovie.7.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.7.Art(poster)))">$INFO[Window(home).Property(RecentMovie.7.Art(poster))]</value>
         <value>fallbackposters/fallback7.jpg</value>
     </variable>
     <variable name="LiveCaseFive">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.4.Thumb))">$INFO[Window(home).Property(RandomMovie.4.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.4.Thumb))">$INFO[Window(home).Property(LatestMovie.4.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.4.Art(poster)))">$INFO[Window(home).Property(RandomMovie.4.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.4.Art(poster)))">$INFO[Window(home).Property(RecentMovie.4.Art(poster))]</value>
         <value>fallbackposters/fallback4.jpg</value>
     </variable>
     <variable name="LiveCaseSix">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.6.Thumb))">$INFO[Window(home).Property(RandomMovie.6.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.6.Thumb))">$INFO[Window(home).Property(LatestMovie.6.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.6.Art(poster)))">$INFO[Window(home).Property(RandomMovie.6.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.6.Art(poster)))">$INFO[Window(home).Property(RecentMovie.6.Art(poster))]</value>
         <value>fallbackposters/fallback6.jpg</value>
     </variable>
     <variable name="LiveCaseSeven">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.10.Thumb))">$INFO[Window(home).Property(RandomMovie.10.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.10.Thumb))">$INFO[Window(home).Property(LatestMovie.10.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.10.Art(poster)))">$INFO[Window(home).Property(RandomMovie.10.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.10.Art(poster)))">$INFO[Window(home).Property(RecentMovie.10.Art(poster))]</value>
         <value>fallbackposters/fallback10.jpg</value>
     </variable>
     <variable name="LiveCaseEight">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.3.Thumb))">$INFO[Window(home).Property(RandomMovie.3.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.3.Thumb))">$INFO[Window(home).Property(LatestMovie.3.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.3.Art(poster)))">$INFO[Window(home).Property(RandomMovie.3.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.3.Art(poster)))">$INFO[Window(home).Property(RecentMovie.3.Art(poster))]</value>
         <value>fallbackposters/fallback3.jpg</value>
     </variable>
     <variable name="LiveCaseNine">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.2.Thumb))">$INFO[Window(home).Property(RandomMovie.2.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.2.Thumb))">$INFO[Window(home).Property(LatestMovie.2.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.2.Art(poster)))">$INFO[Window(home).Property(RandomMovie.2.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.2.Art(poster)))">$INFO[Window(home).Property(RecentMovie.2.Art(poster))]</value>
         <value>fallbackposters/fallback2.jpg</value>
     </variable>
     <variable name="LiveCaseTen">
-        <value condition="!IsEmpty(Window(home).Property(RandomMovie.1.Thumb))">$INFO[Window(home).Property(RandomMovie.1.Thumb)]</value>
-        <value condition="!IsEmpty(Window(home).Property(LatestMovie.1.Thumb))">$INFO[Window(home).Property(LatestMovie.1.Thumb)]</value>
+        <value condition="!IsEmpty(Window(home).Property(RandomMovie.1.Art(poster)))">$INFO[Window(home).Property(RandomMovie.1.Art(poster))]</value>
+        <value condition="!IsEmpty(Window(home).Property(RecentMovie.1.Art(poster)))">$INFO[Window(home).Property(RecentMovie.1.Art(poster))]</value>
         <value>fallbackposters/fallback1.jpg</value>
     </variable>
     <variable name="UsrHomePlaylistTitleOne" type="text">
