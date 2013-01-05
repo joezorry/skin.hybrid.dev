@@ -1,3 +1,12 @@
+[B]1.0.6[/B][I]Jan 2013[/I]
+- BugFix Zorder DialogSelect
+
+[B]1.0.5[/B][I]Jan 2013[/I]
+- Added ability to Hide Media Cases
+- Added Extra menu & submenu choices
+- Various small bugfixes
+- Tweaked Advance Launcher Views
+
 [B]1.0.4[/B][I]Jan 2013[/I]
 - Added CAPS Roboto Bold Font Edited  by uNiversal
 - Added Toggles for included 3rd Party Scripts
