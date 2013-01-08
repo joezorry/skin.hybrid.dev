@@ -81,7 +81,7 @@
     <include name="HomeScreenBackground">
 		<control type="multiimage">
             <include>Dimensions_Fullscreen</include>
-            <imagepath background="true">$INFO[Container(9000).ListItem.ActualIcon]</imagepath>
+            <imagepath background="true">$INFO[Container(9000).ListItem.Thumb]</imagepath>
             <timeperimage>8000</timeperimage>
             <randomize>true</randomize>
             <fadetime>FanartCrossfadeTime</fadetime>
