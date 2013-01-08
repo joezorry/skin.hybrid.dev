@@ -1,5 +1,11 @@
 [B]1.0.6[/B][I]Jan 2013[/I]
 - BugFix Zorder DialogSelect
+- BugFix HideCDart Home Screen
+- BugFix randomandlastitems (Music still a problem)
+- Tweak Code for HomeScreen Backgrounds (BugFix Lag)
+- Added Optional Transparency FullWallView
+- Added Disable & Autorun Artwork Downloader
+- Add Support Script.TVNextAired (UnTested)
 
 [B]1.0.5[/B][I]Jan 2013[/I]
 - Added ability to Hide Media Cases

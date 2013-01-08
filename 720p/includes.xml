@@ -68,7 +68,7 @@
     <include name="TransparentEffect">
         <colordiffuse>$INFO[Skin.String(MediaPanelTrans)]</colordiffuse>
     </include>
-	<include name="TransparentWallEffect">
+    <include name="TransparentWallEffect">
         <colordiffuse>4FFFFFFF</colordiffuse>
     </include>
     <include name="ButtonCommonValues">
