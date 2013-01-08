@@ -846,7 +846,7 @@
             </control>
             <control type="group">
                 <!-- Music Playlist -->
-                <visible>
+				<visible>
 					[Container(9000).HasFocus(1) + StringCompare(Window(home).Property(HomePlayListOne.Type),Music)]|
 					[Container(9000).HasFocus(2) + StringCompare(Window(home).Property(HomePlayListTwo.Type),Music)]|
 					[Container(9000).HasFocus(3) + StringCompare(Window(home).Property(HomePlayListThree.Type),Music)]|
@@ -858,7 +858,7 @@
 					[Container(9000).HasFocus(9) + StringCompare(Window(home).Property(HomePlayListNine.Type),Music)]|
 					[Container(9000).HasFocus(10) + StringCompare(Window(home).Property(HomePlayListTen.Type),Music)]
 				</visible>
-                <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
                 <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
                 <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
                 <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>

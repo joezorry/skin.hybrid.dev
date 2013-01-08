@@ -325,6 +325,20 @@
         <value condition="!IsEmpty(Window(home).Property(RecentMovie.1.Art(poster)))">$INFO[Window(home).Property(RecentMovie.1.Art(poster))]</value>
         <value>fallbackposters/fallback1.jpg</value>
     </variable>
+	<variable name="NextAiredFanart">
+		<value condition="Control.HasFocus(200) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(200).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(201) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(201).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(202) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(202).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(203) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(203).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(204) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(204).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(205) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(205).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(206) + !IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))">$INFO[Container(206).ListItem.Property(Fanart)]</value>
+		<value>special://skin/backgrounds/homescreen/search.jpg</value>
+	</variable>
+
+	
+	
+	
     <variable name="UsrHomePlaylistTitleOne" type="text">
         <value condition="Container(9000).Hasfocus(1)">$INFO[Window(home).Property(HomePlayListOne.1.Title)]</value>
         <value condition="Container(9000).Hasfocus(2)">$INFO[Window(home).Property(HomePlayListTwo.1.Title)]</value>
