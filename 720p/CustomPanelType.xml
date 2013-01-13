@@ -271,7 +271,23 @@
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>Library.HasContent(Music)</visible>
                     </item>
-                    <item id="19">
+					<item id="19">
+                        <description>Suggested Music</description>
+                        <label>$LOCALIZE[31920]</label>
+                        <onclick>Dialog.Close(2117)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,SuggestedAlbums)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>Library.HasContent(Movies)</visible>
+                    </item>
+					<item id="20">
+                        <description>Suggested Music FanArt</description>
+                        <label>$LOCALIZE[31920]  $LOCALIZE[31029]</label>
+                        <onclick>Dialog.Close(2117)</onclick>
+                        <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,SuggestedAlbumsFanart)</onclick>
+                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+                        <visible>Library.HasContent(Movies)</visible>
+                    </item>
+                    <item id="21">
                         <description>Recent Concerts</description>
                         <label>$LOCALIZE[31918]</label>
                         <onclick>Dialog.Close(2117)</onclick>
@@ -279,7 +295,7 @@
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>Library.HasContent(MusicVideos)</visible>
                     </item>
-                    <item id="20">
+                    <item id="22">
                         <description>Recent Concerts FanArt</description>
                         <label>$LOCALIZE[31918] $LOCALIZE[31029]</label>
                         <onclick>Dialog.Close(2117)</onclick>
@@ -287,7 +303,7 @@
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>Library.HasContent(MusicVideos)</visible>
                     </item>
-                    <item id="21">
+                    <item id="23">
                         <description>Random Concerts</description>
                         <label>$LOCALIZE[31917]</label>
                         <onclick>Dialog.Close(2117)</onclick>
@@ -295,7 +311,7 @@
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
                         <visible>Library.HasContent(MusicVideos)</visible>
                     </item>
-                    <item id="22">
+                    <item id="24">
                         <description>Random Concerts FanArt</description>
                         <label>$LOCALIZE[31917] $LOCALIZE[31029]</label>
                         <onclick>Dialog.Close(2117)</onclick>

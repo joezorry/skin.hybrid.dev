@@ -53,6 +53,8 @@
 			<include>SuggestedMoviePanel</include>
 			<include>SuggestedMoviePanelFanArt</include>
 			<include>SuggestedTVShowPanel</include>
+			<include>SuggestedAlbumPanel</include>
+			<include>SuggestedAlbumPanelFanArt</include>
         </control>
         <control type="group">
             <animation effect="slide" end="-450,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
