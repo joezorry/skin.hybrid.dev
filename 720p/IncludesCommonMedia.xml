@@ -233,6 +233,18 @@
             <fadetime>600</fadetime>
             <visible>Control.HasFocus(8018) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
         </control>
+		<control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture background="true">$INFO[Container(8020).ListItem.Thumb]</texture>
+            <fadetime>600</fadetime>
+            <visible>Control.HasFocus(8020) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+        </control>
+		<control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture background="true">$INFO[Container(8021).ListItem.Thumb]</texture>
+            <fadetime>600</fadetime>
+            <visible>Control.HasFocus(8021) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
+        </control>
         <include>MediaPlayingBackground</include>
     </include>
     <include name="CommonVideoBackground">

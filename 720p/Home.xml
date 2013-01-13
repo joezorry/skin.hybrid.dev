@@ -50,6 +50,8 @@
             <include>RandomAlbumPanelFanArt</include>
             <include>RandomConcertsPanel</include>
             <include>RandomConcertsPanelFanArt</include>
+			<include>SuggestedMoviePanel</include>
+			<include>SuggestedMoviePanelFanArt</include>
         </control>
         <control type="group">
             <animation effect="slide" end="-450,0" time="500" tween="quadratic" easing="out">WindowClose</animation>
