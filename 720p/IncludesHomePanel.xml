@@ -1889,4 +1889,99 @@
             </control>
         </control>
     </include>
+	<include name="UnWatchedMoviePanel">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMovies) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Latest Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8025)</visible>
+            </control>
+            <control type="label">
+                <description>Selected Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8025).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8025)</visible>
+            </control>
+            <control type="panel" id="8025">
+                <include>DimensionsPosterPanel</include>
+                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onup>
+                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onleft>
+                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onright>
+                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</onup>
+                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</ondown>
+                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
+                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+                <include>MoviePosterLayout</include>
+                <include>HomeUnWatchedMovies</include>
+            </control>
+        </control>
+    </include>
+    <include name="UnWatchedMoviePanelFanArt">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMoviesFanArt) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Latest Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="panel" id="8026">
+                <include>DimensionsLandscapePanel</include>
+                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onup>
+                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
+                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onleft>
+                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onright>
+                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</onup>
+                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</ondown>
+                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
+                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+                <include>MovieLandscapeLayout</include>
+                <include>HomeUnWatchedMovies</include>
+            </control>
+        </control>
+    </include>
 </includes>

@@ -335,7 +335,24 @@
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
                 <include>CloseMenuChoice</include>
             </item>
-            <item id="26">
+			<item id="26">
+                <description>Hybrid Playlist Video</description>
+                <label>$LOCALIZE[559] ([COLOR=selected]$LOCALIZE[16101] $LOCALIZE[342][/COLOR])</label>
+                <include>ClearButtonChoice</include>
+                <onclick>Skin.SetString(UsrSelectAddon,special://skin/extras/Playlists/Unwatched Movies.xsp)</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label,$LOCALIZE[16101])</onclick>
+                <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Path,ActivateWindow(VideoLibrary,$INFO[Skin.String(UsrSelectAddon)],return))</onclick>
+                <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].FanArt,special://skin/backgrounds/homescreen/movies.jpg)</onclick>
+                <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
+                <!-- Not treated as Playlist as skin already runs script with this playlist -->
+				<!--onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].PlayList,$INFO[Skin.String(UsrSelectAddon)])</onclick-->
+                <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Stats,Movies)</onclick>
+                <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Movies)</onclick>
+                <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Movies)</onclick>
+                <include>CloseMenuChoice</include>
+				<visible>Library.HasContent(Movies)</visible>
+            </item>			
+			<item id="26">
                 <description>Hybrid Playlist Video</description>
                 <label>$LOCALIZE[559] ([COLOR=selected]$LOCALIZE[31020][/COLOR])</label>
                 <include>ClearButtonChoice</include>
@@ -349,6 +366,7 @@
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Playlists)</onclick>
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
                 <include>CloseMenuChoice</include>
+				<visible>Library.HasContent(Movies)</visible>
             </item>
             <item id="27">
                 <description>Hybrid Playlist Video</description>
@@ -364,6 +382,7 @@
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Playlists)</onclick>
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
                 <include>CloseMenuChoice</include>
+				<visible>Library.HasContent(Movies)</visible>
             </item>
             <item id="28">
                 <description>Hybrid Playlist Video</description>
@@ -379,6 +398,7 @@
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Playlists)</onclick>
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
                 <include>CloseMenuChoice</include>
+				<visible>Library.HasContent(Movies)</visible>
             </item>
             <item id="29">
                 <description>Hybrid Playlist Video</description>
@@ -394,6 +414,7 @@
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Type,Playlists)</onclick>
                 <onclick condition="Window.IsVisible(2114) + !IsEmpty(Skin.String(UsrSelectAddon))">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
                 <include>CloseMenuChoice</include>
+				<visible>Library.HasContent(Movies)</visible>
             </item>
             <item id="30">
                 <description>Video Folder</description>
