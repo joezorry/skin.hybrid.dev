@@ -62,7 +62,7 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                         <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
                         <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
@@ -300,7 +300,7 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
                         <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
