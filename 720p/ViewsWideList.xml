@@ -55,6 +55,18 @@
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
                         <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
                         <visible>!StringCompare(ListItem.Label,..)</visible>
+						 <visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
+					</control>
+					<control type="image">
+                        <posx>18</posx>
+                        <posy>24</posy>
+                        <width>169</width>
+                        <height>102</height>
+                        <aspectratio>stretch</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
+                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
+                        <visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
                     </control>
                     <control type="image">
                         <posx>18</posx>
@@ -281,6 +293,18 @@
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
                         <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
                         <visible>!StringCompare(ListItem.Label,..)</visible>
+						 <visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
+					</control>
+					<control type="image">
+                        <posx>18</posx>
+                        <posy>24</posy>
+                        <width>169</width>
+                        <height>102</height>
+                        <aspectratio>stretch</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
+                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
+                        <visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
                     </control>
                     <control type="image">
                         <posx>18</posx>
