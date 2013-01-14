@@ -180,12 +180,22 @@
                     <description>Show Info Toggle 508</description>
                     <textwidth>170</textwidth>
                     <include>ButtonCommonValues</include>
-                    <label>31005</label>
+                    <label>$LOCALIZE[31005]</label>
                     <onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
                     <selected>Skin.HasSetting(View508HideInfo)</selected>
                     <visible>Control.IsVisible(508)</visible>
                 </control>
-                <control type="radiobutton" id="98">
+				<control type="radiobutton" id="98">
+                    <description>Disable Show Info Toggle 508 Delay</description>
+                    <textwidth>170</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>$LOCALIZE[31653]</label>
+                    <onclick>Skin.ToggleSetting(View508DelayInfo)</onclick>
+                    <selected>!Skin.HasSetting(View508DelayInfo)</selected>
+					 <enable>!Skin.HasSetting(View508HideInfo)</enable>
+                    <visible>Control.IsVisible(508)</visible>
+                </control>				
+                <control type="radiobutton" id="99">
                     <description>Show Info Toggle 732</description>
                     <textwidth>170</textwidth>
                     <include>ButtonCommonValues</include>
@@ -194,7 +204,7 @@
                     <selected>Skin.HasSetting(View732HideInfo)</selected>
                     <visible>Control.IsVisible(732)</visible>
                 </control>
-                <control type="radiobutton" id="99">
+                <control type="radiobutton" id="100">
                     <description>Hide Genre Icons in 501</description>
                     <textwidth>170</textwidth>
                     <include>ButtonCommonValues</include>
@@ -203,7 +213,7 @@
                     <selected>Skin.HasSetting(Hide501GenreFlags)</selected>
                     <visible>Control.IsVisible(501)</visible>
                 </control>
-                <control type="radiobutton" id="100">
+                <control type="radiobutton" id="101">
                     <description>Use ClearArt in 529</description>
                     <textwidth>170</textwidth>
                     <include>ButtonCommonValues</include>
