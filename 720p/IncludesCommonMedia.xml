@@ -320,8 +320,7 @@
             <timeperimage>5000</timeperimage>
             <randomize>true</randomize>
             <fadetime>700</fadetime>
-            <visible>!Skin.HasSetting(HideBackGroundFanart) + Skin.HasSetting(EnableXtraFanArt)</visible>
-       <visible>!IsEmpty(ListItem.Path) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+            <visible>!Skin.HasSetting(HideBackGroundFanart) + Skin.HasSetting(EnableXtraFanArt) + !StringCompare(ListItem.Label,..)</visible>
 	   </control>
         <control type="image">
             <include>Dimensions_Fullscreen</include>

@@ -3226,7 +3226,7 @@
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(StopAutoScroll)</onclick>
-                        <selected>Skin.HasSetting(StopAutoScroll)</selected>
+                        <selected>!Skin.HasSetting(StopAutoScroll)</selected>
                     </control>
                     <control type="radiobutton" id="516">
                         <description>Show Sub Flag Toggle</description>
