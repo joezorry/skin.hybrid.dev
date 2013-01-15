@@ -222,6 +222,15 @@
                     <selected>Skin.HasSetting(Enable529ClearArt)</selected>
                     <visible>Control.IsVisible(529)</visible>
                 </control>
+				<control type="radiobutton" id="102">
+                    <description>Use Extra Thumbs in 515</description>
+                    <textwidth>170</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>$LOCALIZE[31654]</label>
+                    <onclick>Skin.ToggleSetting(Enable515ExtraThumbs)</onclick>
+                    <selected>Skin.HasSetting(Enable515ExtraThumbs)</selected>
+                    <visible>Control.IsVisible(515) + Container.Content(Movies)</visible>
+                </control>
                 <control type="radiobutton" id="14">
                     <description>Watched Toggle</description>
                     <textwidth>170</textwidth>

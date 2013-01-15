@@ -128,7 +128,7 @@
                 </control>
                 <include>MainListLabel</include>
             </control>
-            <control type="group">
+			<control type="group">
                 <posx>470</posx>
                 <posy>85</posy>
                 <visible>Control.IsVisible(515) + Container.Content(Movies)</visible>
@@ -153,7 +153,7 @@
                     <fadetime>700</fadetime>
                     <visible>Skin.HasSetting(EnableXtraFanArt) + !StringCompare(ListItem.Label,..)</visible>
                 </control>
-                <control type="image">
+				<control type="image">
                     <description>Rating value</description>
                     <posx>10</posx>
                     <posy>392</posy>
@@ -161,11 +161,11 @@
                     <height>32</height>
                     <aspectratio align="left">keep</aspectratio>
                     <texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
-                </control>
-                <control type="label">
+				</control>
+				<control type="label">
                     <posx>550</posx>
                     <posy>394</posy>
-                    <width>400</width>
+                    <width>270</width>
                     <height>30</height>
                     <font>font13</font>
                     <textcolor>white</textcolor>
@@ -174,6 +174,7 @@
                     <align>right</align>
                     <aligny>top</aligny>
                     <label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
+					<animation effect="slide" start="0,0" end="-140,0" time="0" condition="Skin.HasSetting(Enable515ExtraThumbs)">conditional</animation>
                     <visible>!IsEmpty(ListItem.Duration)</visible>
                 </control>
                 <control type="textbox">
@@ -187,7 +188,21 @@
                     <textcolor>white</textcolor>
                     <label>$VAR[ShowMediaPlot]</label>
                     <autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+					<visible>!Skin.HasSetting(Enable515ExtraThumbs)</visible>
                 </control>
+				<control type="textbox">
+                    <description>Description Value for Video</description>
+                    <posx>10</posx>
+                    <posy>425</posy>
+                    <width>400</width>
+                    <height>105</height>
+                    <font>font12</font>
+                    <align>justify</align>
+                    <textcolor>white</textcolor>
+                    <label>$VAR[ShowMediaPlot]</label>
+                    <autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+					<visible>Skin.HasSetting(Enable515ExtraThumbs)</visible>
+                </control>				
                 <control type="grouplist">
                     <description>Media Codec Flagging Images</description>
                     <posx>-15</posx>
@@ -201,6 +216,21 @@
                     <include>VideoCodecFlaggingConditions</include>
                     <include>AudioChannelsFlaggingConditions</include>
                     <include>AudioCodecFlaggingConditions</include>
+					<visible>!Skin.HasSetting(Enable515ExtraThumbs)</visible>
+                </control>
+				<control type="grouplist">
+                    <description>Media Codec Flagging Images</description>
+                    <posx>0</posx>
+                    <posy>540</posy>
+                    <width>400</width>
+                    <align>left</align>
+                    <itemgap>0</itemgap>
+                    <orientation>horizontal</orientation>
+                    <include>MediaStudioFlagging</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AudioChannelsFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+					<visible>Skin.HasSetting(Enable515ExtraThumbs)</visible>
                 </control>
                 <control type="image">
                     <posx>560</posx>
@@ -210,9 +240,126 @@
                     <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <fadetime>IconCrossfadeTime</fadetime>
                     <texture background="true" diffuse="episodematte.png">$VAR[PosterThumb]</texture>
+					<visible>!Skin.HasSetting(Enable515ExtraThumbs) | stringcompare(ListItem.Label,..)</visible>
+                </control>
+				<control type="multiimage">
+                    <posx>420</posx>
+                    <posy>140</posy>
+                    <width>330</width>
+                    <height>440</height>
+					<timeperimage>4000</timeperimage>
+					<randomize>true</randomize>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <imagepath background="true" diffuse="episodematte.png">$INFO[ListItem.Path,,extrathumbs/]</imagepath>
+					<visible>!stringcompare(ListItem.Label,..) + Skin.HasSetting(Enable515ExtraThumbs)</visible>
                 </control>
             </control>
-            <control type="group">
+ <!--           
+###################################################	
+
+		<control type="multiimage">
+			<posx>14</posx>
+			<posy>14</posy>
+			<width>212</width>
+			<height>120</height>
+			<imagepath background="true" diffuse="video-diffuse.png">$INFO[ListItem.Path,,extrathumbs/]</imagepath>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<timeperimage>4000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>IconCrossfadeTime</fadetime>
+			<visible>!stringcompare(ListItem.Label,..) + ![substring(ListItem.Path,plugin://) | substring(ListItem.Path,special://videoplaylists/) | substring(Container.FolderPath,plugin://) | substring(Container.FolderPath,addons://)]</visible>
+		</control>
+
+
+		
+<control type="group">
+                <posx>470</posx>
+                <posy>70</posy>
+                <visible>Control.IsVisible(515) + Container.Content(Episodes)</visible>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>750</width>
+                    <height>420</height>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture diffuse="Fanart_Diffuse.png" background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
+                    <visible>!StringCompare(ListItem.label,..)</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>750</width>
+                    <height>420</height>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <fadetime>FanartCrossfadeTime</fadetime>
+                    <texture diffuse="Fanart_Diffuse.png" background="true">$INFO[ListItem.Path,,fanart.jpg]</texture>
+                    <visible>Skin.HasSetting(UseTvSeasonArt) + !IsEmpty(ListItem.Path) + !StringCompare(ListItem.label,..)</visible>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>750</width>
+                    <height>420</height>
+                    <aspectratio scalediffuse="false">scale</aspectratio>
+                    <fadetime>FanartCrossfadeTime</fadetime>
+                    <texture diffuse="Fanart_Diffuse.png" background="true">$INFO[Fanart.Image]</texture>
+                    <visible>StringCompare(ListItem.label,..)</visible>
+                </control>
+                <control type="label">
+                    <posx>10</posx>
+                    <posy>395</posy>
+                    <width>400</width>
+                    <height>30</height>
+                    <font>font24_title</font>
+                    <textcolor>white</textcolor>
+                    <shadowcolor>black</shadowcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="textbox">
+                    <description>Description Value for Video</description>
+                    <posx>10</posx>
+                    <posy>425</posy>
+                    <width>400</width>
+                    <height>105</height>
+                    <font>font12</font>
+                    <align>justify</align>
+                    <textcolor>white</textcolor>
+                    <label>$VAR[ShowMediaPlot]</label>
+                    <autoscroll time="2000" delay="3000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+                </control>
+                <control type="grouplist">
+                    <description>Media Codec Flagging Images</description>
+                    <posx>0</posx>
+                    <posy>540</posy>
+                    <width>410</width>
+                    <align>center</align>
+                    <itemgap>2</itemgap>
+                    <orientation>horizontal</orientation>
+                    <include>MediaStudioFlagging</include>
+                    <include>VideoTypeHackFlaggingConditions</include>
+                    <include>VideoCodecFlaggingConditions</include>
+                    <include>AspectCodecFlaggingConditions</include>
+                    <include>AudioChannelsFlaggingConditions</include>
+                    <include>AudioCodecFlaggingConditions</include>
+                </control>
+                <control type="image">
+                    <posx>420</posx>
+                    <posy>140</posy>
+                    <width>330</width>
+                    <height>440</height>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <fadetime>IconCrossfadeTime</fadetime>
+                    <texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
+                </control>
+            </control>
+			
+###################################################
+-->			
+			<control type="group">
                 <posx>470</posx>
                 <posy>70</posy>
                 <visible>Control.IsVisible(515) + Container.Content(TVShows)</visible>
