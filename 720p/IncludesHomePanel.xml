@@ -90,7 +90,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeRecentMovies</include>
+                <include>HomeRecentMoviesFanArt</include>
             </control>
         </control>
     </include>
@@ -240,7 +240,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MusicCDLandscapeLayout</include>
-                <include>HomeRecentAlbums</include>
+                <include>HomeRecentAlbumsFanArt</include>
             </control>
         </control>
     </include>
@@ -335,7 +335,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeRecentConcerts</include>
+                <include>HomeRecentConcertsFanArt</include>
             </control>
         </control>
     </include>
@@ -430,7 +430,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeRandomMovies</include>
+                <include>HomeRandomMoviesFanArt</include>
             </control>
         </control>
     </include>
@@ -580,7 +580,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MusicCDLandscapeLayout</include>
-                <include>HomeRandomAlbums</include>
+                <include>HomeRandomAlbumsFanArt</include>
             </control>
         </control>
     </include>
@@ -675,7 +675,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeRandomConcerts</include>
+                <include>HomeRandomConcertsFanArt</include>
             </control>
         </control>
     </include>
@@ -922,7 +922,7 @@
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
                     <include>MusicCDThumbLayout</include>
-                    <include>PlayListContent</include>
+                    <include>PlayListAlbums</include>
                 </control>
             </control>
         </control>
@@ -992,7 +992,7 @@
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
                     <include>MovieLandscapeLayout</include>
-                    <include>PlayListContent</include>
+                    <include>PlayListContentFanArt</include>
                 </control>
             </control>
             <control type="group">
@@ -1138,7 +1138,7 @@
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
                     <include>MusicCDLandscapeLayout</include>
-                    <include>PlayListContent</include>
+                    <include>PlayListContentFanArt</include>
                 </control>
             </control>
         </control>
@@ -1735,7 +1735,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeSuggestMovies</include>
+                <include>HomeSuggestMoviesFanart</include>
             </control>
         </control>
     </include>
@@ -1885,7 +1885,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MusicCDLandscapeLayout</include>
-                <include>HomeSuggestAlbums</include>
+                <include>HomeSuggestAlbumsFanArt</include>
             </control>
         </control>
     </include>
@@ -1980,7 +1980,7 @@
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MovieLandscapeLayout</include>
-                <include>HomeUnWatchedMovies</include>
+                <include>HomeUnWatchedMoviesFanArt</include>
             </control>
         </control>
     </include>

@@ -749,7 +749,11 @@ msgctxt "#31654"
 msgid "Use Thumbnails"
 msgstr ""
 
-#empty strings from id 31655 to 31656
+msgctxt "#31655"
+msgid "Enable Scrolling Panel Items"
+msgstr ""
+
+#empty strings from id 31656 to 31656
 
 msgctxt "#31657"
 msgid "Live Cases"
