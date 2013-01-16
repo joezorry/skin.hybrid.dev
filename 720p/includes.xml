@@ -244,7 +244,7 @@
             <include>TransparentEffect</include>
             <include>Window_OpenClose_Animation</include>
             <texture>black-back.png</texture>
-            <visible>!stringcompare(Skin.String(HomePanelTrans),18FFFFFF)</visible>
+            <visible>!stringcompare(Skin.String(HomePanelTrans),18FFFFFF) + !Window.IsActive(home)</visible>
         </control>
         <control type="image">
             <posx>0</posx>
