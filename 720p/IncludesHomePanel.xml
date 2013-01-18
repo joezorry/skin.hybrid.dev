@@ -36,21 +36,32 @@
                 <shadowcolor>black</shadowcolor>
                 <visible>Control.HasFocus(8000)</visible>
             </control>
-            <control type="panel" id="8000">
+			<control type="panel" id="8000">
                 <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8000</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8000</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8000</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8000</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8000</onright>
+                <onup>8000</onup>
+                <ondown>9000</ondown>
+                <onleft>8000</onleft>
+                <onright>8000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MoviePosterLayout</include>
+                <include>HomeRecentMovies</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8000">
+                <include>DimensionsPosterPanel</include>
+                <onup>8000</onup>
+                <ondown>8000</ondown>
+                <onleft>9000</onleft>
+                <onright>8000</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MoviePosterLayout</include>
                 <include>HomeRecentMovies</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -78,19 +89,30 @@
             </control>
             <control type="panel" id="8001">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8001</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8001</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8001</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8001</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8001</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8001</onright>
+                <onup>8001</onup>
+                <ondown>9000</ondown>
+                <onleft>8001</onleft>
+                <onright>8001</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MovieLandscapeLayout</include>
                 <include>HomeRecentMoviesFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8001">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8001</onup>
+                <ondown>8001</ondown>
+                <onleft>9000</onleft>
+                <onright>8001</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeRecentMoviesFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -133,19 +155,30 @@
             </control>
             <control type="panel" id="8002">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8002</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8002</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8002</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8002</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8002</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8002</onright>
+                <onup>8002</onup>
+                <ondown>9000</ondown>
+                <onleft>8002</onleft>
+                <onright>8002</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>TVShowLandscapeLayout</include>
                 <include>HomeRecentEpisodes</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8002">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8002</onup>
+                <ondown>8002</ondown>
+                <onleft>9000</onleft>
+                <onright>8002</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>TVShowLandscapeLayout</include>
+                <include>HomeRecentEpisodes</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -188,19 +221,30 @@
             </control>
             <control type="panel" id="8003">
                 <include>DimensionsMusicCDPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8003</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8003</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8003</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8003</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8003</onleft>
+                <onright>8003</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MusicCDThumbLayout</include>
                 <include>HomeRecentAlbums</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8003">
+                <include>DimensionsMusicCDPanel</include>
+                <onup>8003</onup>
+                <ondown>8003</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MusicCDThumbLayout</include>
+                <include>HomeRecentAlbums</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -228,19 +272,30 @@
             </control>
             <control type="panel" id="8004">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8004</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8004</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8004</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8004</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8004</onleft>
+                <onright>8004</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MusicCDLandscapeLayout</include>
                 <include>HomeRecentAlbumsFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8004">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8004</onup>
+                <ondown>8004</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MusicCDLandscapeLayout</include>
+                <include>HomeRecentAlbumsFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -283,19 +338,30 @@
             </control>
             <control type="panel" id="8005">
                 <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8005</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8005</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8005</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8005</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8005</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8005</onright>
+                <onup>8005</onup>
+                <ondown>9000</ondown>
+                <onleft>8005</onleft>
+                <onright>8005</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MoviePosterLayout</include>
                 <include>HomeRecentConcerts</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8005">
+                <include>DimensionsPosterPanel</include>
+                <onup>8005</onup>
+                <ondown>8005</ondown>
+                <onleft>9000</onleft>
+                <onright>8005</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MoviePosterLayout</include>
+                <include>HomeRecentConcerts</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -323,19 +389,30 @@
             </control>
             <control type="panel" id="8006">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8006</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8006</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8006</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8006</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8006</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8006</onright>
+                <onup>8006</onup>
+                <ondown>9000</ondown>
+                <onleft>8006</onleft>
+                <onright>8006</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MovieLandscapeLayout</include>
                 <include>HomeRecentConcertsFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8006">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8006</onup>
+                <ondown>8006</ondown>
+                <onleft>9000</onleft>
+                <onright>8006</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeRecentConcertsFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -378,19 +455,30 @@
             </control>
             <control type="panel" id="8007">
                 <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8007</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8007</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8007</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8007</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8007</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8007</onright>
+                <onup>8007</onup>
+                <ondown>9000</ondown>
+                <onleft>8007</onleft>
+                <onright>8007</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MoviePosterLayout</include>
                 <include>HomeRandomMovies</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8007">
+                <include>DimensionsPosterPanel</include>
+                <onup>8007</onup>
+                <ondown>8007</ondown>
+                <onleft>9000</onleft>
+                <onright>8007</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MoviePosterLayout</include>
+                <include>HomeRandomMovies</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -418,19 +506,30 @@
             </control>
             <control type="panel" id="8008">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8008</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8008</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8008</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8008</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8008</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8008</onright>
+                <onup>8008</onup>
+                <ondown>9000</ondown>
+                <onleft>8008</onleft>
+                <onright>8008</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MovieLandscapeLayout</include>
                 <include>HomeRandomMoviesFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8008">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8008</onup>
+                <ondown>8008</ondown>
+                <onleft>9000</onleft>
+                <onright>8008</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeRandomMoviesFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -473,19 +572,30 @@
             </control>
             <control type="panel" id="8009">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8009</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8009</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8009</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8009</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8009</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8009</onright>
+                <onup>8009</onup>
+                <ondown>9000</ondown>
+                <onleft>8009</onleft>
+                <onright>8009</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>TVShowLandscapeLayout</include>
                 <include>HomeRandomTVShows</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8009">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8009</onup>
+                <ondown>8009</ondown>
+                <onleft>9000</onleft>
+                <onright>8009</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>TVShowLandscapeLayout</include>
+                <include>HomeRandomTVShows</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -528,19 +638,30 @@
             </control>
             <control type="panel" id="8010">
                 <include>DimensionsMusicCDPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8010</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8010</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8010</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8010</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8010</onleft>
+                <onright>8010</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MusicCDThumbLayout</include>
                 <include>HomeRandomAlbums</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8010">
+                <include>DimensionsMusicCDPanel</include>
+                <onup>8010</onup>
+                <ondown>8010</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MusicCDThumbLayout</include>
+                <include>HomeRandomAlbums</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -568,19 +689,30 @@
             </control>
             <control type="panel" id="8011">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8011</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8011</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8011</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8011</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8011</onleft>
+                <onright>8011</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MusicCDLandscapeLayout</include>
+                <include>HomeRandomAlbumsFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8011">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8011</onup>
+                <ondown>8011</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
                 <include>MusicCDLandscapeLayout</include>
                 <include>HomeRandomAlbumsFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -623,19 +755,30 @@
             </control>
             <control type="panel" id="8012">
                 <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8012</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8012</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8012</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8012</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8012</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8012</onright>
+                <onup>8012</onup>
+                <ondown>9000</ondown>
+                <onleft>8012</onleft>
+                <onright>8012</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MoviePosterLayout</include>
                 <include>HomeRandomConcerts</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8012">
+                <include>DimensionsPosterPanel</include>
+                <onup>8012</onup>
+                <ondown>8012</ondown>
+                <onleft>9000</onleft>
+                <onright>8012</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MoviePosterLayout</include>
+                <include>HomeRandomConcerts</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -663,19 +806,462 @@
             </control>
             <control type="panel" id="8013">
                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8013</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8013</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8013</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8013</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8013</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8013</onright>
+                <onup>8013</onup>
+                <ondown>9000</ondown>
+                <onleft>8013</onleft>
+                <onright>8013</onright>
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
                 <include>MovieLandscapeLayout</include>
                 <include>HomeRandomConcertsFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8013">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8013</onup>
+                <ondown>8013</ondown>
+                <onleft>9000</onleft>
+                <onright>8013</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeRandomConcertsFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+		<include name="SuggestedMoviePanel">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedMovies) + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Suggested Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[31926]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8020)</visible>
+            </control>
+            <control type="label">
+                <description>Selected Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8020).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8020)</visible>
+            </control>
+            <control type="panel" id="8020">
+                <include>DimensionsPosterPanel</include>
+                <onup>8020</onup>
+                <ondown>9000</ondown>
+                <onleft>8020</onleft>
+                <onright>8020</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MoviePosterLayout</include>
+                <include>HomeSuggestMovies</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8020">
+                <include>DimensionsPosterPanel</include>
+                <onup>8020</onup>
+                <ondown>8020</ondown>
+                <onleft>9000</onleft>
+                <onright>8020</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MoviePosterLayout</include>
+                <include>HomeSuggestMovies</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+	<include name="SuggestedMoviePanelFanArt">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedMoviesFanArt) + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Suggested Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[31926]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8021)</visible>
+            </control>
+            <control type="label">
+                <description>Selected Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8021).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8021)</visible>
+            </control>
+            <control type="panel" id="8021">
+                 <include>DimensionsLandscapePanel</include>
+                <onup>8021</onup>
+                <ondown>9000</ondown>
+                <onleft>8021</onleft>
+                <onright>8021</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MovieLandscapeLayout</include>
+                <include>HomeSuggestMoviesFanart</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8021">
+                 <include>DimensionsLandscapePanel</include>
+                <onup>8021</onup>
+                <ondown>8021</ondown>
+                <onleft>9000</onleft>
+                <onright>8021</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeSuggestMoviesFanart</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+	<include name="SuggestedTVShowPanel">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedEpisodes) + !IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[31923]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8022)</visible>
+            </control>
+            <control type="label">
+                <description>Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8022).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8022)</visible>
+            </control>
+            <control type="panel" id="8022">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8022</onup>
+                <ondown>9000</ondown>
+                <onleft>8022</onleft>
+                <onright>8022</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation condition="Skin.HasSetting(HorizontalHomeScreen)">horizontal</orientation>
+                <include>TVShowLandscapeLayout</include>
+                <include>HomeSuggestEpisodes</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8022">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8022</onup>
+                <ondown>8022</ondown>
+                <onleft>9000</onleft>
+                <onright>8022</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>TVShowLandscapeLayout</include>
+                <include>HomeSuggestEpisodes</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>	
+    <include name="SuggestedAlbumPanel">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedAlbums) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[31920]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8023)</visible>
+            </control>
+            <control type="label">
+                <description>Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8023).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8023)</visible>
+            </control>
+            <control type="panel" id="8023">
+                <include>DimensionsMusicCDPanel</include>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8023</onleft>
+                <onright>8023</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MusicCDThumbLayout</include>
+                <include>HomeSuggestAlbums</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8023">
+                <include>DimensionsMusicCDPanel</include>
+                <onup>8023</onup>
+                <ondown>8023</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MusicCDThumbLayout</include>
+                <include>HomeSuggestAlbums</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+    <include name="SuggestedAlbumPanelFanArt">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedAlbumsFanart) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[31920]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="panel" id="8024">
+                <include>DimensionsLandscapePanel</include>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onleft>8024</onleft>
+                <onright>8024</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MusicCDLandscapeLayout</include>
+                <include>HomeSuggestAlbumsFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8024">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8024</onup>
+                <ondown>8024</ondown>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MusicCDLandscapeLayout</include>
+                <include>HomeSuggestAlbumsFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+	<include name="UnWatchedMoviePanel">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMovies) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Latest Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>!Control.HasFocus(8025)</visible>
+            </control>
+            <control type="label">
+                <description>Selected Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$INFO[Container(8025).ListItem.Label]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+                <visible>Control.HasFocus(8025)</visible>
+            </control>
+            <control type="panel" id="8025">
+                <include>DimensionsPosterPanel</include>
+                <onup>8025</onup>
+                <ondown>9000</ondown>
+                <onleft>8025</onleft>
+                <onright>8025</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MoviePosterLayout</include>
+                <include>HomeUnWatchedMovies</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8025">
+                <include>DimensionsPosterPanel</include>
+                <onup>8025</onup>
+                <ondown>8025</ondown>
+                <onleft>9000</onleft>
+                <onright>8025</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MoviePosterLayout</include>
+                <include>HomeUnWatchedMovies</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+        </control>
+    </include>
+    <include name="UnWatchedMoviePanelFanArt">
+        <control type="group">
+            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMoviesFanArt) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
+            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
+            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
+            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+            <include>HomePanelBackground</include>
+            <control type="label">
+                <description>Latest Movies Title label</description>
+                <posx>10</posx>
+                <posy>18</posy>
+                <height>20</height>
+                <width>830</width>
+                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>font13_title</font>
+                <textcolor>HomeInfoOne</textcolor>
+                <shadowcolor>black</shadowcolor>
+            </control>
+            <control type="panel" id="8026">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8026</onup>
+                <ondown>9000</ondown>
+                <onleft>8026</onleft>
+                <onright>8026</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+                <include>MovieLandscapeLayout</include>
+                <include>HomeUnWatchedMoviesFanArt</include>
+				<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+            </control>
+			<control type="panel" id="8026">
+                <include>DimensionsLandscapePanel</include>
+                <onup>8026</onup>
+                <ondown>8026</ondown>
+                <onleft>9000</onleft>
+                <onright>8026</onright>
+                <preloaditems>4</preloaditems>
+                <scrolltime>150</scrolltime>
+                <pagecontrol>-</pagecontrol>
+				<include>MovieLandscapeLayout</include>
+                <include>HomeUnWatchedMoviesFanArt</include>
+				<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
             </control>
         </control>
     </include>
@@ -748,19 +1334,30 @@
                 </control>
                 <control type="panel" id="8014">
                     <include>DimensionsPosterPanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8014</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8014</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8014</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8014</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8014</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8014</onright>
+                    <onup>8014</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8014</onleft>
+                    <onright>8014</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>MoviePosterLayout</include>
                     <include>PlayListContent</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8014">
+                    <include>DimensionsPosterPanel</include>
+                    <onup>8014</onup>
+                    <ondown>8014</ondown>
+                    <onleft>9000</onleft>
+                    <onright>8014</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<include>MoviePosterLayout</include>
+                    <include>PlayListContent</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
             <control type="group">
@@ -829,19 +1426,30 @@
                 </control>
                 <control type="panel" id="8016">
                     <include>DimensionsLandscapePanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</onright>
+                    <onup>8016</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8016</onleft>
+                    <onright>8016</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>TVShowLandscapeLayout</include>
                     <include>PlayListEpisodes</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8016">
+                    <include>DimensionsLandscapePanel</include>
+                    <onup>8016</onup>
+                    <ondown>8016</ondown>
+                    <onleft>9000</onleft>
+                    <onright>8016</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<include>TVShowLandscapeLayout</include>
+                    <include>PlayListEpisodes</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
             <control type="group">
@@ -910,19 +1518,30 @@
                 </control>
                 <control type="panel" id="8017">
                     <include>DimensionsMusicCDPanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8017</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8017</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8017</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8017</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8017</onleft>
+                    <onright>8017</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>MusicCDThumbLayout</include>
                     <include>PlayListAlbums</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8017">
+                    <include>DimensionsMusicCDPanel</include>
+                    <onup>8017</onup>
+                    <ondown>8017</ondown>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<include>MusicCDThumbLayout</include>
+                    <include>PlayListAlbums</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
         </control>
@@ -980,19 +1599,30 @@
                 </control>
                 <control type="panel" id="8015">
                     <include>DimensionsLandscapePanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8015</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8015</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8015</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8015</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8015</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8015</onright>
+                    <onup>8015</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8015</onleft>
+                    <onright>8015</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>MovieLandscapeLayout</include>
                     <include>PlayListContentFanArt</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8015">
+                    <include>DimensionsLandscapePanel</include>
+                    <onup>8015</onup>
+                    <ondown>8015</ondown>
+                    <onleft>9000</onleft>
+                    <onright>8015</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<include>MovieLandscapeLayout</include>
+                    <include>PlayListContentFanArt</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
             <control type="group">
@@ -1061,19 +1691,31 @@
                 </control>
                 <control type="panel" id="8016">
                     <include>DimensionsLandscapePanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8016</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8016</onright>
+                    <onup>8016</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8016</onleft>
+                    <onright>8016</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>TVShowLandscapeLayout</include>
                     <include>PlayListEpisodes</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8016">
+                    <include>DimensionsLandscapePanel</include>
+                    <onup>8016</onup>
+                    <ondown>8016</ondown>
+                    <onleft>9000</onleft>
+                    <onright>8016</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
+                    <include>TVShowLandscapeLayout</include>
+                    <include>PlayListEpisodes</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
             <control type="group">
@@ -1126,19 +1768,30 @@
                 </control>
                 <control type="panel" id="8018">
                     <include>DimensionsLandscapePanel</include>
-                    <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                    <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                    <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8018</onleft>
-                    <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8018</onright>
-                    <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8018</onup>
-                    <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8018</ondown>
-                    <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                    <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onleft>8018</onleft>
+                    <onright>8018</onright>
                     <preloaditems>4</preloaditems>
                     <scrolltime>150</scrolltime>
                     <pagecontrol>-</pagecontrol>
+					<orientation>horizontal</orientation>
                     <include>MusicCDLandscapeLayout</include>
                     <include>PlayListContentFanArt</include>
+					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+                </control>
+				<control type="panel" id="8018">
+                    <include>DimensionsLandscapePanel</include>
+                    <onup>8018</onup>
+                    <ondown>8018</ondown>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <preloaditems>4</preloaditems>
+                    <scrolltime>150</scrolltime>
+                    <pagecontrol>-</pagecontrol>
+					<include>MusicCDLandscapeLayout</include>
+                    <include>PlayListContentFanArt</include>
+					<visible>!Skin.HasSetting(HorizontalHomeScreen)</visible>
                 </control>
             </control>
         </control>
@@ -1201,7 +1854,7 @@
                 <preloaditems>4</preloaditems>
                 <scrolltime>150</scrolltime>
                 <pagecontrol>-</pagecontrol>
-                <itemlayout height="160" width="160">
+				<itemlayout height="160" width="160">
                     <control type="image">
                         <posx>7</posx>
                         <posy>7</posy>
@@ -1398,7 +2051,7 @@
         <itemlayout height="165" width="182">
             <control type="image">
                 <description>Cover image</description>
-                <posx>13</posx>
+                <posx>15</posx>
                 <posy>3</posy>
                 <width>130</width>
                 <height>125</height>
@@ -1408,7 +2061,7 @@
             </control>
             <control type="image">
                 <description>CD Case</description>
-                <posx>-2</posx>
+                <posx>0</posx>
                 <posy>3</posy>
                 <width>148</width>
                 <height>125</height>
@@ -1422,7 +2075,7 @@
                 <animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
                 <control type="image">
                     <description>Cover image</description>
-                    <posx>13</posx>
+                    <posx>15</posx>
                     <posy>3</posy>
                     <width>130</width>
                     <height>125</height>
@@ -1432,7 +2085,7 @@
                 </control>
                 <control type="image">
                     <description>CD Case</description>
-                    <posx>-2</posx>
+                    <posx>0</posx>
                     <posy>3</posy>
                     <width>148</width>
                     <height>125</height>
@@ -1628,360 +2281,5 @@
                 <visible>!IsEmpty(ListItem.Label)</visible>
             </control>
         </focusedlayout>
-    </include>
-	<include name="SuggestedMoviePanel">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedMovies) + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Suggested Movies Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[31926]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>!Control.HasFocus(8020)</visible>
-            </control>
-            <control type="label">
-                <description>Selected Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$INFO[Container(8020).ListItem.Label]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Control.HasFocus(8020)</visible>
-            </control>
-            <control type="panel" id="8020">
-                <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8020</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8020</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8020</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8020</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8020</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8020</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MoviePosterLayout</include>
-                <include>HomeSuggestMovies</include>
-            </control>
-        </control>
-    </include>
-	<include name="SuggestedMoviePanelFanArt">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedMoviesFanArt) + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Suggested Movies Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[31926]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>!Control.HasFocus(8021)</visible>
-            </control>
-            <control type="label">
-                <description>Selected Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$INFO[Container(8021).ListItem.Label]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Control.HasFocus(8021)</visible>
-            </control>
-            <control type="panel" id="8021">
-                 <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8021</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8021</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8021</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8021</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8021</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8021</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MovieLandscapeLayout</include>
-                <include>HomeSuggestMoviesFanart</include>
-            </control>
-        </control>
-    </include>
-	<include name="SuggestedTVShowPanel">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedEpisodes) + !IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[31923]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>!Control.HasFocus(8022)</visible>
-            </control>
-            <control type="label">
-                <description>Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$INFO[Container(8022).ListItem.Label]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Control.HasFocus(8022)</visible>
-            </control>
-            <control type="panel" id="8022">
-                <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8022</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8022</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8022</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8022</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8022</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8022</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>TVShowLandscapeLayout</include>
-                <include>HomeSuggestEpisodes</include>
-            </control>
-        </control>
-    </include>	
-    <include name="SuggestedAlbumPanel">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedAlbums) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[31920]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>!Control.HasFocus(8023)</visible>
-            </control>
-            <control type="label">
-                <description>Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$INFO[Container(8023).ListItem.Label]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Control.HasFocus(8023)</visible>
-            </control>
-            <control type="panel" id="8023">
-                <include>DimensionsMusicCDPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8023</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8023</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8023</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8023</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MusicCDThumbLayout</include>
-                <include>HomeSuggestAlbums</include>
-            </control>
-        </control>
-    </include>
-    <include name="SuggestedAlbumPanelFanArt">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),SuggestedAlbumsFanart) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[31920]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="panel" id="8024">
-                <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8024</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8024</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8024</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8024</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MusicCDLandscapeLayout</include>
-                <include>HomeSuggestAlbumsFanArt</include>
-            </control>
-        </control>
-    </include>
-	<include name="UnWatchedMoviePanel">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMovies) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Latest Movies Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>!Control.HasFocus(8025)</visible>
-            </control>
-            <control type="label">
-                <description>Selected Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$INFO[Container(8025).ListItem.Label]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-                <visible>Control.HasFocus(8025)</visible>
-            </control>
-            <control type="panel" id="8025">
-                <include>DimensionsPosterPanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8025</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8025</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MoviePosterLayout</include>
-                <include>HomeUnWatchedMovies</include>
-            </control>
-        </control>
-    </include>
-    <include name="UnWatchedMoviePanelFanArt">
-        <control type="group">
-            <visible>StringCompare(Container(9000).ListItem.Property(PanelType),UnWatchedMoviesFanArt) + !IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.1.Title))</visible>
-            <animation effect="slide" start="0,0" end="200,5" condition="!Skin.HasSetting(HorizontalHomeScreen)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,-18" condition="!Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="slide" start="0,0" end="130,0" condition="Skin.HasSetting(HorizontalHomeScreen) + !Skin.HasSetting(HideHomePlaying) + Player.HasMedia">Conditional</animation>
-            <animation effect="fade" start="100" end="30" time="200" condition="!Skin.HasSetting(HorizontalHomeScreen) + [ControlGroup(9001).HasFocus | Control.HasFocus(9002)]">conditional</animation>
-            <animation effect="fade" start="100" end="30" time="500" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
-            <include>HomePanelBackground</include>
-            <control type="label">
-                <description>Latest Movies Title label</description>
-                <posx>10</posx>
-                <posy>18</posy>
-                <height>20</height>
-                <width>830</width>
-                <label>$LOCALIZE[16101] $LOCALIZE[342]</label>
-                <align>center</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>HomeInfoOne</textcolor>
-                <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="panel" id="8026">
-                <include>DimensionsLandscapePanel</include>
-                <onup condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onup>
-                <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
-                <onleft condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onleft>
-                <onright condition="Skin.HasSetting(HorizontalHomeScreen)">8026</onright>
-                <onup condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</onup>
-                <ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</ondown>
-                <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
-                <onright condition="!Skin.HasSetting(HorizontalHomeScreen)">8026</onright>
-                <preloaditems>4</preloaditems>
-                <scrolltime>150</scrolltime>
-                <pagecontrol>-</pagecontrol>
-                <include>MovieLandscapeLayout</include>
-                <include>HomeUnWatchedMoviesFanArt</include>
-            </control>
-        </control>
     </include>
 </includes>
