@@ -11,7 +11,7 @@
             <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
             <include>KBurnsAnimateFanart</include>
             <visible>Player.HasAudio + !Skin.HasSetting(ShowBackgroundAlbumWall)</visible>
-            <visible>!System.HasAddon(script.artistslideshow) | Skin.HasSetting(DisableArtistSlideShow)</visible>
+            <visible>!System.HasAddon(script.artistslideshow) | Skin.HasSetting(DisableArtistSlideShow) | !Skin.HasSetting(ShowArtistSlideShow)</visible>
         </control>
         <control type="multiimage">
             <description>Artist SlideShow FanArt Background</description>
@@ -24,7 +24,7 @@
             <animation effect="fade" start="0" end="100" time="300">Visible</animation>
             <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
             <include>KBurnsAnimateFanart</include>
-            <visible>Player.HasAudio + System.HasAddon(script.artistslideshow) + !Skin.HasSetting(DisableArtistSlideShow)</visible>
+            <visible>Player.HasAudio + System.HasAddon(script.artistslideshow) + !Skin.HasSetting(DisableArtistSlideShow) + Skin.HasSetting(ShowArtistSlideShow)</visible>
             <visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left)]</visible>
         </control>
         <control type="multiimage">
@@ -39,7 +39,7 @@
             <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
             <include>KBurnsAnimateFanart</include>
             <visible>Player.HasAudio + Skin.HasSetting(EnableXtraFanArt)</visible>
-            <visible>Skin.HasSetting(DisableArtistSlideShow) + !Skin.HasSetting(ShowBackgroundAlbumWall)</visible>
+            <visible>[Skin.HasSetting(DisableArtistSlideShow) | !Skin.HasSetting(ShowArtistSlideShow)] + !Skin.HasSetting(ShowBackgroundAlbumWall)</visible>
         </control>
         <control type="visualisation" id="2">
             <description>visualisation</description>
