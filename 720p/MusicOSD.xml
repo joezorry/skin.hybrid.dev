@@ -208,6 +208,7 @@
                 <onright>602</onright>
                 <onup>600</onup>
                 <ondown>600</ondown>
+				<onclick>Dialog.Close(MusicOSD,true)</onclick>
                 <onclick>ActivateWindow(musicplaylist)</onclick>
             </control>
             <control type="button" id="602">
