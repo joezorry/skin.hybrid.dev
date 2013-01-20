@@ -731,7 +731,15 @@ msgctxt "#31635"
 msgid "Genre Posters"
 msgstr ""
 
-#empty strings from id 31636 to 31650
+msgctxt "#31636"
+msgid "Vertical Logo"
+msgstr ""
+
+msgctxt "#31637"
+msgid "Logo Wall"
+msgstr ""
+
+#empty strings from id 31638 to 31650
 
 msgctxt "#31651"
 msgid "Use External Genre Icons - media/MovieGenre/*.png"

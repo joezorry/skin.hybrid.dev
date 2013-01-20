@@ -22,6 +22,7 @@
     <include file="ViewsGenrePoster.xml" />
     <include file="ViewsFanArtPoster.xml" />
     <include file="ViewsFullWall.xml" />
+	<include file="ViewsLogoWall.xml" />
     <include file="ViewsEpisodes.xml" />
     <include file="ViewsLowlist.xml" />
     <include file="ViewsMediaInfo.xml" />
