@@ -815,7 +815,11 @@ msgctxt "#31669"
 msgid "Concerts"
 msgstr ""
 
-#empty strings from id 31670 to 31671
+msgctxt "#31670"
+msgid "Dark Background"
+msgstr ""
+
+#empty string from id 31671
 
 msgctxt "#31672"
 msgid "Hide RainDrop Effect"

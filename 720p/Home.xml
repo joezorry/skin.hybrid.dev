@@ -25,7 +25,7 @@
         <include condition="!Skin.HasSetting(HideRainDropEffect)">BackgroundRainDropEffect</include>
         <include condition="!Skin.HasSetting(HideHomePlaying)">ShowNowPlayingMedia</include>
         <control type="group" id="9003">
-            <include>VisibleFadeEffect</include>
+            <!--include>VisibleFadeEffect</include-->
             <onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
             <ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9000</ondown>
             <onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>

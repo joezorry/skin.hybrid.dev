@@ -275,7 +275,6 @@
             <fadetime>600</fadetime>
             <visible>Control.HasFocus(8026) + !Skin.HasSetting(HideHomePanelFanArt)</visible>
         </control>
-
         <include>MediaPlayingBackground</include>
     </include>
     <include name="CommonVideoBackground">

@@ -3,7 +3,14 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>VisibleFadeEffect</include>
-            <control type="list" id="50">
+            <control type="image">
+                <include>Dimensions_Fullscreen</include>
+                <aspectratio>stretch</aspectratio>
+				<colordiffuse>AAFFFFFF</colordiffuse>
+                <texture>black-back.png</texture>
+				<visible>Skin.HasSetting(EnableDarkBackground)</visible>
+            </control>
+			<control type="list" id="50">
                 <posx>70</posx>
                 <posy>78</posy>
                 <width>1175</width>

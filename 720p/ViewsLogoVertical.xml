@@ -8,6 +8,7 @@
                 <aspectratio>stretch</aspectratio>
 				<colordiffuse>AAFFFFFF</colordiffuse>
                 <texture>black-back.png</texture>
+				<visible>Skin.HasSetting(EnableDarkBackground)</visible>
             </control>
             <include>MainListLabel</include>
             <control type="wraplist" id="730">
