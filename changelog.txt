@@ -1,3 +1,17 @@
+[B]1.0.7[/B][I]Jan 2013[/I]
+- Adjusted Transparency Values
+- Added view Logo Wall
+- Added UnWatched Movies Home Paanel
+- Added suggested Media home Panel
+- Added Now Playing to OSD & Menu Options
+- Added Option to Disable Scroll in Home Panel
+- Changed direction of Horz Home Panel Scroll
+- Added Extra Thumbnail Option MediaInfoView
+- Added Toggle to Delay Plot Info FanArtView
+- Added ClearArt Toggle to WideListView
+- Bugfix oversight in Artist SlideShow toggle
+- Bugfix inverted AutoScroll Toggle
+
 [B]1.0.6[/B][I]Jan 2013[/I]
 - BugFix Zorder DialogSelect
 - BugFix HideCDart Home Screen
