@@ -8,7 +8,7 @@
     </coordinates>
     <controls>
 		<control type="group" id="1100">
-			<visible>!IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))</visible>
+			<visible>!IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)) + !Skin.HasSetting(DisableArtistSlideShow)</visible>
 			<posx>30</posx>
 			<posy>60</posy>	
 			<control type="image" id="1101">

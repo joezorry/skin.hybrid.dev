@@ -6,6 +6,7 @@
             <control type="image">
                 <include>Dimensions_Fullscreen</include>
                 <aspectratio>stretch</aspectratio>
+				<colordiffuse>AAFFFFFF</colordiffuse>
                 <texture>black-back.png</texture>
             </control>
             <include>MainListLabel</include>
@@ -19,7 +20,7 @@
                 <onup>730</onup>
                 <ondown>730</ondown>
                 <pagecontrol>60</pagecontrol>
-                <viewtype label="Logo">list</viewtype>
+                <viewtype label="$LOCALIZE[31636]">list</viewtype>
                 <orientation>vertical</orientation>
                 <scrolltime>300</scrolltime>
                 <focusposition>2</focusposition>
