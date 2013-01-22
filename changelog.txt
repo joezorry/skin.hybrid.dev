@@ -1,3 +1,6 @@
+[B]1.0.8[/B][I]Jan 2013[/I]
+- Bugfix PosterThumb now looks for Thumb before Fallback
+
 [B]1.0.7[/B][I]Jan 2013[/I]
 - Adjusted Transparency Values
 - Added view Logo Wall

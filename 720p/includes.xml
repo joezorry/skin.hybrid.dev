@@ -96,7 +96,7 @@
             <aligny>center</aligny>
             <include>Window_OpenClose_Animation</include>
             <label>[UPPERCASE]$VAR[Mainlabel][/UPPERCASE]</label>
-        </control>
+		</control>
         <control type="label">
             <posx>190</posx>
             <posy>50</posy>

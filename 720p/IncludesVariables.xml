@@ -97,23 +97,28 @@
         <value condition="!IsEmpty(ListItem.Property(date))">$INFO[ListItem.label] ($INFO[ListItem.Property(date)])</value>
         <value>$INFO[ListItem.label]</value>
     </variable>
+	<variable name="LocalFanArt">
+		<value condition="SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
+		<value condition="SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
+		<value>$INFO[ListItem.FileNameAndPath]fanart.jpg</value>
+	</variable>
     <variable name="ShowMediaPlot">
         <value condition="!Container.Content(Seasons)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
     </variable>
-    <variable name="BannerThumb">
-        <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-        <value condition="IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Icon]</value>
-    </variable>
     <variable name="PosterThumb">
-        <value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
-        <value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..)">$INFO[ListItem.Art(tvshow.poster)]</value>
+	    <value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
+        <value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="Container.Content(Seasons) + IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
         <value condition="SubString(Container.FolderPath,program.advanced.launcher)  + !IsEmpty(ListItem.thumbnailImage)">$INFO[ListItem.thumbnailImage]</value>
         <value condition="SubString(Container.FolderPath,program.advanced.launcher)  + IsEmpty(ListItem.thumbnailImage)">$INFO[ListItem.Icon]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-		<value condition="IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Icon]</value>
-        <value>DefaultFallback/DefaultPoster.png</value>
+		<value condition="IsEmpty(ListItem.Art(poster)) + Control.IsVisible(508)">$INFO[ListItem.Icon]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]folder.jpg</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]folder.jpg</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + IsEmpty(ListItem.Art(poster))">$INFO[ListItem.FileNameAndPath]folder.jpg</value>
+		<value condition="IsEmpty(ListItem.Art(poster)) + Skin.HasSetting(DisableMediaCases)">$INFO[ListItem.Icon]</value>
+		<value>DefaultFallback/DefaultPoster.png</value>
     </variable>
     <variable name="LogoThumb">
         <value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
