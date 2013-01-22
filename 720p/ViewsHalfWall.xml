@@ -94,6 +94,19 @@
                 <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                 <bordertexture border="8">ThumbShadow.png</bordertexture>
                 <bordersize>8</bordersize>
+				<visible>!IsEmpty(ListItem.Art(banner))</visible>
+            </control>
+			<control type="image">
+                <posx>50</posx>
+                <posy>560</posy>
+                <width>530</width>
+                <height>110</height>
+                <aspectratio scalediffuse="true" align="center" aligny="bottom">keep</aspectratio>
+                <fadetime>IconCrossfadeTime</fadetime>
+                <texture background="true">$INFO[ListItem.FileNameAndPath]banner.jpg</texture>
+                <bordertexture border="8">ThumbShadow.png</bordertexture>
+                <bordersize>8</bordersize>
+				<visible>IsEmpty(ListItem.Art(banner)) +  Skin.HasSetting(EnableLocalFanArt)</visible>
             </control>
             <control type="scrollbar" id="60">
                 <posx>1245</posx>

@@ -15,8 +15,8 @@
                 <viewtype label="$LOCALIZE[31973]">list</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos) | SubString(Container.FolderPath,program.advanced.launcher)</visible>
-                <visible>!Container.Content(LiveTV)</visible>
+                <visible>[Window.IsVisible(Videos) + !Container.Content(Episodes)] | SubString(Container.FolderPath,program.advanced.launcher)</visible>
+				<visible>!Container.Content(LiveTV)</visible>
                 <itemlayout height="40" width="480">
                     <control type="image">
                         <posx>0</posx>
@@ -156,8 +156,8 @@
                 <visible>Control.IsVisible(724)</visible>
                 <include>MainListLabel</include>
                 <control type="group">
-                    <visible>SubString(Container.FolderPath,program.advanced.launcher) | StringCompare(ListItem.Label,..)</visible>
-                    <posx>40</posx>
+				<visible>IsEmpty(ListItem.Art(poster)) | !Window.IsVisible(Videos)</visible>			
+					<posx>40</posx>
                     <posy>190</posy>
                     <camera x="640" y="200" />
                     <animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
@@ -168,12 +168,23 @@
                         <height>480</height>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
+                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.thumbnailImage]</texture>
+						<visible>!IsEmpty(ListItem.thumbnailImage)</visible>
+                    </control>
+					<control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>260</width>
+                        <height>480</height>
+                        <aspectratio aligny="bottom">keep</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$INFO[ListItem.Icon]</texture>
+						<visible>IsEmpty(ListItem.thumbnailImage)</visible>
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!SubString(Container.FolderPath,program.advanced.launcher) + !StringCompare(ListItem.Label,..)</visible>
-                    <posx>40</posx>
+                    <visible>!IsEmpty(ListItem.Art(poster)) + Window.IsVisible(Videos)</visible>
+					<posx>40</posx>
                     <posy>190</posy>
                     <camera x="640" y="200" />
                     <animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
@@ -280,7 +291,7 @@
                     <height>55</height>
                     <aspectratio align="left">keep</aspectratio>
                     <texture fallback="LeftRating/rating0.png">LeftRating/$INFO[ListItem.StarRating]</texture>
-                    <visible>!StringCompare(ListItem.Label,..) + !SubString(Container.FolderPath,program.advanced.launcher)</visible>
+                    <visible>!IsEmpty(ListItem.StarRating)</visible>
                 </control>
                 <control type="label">
                     <posx>1270</posx>
