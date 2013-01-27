@@ -43,12 +43,12 @@
 						 <visible>!stringcompare(ListItem.Label,..)</visible>
 						<control type="image">
 							<visible>[Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
-							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner))</visible>
+							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner)) | Skin.HasSetting(EnableLocalFanArt)</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>230</width>
 							<height>89</height>
-							<texture background="true">$VAR[LogoThumb]</texture>
+							<texture background="true" fallback="DefaultFallback/LogoFallback.png">$VAR[LogoThumb]</texture>
 							<fadetime>300</fadetime>
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<animation effect="fade" start="60" end="60" time="0" condition="true">conditional</animation>
@@ -66,7 +66,7 @@
 						</control>
 						<control type="label">
 							<visible>
-								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes)]
+								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes) + !Skin.HasSetting(EnableLocalFanArt)]
 							</visible>
 							<posx>0</posx>
 							<posy>30</posy>
@@ -98,12 +98,12 @@
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 						<control type="image">
 							<visible>[Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
-							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner))</visible>
+							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner)) | Skin.HasSetting(EnableLocalFanArt)</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>230</width>
 							<height>89</height>
-							<texture background="true">$VAR[LogoThumb]</texture>
+							<texture background="true" fallback="DefaultFallback/LogoFallback.png">$VAR[LogoThumb]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<animation type="Focus" reversible="false">
@@ -128,7 +128,7 @@
 						</control>
 						<control type="label">
 							<visible>
-								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes)]
+								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes) + !Skin.HasSetting(EnableLocalFanArt)]
 							</visible>
 							<posx>0</posx>
 							<posy>30</posy>

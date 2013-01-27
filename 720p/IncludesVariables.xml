@@ -100,8 +100,17 @@
 	<variable name="LocalFanArt">
 		<value condition="SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
 		<value condition="SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
+		<!--value condition="SubString(ListItem.FileNameAndPath,season)">$INFO[ListItem.Path,,fanart.jpg]</value-->
+		
 		<value>$INFO[ListItem.FileNameAndPath]fanart.jpg</value>
-	</variable>
+		</variable>
+		
+	<variable name="MediaDiskArt">
+		<value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Path,,disc.png]</value>
+		<value condition="stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)">Disks/disc-bluray.png</value>
+		<value>Disks/disc-dvd.png</value>
+ 	</variable>		
     <variable name="ShowMediaPlot">
         <value condition="!Container.Content(Seasons)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
@@ -124,8 +133,8 @@
         <value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
         <value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..)">$INFO[ListItem.Art(tvshow.banner)]</value>
         <value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-        <!--value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Path)">$INFO[ListItem.path]logo.png</value-->
+		<value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt)">$INFO[ListItem.Path,,logo.png]</value>
         <value>DefaultFallback/LogoFallback.png</value>
     </variable>
     <variable name="videocodec">

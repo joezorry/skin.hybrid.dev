@@ -240,7 +240,7 @@
                     <label>$LOCALIZE[31670]</label>
                     <onclick>Skin.ToggleSetting(EnableDarkBackground)</onclick>
                     <selected>Skin.HasSetting(EnableDarkBackground)</selected>
-                    <visible>Control.IsVisible(50) | Control.IsVisible(730) | Control.IsVisible(594)</visible>
+                    <visible>Control.IsVisible(50) | Control.IsVisible(529) | Control.IsVisible(594) | Control.IsVisible(730)</visible>
                 </control>
                 <control type="radiobutton" id="14">
                     <description>Watched Toggle</description>
