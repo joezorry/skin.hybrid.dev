@@ -368,7 +368,17 @@
             <aspectratio>stretch</aspectratio>
             <fadetime>IconCrossfadeTime</fadetime>
             <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
-            <visible>!StringCompare(ListItem.Label,..) + !Container.Content(Episodes)</visible>
+            <visible>!IsEmpty(ListItem.Art(fanart)) + !StringCompare(ListItem.Label,..) + !Container.Content(Episodes)</visible>
+        </control>
+		<control type="image">
+            <posx>30</posx>
+            <posy>15</posy>
+            <width>400</width>
+            <height>220</height>
+            <aspectratio>stretch</aspectratio>
+            <fadetime>IconCrossfadeTime</fadetime>
+            <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$VAR[LocalFanArt]</texture>
+            <visible>Skin.HasSetting(EnableLocalFanArt) + IsEmpty(ListItem.Art(fanart)) + !StringCompare(ListItem.Label,..) + !Container.Content(Episodes)</visible>
         </control>
         <control type="multiimage">
             <posx>30</posx>
@@ -391,7 +401,17 @@
             <aspectratio>stretch</aspectratio>
             <fadetime>IconCrossfadeTime</fadetime>
             <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
-            <visible>!StringCompare(ListItem.Label,..) + Container.Content(Episodes)</visible>
+            <visible>!StringCompare(ListItem.Label,..) + !Skin.HasSetting(HideEpisodeThumb) + Container.Content(Episodes)</visible>
+        </control>
+		<control type="image">
+            <posx>30</posx>
+            <posy>15</posy>
+            <width>400</width>
+            <height>220</height>
+            <aspectratio>stretch</aspectratio>
+            <fadetime>IconCrossfadeTime</fadetime>
+            <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
+            <visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(HideEpisodeThumb) + Container.Content(Episodes)</visible>
         </control>
         <control type="textbox">
             <description>Large Description Value for Video</description>

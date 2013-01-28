@@ -100,11 +100,10 @@
 	<variable name="LocalFanArt">
 		<value condition="SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
 		<value condition="SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
+		<value condition="Container.Content(Movies)">$INFO[ListItem.Path]fanart.jpg</value>
 		<!--value condition="SubString(ListItem.FileNameAndPath,season)">$INFO[ListItem.Path,,fanart.jpg]</value-->
-		
 		<value>$INFO[ListItem.FileNameAndPath]fanart.jpg</value>
-		</variable>
-		
+	</variable>
 	<variable name="MediaDiskArt">
 		<value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
 		<value condition="Skin.HasSetting(EnableLocalFanArt) + IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Path,,disc.png]</value>
