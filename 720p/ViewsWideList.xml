@@ -8,6 +8,7 @@
                 <aspectratio>stretch</aspectratio>
                 <texture>black-back.png</texture>
                 <colordiffuse>AAFFFFFF</colordiffuse>
+				<visible>Skin.HasSetting(EnableDarkBackground)</visible>
             </control>
             <include>MainListLabel</include>
             <control type="panel" id="529">
@@ -34,6 +35,7 @@
                         <height>140</height>
                         <texture diffuse="MaskWide.png">black-back.png</texture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
+						<visible>Skin.HasSetting(EnableDarkBackground)</visible>
                     </control>
                     <control type="image">
                         <posx>68</posx>
@@ -45,7 +47,7 @@
                         <aspectratio>stretch</aspectratio>
                         <visible>StringCompare(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
+					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -53,22 +55,31 @@
                         <aspectratio>stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
-                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
-						 <visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
+						<visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
+						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart)) + !Skin.HasSetting(EnableLocalFanArt)]</visible>
 					</control>
 					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
+                        <aspectratio>stretch</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$VAR[LocalFanArt]</texture>
+                        <visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
+                        <visible>IsEmpty(ListItem.Art(fanart)) + Skin.HasSetting(EnableLocalFanArt) + !Skin.HasSetting(Enable529ClearArt)</visible>
+					</control>
+					<control type="image">
+					    <posx>18</posx>
+                        <posy>24</posy>
+                        <width>169</width>
+                        <height>102</height>
                          <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
-                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
-                        <visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
-                    </control>
-                    <control type="image">
+                        <texture background="true" diffuse="episodematte.png"  fallback="Fanart_Fallback_Small.jpg">$VAR[MediaClearArt]</texture>
+                        <visible> Skin.HasSetting(Enable529ClearArt)</visible>
+                   </control>
+					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -78,7 +89,7 @@
                         <texture background="true" fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[ListItem.Property(fanart_image)]</texture>
                         <visible>SubString(Container.FolderPath,program.advanced.launcher) + !StringCompare(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
+		            <control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -89,7 +100,7 @@
                         <aspectratio>stretch</aspectratio>
                         <visible>[Container.Content(seasons) + !Skin.HasSetting(UseTvSeasonArt)] + !StringCompare(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
+	                    <control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -273,7 +284,7 @@
                         <texture diffuse="MaskWide.png" background="true">WideListSelect.png</texture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
                     </control>
-                    <control type="image">
+                     <control type="image">
                         <posx>68</posx>
                         <posy>24</posy>
                         <width>71</width>
@@ -283,7 +294,7 @@
                         <aspectratio>stretch</aspectratio>
                         <visible>StringCompare(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
+					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -291,22 +302,31 @@
                         <aspectratio>stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
-                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
-                        <visible>!StringCompare(ListItem.Label,..)</visible>
-						 <visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
+						<visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
+						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart)) + !Skin.HasSetting(EnableLocalFanArt)]</visible>
 					</control>
 					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio aligny="bottom">keep</aspectratio>
+                        <aspectratio>stretch</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
-                        <visible>Container.Content(Movies) | Container.Content(TVshows)</visible>
-                        <visible>!StringCompare(ListItem.Label,..) + Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
-                    </control>
-                    <control type="image">
+                        <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$VAR[LocalFanArt]</texture>
+                        <visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
+                        <visible>IsEmpty(ListItem.Art(fanart)) + Skin.HasSetting(EnableLocalFanArt) + !Skin.HasSetting(Enable529ClearArt)</visible>
+					</control>
+					<control type="image">
+					    <posx>18</posx>
+                        <posy>24</posy>
+                        <width>169</width>
+                        <height>102</height>
+                         <aspectratio aligny="bottom">keep</aspectratio>
+                        <fadetime>IconCrossfadeTime</fadetime>
+                        <texture background="true" diffuse="episodematte.png"  fallback="Fanart_Fallback_Small.jpg">$VAR[MediaClearArt]</texture>
+                        <visible>Skin.HasSetting(Enable529ClearArt)</visible>
+					</control>
+					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
@@ -316,7 +336,7 @@
                         <texture background="true" fallback="AdvLaunchFallback.png" diffuse="episodematte.png">$INFO[ListItem.Property(fanart_image)]</texture>
                         <visible>SubString(Container.FolderPath,program.advanced.launcher) + !StringCompare(ListItem.Label,..)</visible>
                     </control>
-                    <control type="image">
+					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>

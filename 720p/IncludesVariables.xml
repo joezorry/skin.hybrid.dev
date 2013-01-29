@@ -110,6 +110,16 @@
 		<value condition="stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)">Disks/disc-bluray.png</value>
 		<value>Disks/disc-dvd.png</value>
  	</variable>		
+	<variable name="MediaClearArt">
+		<value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
+		<value condition="!IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+		<value condition="IsEmpty(ListItem.Art(clearart)) + !Skin.HasSetting(EnableLocalFanArt)]">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]clearart.png</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]clearart.png</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.Path,,clearart.png]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + Container.Content(TVShows)">$INFO[ListItem.Path,,clearart.png]</value>
+		<value condition="Skin.HasSetting(EnableLocalFanArt) + Container.Content(Movies)">$INFO[ListItem.FileNameAndPath,,clearart.png]</value>
+ 	</variable>	
     <variable name="ShowMediaPlot">
         <value condition="!Container.Content(Seasons)">$INFO[ListItem.Plot]</value>
         <value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
