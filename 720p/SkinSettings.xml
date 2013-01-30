@@ -3493,6 +3493,18 @@
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
+                        <label>$LOCALIZE[31965]</label>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>MenuItemNF.png</texturenofocus>
+                        <onclick>Skin.ToggleSetting(ShowMusicVizOnly)</onclick>
+                        <selected>Skin.HasSetting(ShowMusicVizOnly)</selected>
+					</control>
+					<control type="radiobutton" id="539">
+                        <width>750</width>
+                        <height>40</height>
+                        <font>font13</font>
                         <label>$LOCALIZE[31962]</label>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
@@ -3500,9 +3512,9 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(ShowArtistSlideShow)</onclick>
                         <selected>Skin.HasSetting(ShowArtistSlideShow)</selected>
-						<enable>!Skin.HasSetting(DisableArtistSlideShow) + !Skin.HasSetting(ShowBackgroundAlbumWall)</enable>
+						<enable>!Skin.HasSetting(DisableArtistSlideShow) + !Skin.HasSetting(ShowBackgroundAlbumWall) + !Skin.HasSetting(ShowMusicVizOnly)</enable>
                     </control>
-                    <control type="radiobutton" id="539">
+                    <control type="radiobutton" id="540">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
@@ -3513,9 +3525,9 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(ShowBackgroundAlbumWall)</onclick>
                         <selected>Skin.HasSetting(ShowBackgroundAlbumWall)</selected>
-						<enable>!Skin.HasSetting(ShowArtistSlideShow)</enable>
+						<enable>!Skin.HasSetting(ShowArtistSlideShow) + !Skin.HasSetting(ShowMusicVizOnly) </enable>
                     </control>
-                    <control type="button" id="540">
+                    <control type="button" id="541">
                         <description>CD Wall Path</description>
                         <width>750</width>
                         <height>40</height>
@@ -3528,9 +3540,9 @@
                         <onclick>Skin.SetPath(AlbumWallFolder)</onclick>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>MenuItemNF.png</texturenofocus>
-                        <enable>Skin.HasSetting(ShowBackgroundAlbumWall)</enable>
+                        <enable>Skin.HasSetting(ShowBackgroundAlbumWall) + !Skin.HasSetting(ShowMusicVizOnly)</enable>
                     </control>
-                    <control type="radiobutton" id="541">
+                    <control type="radiobutton" id="542">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
@@ -3541,8 +3553,9 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(NoAnimateFanArt)</onclick>
                         <selected>Skin.HasSetting(NoAnimateFanArt)</selected>
+						<enable>!Skin.HasSetting(ShowMusicVizOnly)</enable>
                     </control>
-                    <control type="radiobutton" id="542">
+                    <control type="radiobutton" id="543">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
@@ -3553,8 +3566,9 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(HideCDArt)</onclick>
                         <selected>Skin.HasSetting(HideCDArt)</selected>
+						<enable>!Skin.HasSetting(ShowMusicVizOnly)</enable>
                     </control>
-                    <control type="label" id="543">
+                    <control type="label" id="544">
                         <width>750</width>
                         <height>45</height>
                         <font>font13_title</font>
@@ -3564,7 +3578,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                     </control>
-                    <control type="radiobutton" id="544">
+                    <control type="radiobutton" id="545">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
@@ -3577,7 +3591,7 @@
                         <onclick>Skin.Reset(EnableStartupPlaylist)</onclick>
                         <selected>!Skin.HasSetting(HideXBMCIntro)</selected>
                     </control>
-                    <control type="radiobutton" id="545">
+                    <control type="radiobutton" id="546">
                         <width>750</width>
                         <height>40</height>
                         <font>font13</font>
@@ -3590,7 +3604,7 @@
                         <onclick>Skin.ToggleSetting(EnableStartupPlaylist)</onclick>
                         <selected>Skin.HasSetting(EnableStartupPlaylist)</selected>
                     </control>
-                    <control type="button" id="546">
+                    <control type="button" id="547">
                         <description>Startup Playlist Path</description>
                         <width>750</width>
                         <height>40</height>

@@ -1141,7 +1141,11 @@ msgctxt "#31964"
 msgid "Next Tracks"
 msgstr ""
 
-#empty strings from id 31965 to 31966
+msgctxt "#31965"
+msgid "Only Show Music Visualization"
+msgstr ""
+
+#empty string from id 31966
 
 msgctxt "#31967"
 msgid "Allow Playlist Script Suggestions"
