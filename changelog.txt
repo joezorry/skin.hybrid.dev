@@ -1,5 +1,9 @@
 [B]1.0.8[/B][I]Jan 2013[/I]
 - Bugfix PosterThumb now looks for Thumb before Fallback
+- Added Local Artwork Toggle (FanArt & Posters)
+- Recoded ViewFileList option for Wide List
+- Added option to Only show Music Viz - no extras
+- Addded Advanced Weather Options
 
 [B]1.0.7[/B][I]Jan 2013[/I]
 - Adjusted Transparency Values
