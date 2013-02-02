@@ -140,10 +140,11 @@
 		<value>DefaultFallback/DefaultPoster.png</value>
     </variable>
     <variable name="LogoThumb">
-        <value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
-        <value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..)">$INFO[ListItem.Art(tvshow.banner)]</value>
-        <value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(ListItem.Label,..)">$INFO[ListItem.Icon]</value>
+		<value condition="Container.Content(Episodes) + !StringCompare(ListItem.Label,..)">$INFO[ListItem.Art(tvshow.banner)]</value>
 		<value condition="IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="!IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		
 		<value condition="Skin.HasSetting(EnableLocalFanArt)">$INFO[ListItem.Path,,logo.png]</value>
         <value>DefaultFallback/LogoFallback.png</value>
     </variable>

@@ -249,7 +249,7 @@
                     <label>$LOCALIZE[31966]</label>
                     <onclick>Skin.ToggleSetting(EnableBannerNotLogo)</onclick>
                     <selected>Skin.HasSetting(EnableBannerNotLogo)</selected>
-                    <visible>Control.IsVisible(730)</visible>
+                    <visible>Control.IsVisible(730) + Container.Content(tvshows)</visible>
                 </control>
                 <control type="radiobutton" id="14">
                     <description>Watched Toggle</description>
