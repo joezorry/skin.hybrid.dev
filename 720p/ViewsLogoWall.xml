@@ -26,7 +26,7 @@
 				<ondown>60</ondown>
 				<preloaditems>2</preloaditems>
 				<include>VisibleFadeEffect</include>
-				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 				<itemlayout width="300" height="140">
 					<control type="image">
                         <visible>stringcompare(ListItem.Label,..)</visible>
@@ -42,32 +42,19 @@
 					<control type="group">
 						 <visible>!stringcompare(ListItem.Label,..)</visible>
 						<control type="image">
-							<visible>[Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
-							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner)) | Skin.HasSetting(EnableLocalFanArt)</visible>
+							<visible>Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)</visible>
+							<visible>!IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Title)</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>230</width>
 							<height>89</height>
-							<texture background="true" fallback="DefaultFallback/LogoFallback.png">$VAR[LogoThumb]</texture>
+							<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 							<fadetime>300</fadetime>
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<animation effect="fade" start="60" end="60" time="0" condition="true">conditional</animation>
 						</control>
 						<control type="label">
-							<visible>Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
-							<posx>0</posx>
-							<posy>30</posy>
-							<width>230</width>
-							<height>89</height>
-							<align>left</align>
-							<font>font28_title</font>
-							<textcolor>grey2</textcolor>
-							<label>[B]$LOCALIZE[20359] $INFO[ListItem.Episode][/B]</label>
-						</control>
-						<control type="label">
-							<visible>
-								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes) + !Skin.HasSetting(EnableLocalFanArt)]
-							</visible>
+							<visible>IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
 							<posx>0</posx>
 							<posy>30</posy>
 							<width>230</width>
@@ -97,13 +84,13 @@
 					<control type="group">
 						<visible>!stringcompare(ListItem.Label,..)</visible>
 						<control type="image">
-							<visible>[Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)] + !IsEmpty(ListItem.Title)</visible>
-							<visible>!IsEmpty(ListItem.Art(clearlogo)) | !IsEmpty(ListItem.Art(banner)) | Skin.HasSetting(EnableLocalFanArt)</visible>
+							<visible>Container.Content(tvshows)| Container.Content(Movies) | Container.Content(MusicVideos)</visible>
+							<visible>!IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Title)</visible>
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>230</width>
 							<height>89</height>
-							<texture background="true" fallback="DefaultFallback/LogoFallback.png">$VAR[LogoThumb]</texture>
+							<texture background="true" fallback="DefaultFallback/LogoFallback.png">$INFO[ListItem.Art(clearlogo)]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">keep</aspectratio>
 							<animation type="Focus" reversible="false">
@@ -112,24 +99,7 @@
 							</animation>
 						</control>
 						<control type="label">
-							<visible>Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
-							<posx>0</posx>
-							<posy>30</posy>
-							<width>230</width>
-							<height>89</height>
-							<align>left</align>
-							<aligny>bottom</aligny>
-							<font>font28_title</font>
-							<textcolor>white</textcolor>
-							<label>[B]$LOCALIZE[20359] $INFO[ListItem.Episode][/B]</label>
-							<animation type="Focus" reversible="false">
-								<effect type="zoom" center="auto" start="100" end="125" time="600" tween="back" easing="out" />
-							</animation>
-						</control>
-						<control type="label">
-							<visible>
-								IsEmpty(ListItem.Title) | [IsEmpty(ListItem.Art(clearlogo)) + IsEmpty(ListItem.Art(banner)) + !Container.Content(episodes) + !Skin.HasSetting(EnableLocalFanArt)]
-							</visible>
+							<visible>IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
 							<posx>0</posx>
 							<posy>30</posy>
 							<width>230</width>
