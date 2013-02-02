@@ -1145,7 +1145,9 @@ msgctxt "#31965"
 msgid "Only Show Music Visualization"
 msgstr ""
 
-#empty string from id 31966
+msgctxt "#31966"
+msgid "Enable Banners"
+msgstr ""
 
 msgctxt "#31967"
 msgid "Allow Playlist Script Suggestions"
