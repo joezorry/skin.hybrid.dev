@@ -122,7 +122,6 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-		<!--textoffsetx>7</textoffsetx-->
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>
 		<colordiffuse>ffffffff</colordiffuse>

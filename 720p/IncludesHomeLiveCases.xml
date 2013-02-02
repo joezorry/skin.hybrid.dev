@@ -3,7 +3,6 @@
 		<control type="group">
 			<animation effect="fade" time="600">VisibleChange</animation>
 			<include>Window_OpenClose_Animation</include>
-			<!--visible>Window.IsActive(home) + !Player.HasVideo</visible-->
 			<control type="group">
 				<posx>-133</posx>
 				<control type="group">

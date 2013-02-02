@@ -26,32 +26,6 @@
 			</control>
 			<control type="group" id="102">
 				<animation effect="fade" time="500">VisibleChange</animation>
-				<!--control type="label">
-					<description>date label</description>
-					<posx>1250</posx>
-					<posy>5</posy>
-					<width>800</width>
-					<height>10</height>
-					<align>right</align>
-					<aligny>center</aligny>
-					<font>font10_title</font>
-					<textcolor>HomeInfoOne</textcolor>
-					<info>System.Date</info>
-					<visible>!Skin.HasSetting(HideSeekBarOSD)</visible>
-				</control-->
-				<!--control type="label">
-					<description>time label</description>
-					<posx>1250</posx>
-					<posy>15</posy>
-					<width>800</width>
-					<height>30</height>
-					<align>right</align>
-					<aligny>center</aligny>
-					<font>font35_title</font>
-					<textcolor>HomeInfoClock</textcolor>
-					<label>$INFO[System.Time]</label>
-					<visible>!Skin.HasSetting(HideSeekBarOSD)</visible>
-				</control-->
 				<control type="image">
 					<posx>-150</posx>
 					<posy>230r</posy>

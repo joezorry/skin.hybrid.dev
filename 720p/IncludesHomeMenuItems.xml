@@ -859,7 +859,6 @@
 			<visible>!Skin.HasSetting(HideDefaultSubItem)</visible>
 			<visible>false</visible>
 		</control>
-		<!-- Concerts Submenu Here -->
 		<control type="image" id="91201">
 			<width>35</width>
 			<height>35</height>
@@ -1010,7 +1009,6 @@
 			<visible>!Player.Playing</visible>
 		</control>
 		<control type="togglebutton" id="91504">
-			<!-- Pause -->
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$LOCALIZE[31351]</label>

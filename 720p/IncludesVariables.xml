@@ -97,7 +97,6 @@
 		<value condition="SubString(ListItem.FileNameAndPath,extrafanart/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
 		<value condition="SubString(ListItem.FileNameAndPath,extrathumbs/,Right)">$INFO[ListItem.Path]fanart.jpg</value>
 		<value condition="Container.Content(Movies)">$INFO[ListItem.Path]fanart.jpg</value>
-		<!--value condition="SubString(ListItem.FileNameAndPath,season)">$INFO[ListItem.Path,,fanart.jpg]</value-->
 		<value>$INFO[ListItem.FileNameAndPath]fanart.jpg</value>
 	</variable>
 	<variable name="MediaDiskArt">
