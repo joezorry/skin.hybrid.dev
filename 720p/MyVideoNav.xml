@@ -242,6 +242,15 @@
                     <selected>Skin.HasSetting(EnableDarkBackground)</selected>
                     <visible>Control.IsVisible(50) | Control.IsVisible(529) | Control.IsVisible(594) | Control.IsVisible(730)</visible>
                 </control>
+				<control type="radiobutton" id="104">
+                    <description>Darken Background</description>
+                    <textwidth>170</textwidth>
+                    <include>ButtonCommonValues</include>
+                    <label>$LOCALIZE[31966]</label>
+                    <onclick>Skin.ToggleSetting(EnableBannerNotLogo)</onclick>
+                    <selected>Skin.HasSetting(EnableBannerNotLogo)</selected>
+                    <visible>Control.IsVisible(730)</visible>
+                </control>
                 <control type="radiobutton" id="14">
                     <description>Watched Toggle</description>
                     <textwidth>170</textwidth>
