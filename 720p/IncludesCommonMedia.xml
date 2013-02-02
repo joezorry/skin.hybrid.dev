@@ -481,6 +481,18 @@
             <fadetime>1000</fadetime>
             <include>VisibleFadeEffect</include>
             <visible>!Skin.HasSetting(HideWeatherFanart)</visible>
+			<visible>!StringCompare(Window.Property(Weather.CurrentView),hourly)</visible>
+            <animation effect="fade" time="200">WindowClose</animation>
+        </control>
+		<control type="multiimage">
+            <include>Dimensions_Fullscreen</include>
+            <imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Container(52).ListItem.Property(FanArt)]</imagepath>
+            <timeperimage>10000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>1000</fadetime>
+            <include>VisibleFadeEffect</include>
+            <visible>!Skin.HasSetting(HideWeatherFanart)</visible>
+			<visible>StringCompare(Window.Property(Weather.CurrentView),hourly)</visible>
             <animation effect="fade" time="200">WindowClose</animation>
         </control>
         <control type="multiimage">
