@@ -52,18 +52,18 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
 						<visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
-						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart)) + !Skin.HasSetting(EnableLocalFanArt)]</visible>
+						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
 					</control>
 					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$VAR[LocalFanArt]</texture>
                         <visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
@@ -74,10 +74,10 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                         <aspectratio aligny="bottom">keep</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" diffuse="episodematte.png"  fallback="Fanart_Fallback_Small.jpg">$VAR[MediaClearArt]</texture>
-                        <visible> Skin.HasSetting(Enable529ClearArt)</visible>
+                        <texture background="true" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
+                        <visible>Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
                    </control>
 					<control type="image">
                         <posx>18</posx>
@@ -284,7 +284,7 @@
                         <texture diffuse="MaskWide.png" background="true">WideListSelect.png</texture>
                         <colordiffuse>AAFFFFFF</colordiffuse>
                     </control>
-                     <control type="image">
+                    <control type="image">
                         <posx>68</posx>
                         <posy>24</posy>
                         <width>71</width>
@@ -299,18 +299,18 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$INFO[ListItem.Art(fanart)]</texture>
 						<visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
-						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart)) + !Skin.HasSetting(EnableLocalFanArt)]</visible>
+						<visible>!Skin.HasSetting(Enable529ClearArt) | [Skin.HasSetting(Enable529ClearArt) + IsEmpty(ListItem.Art(clearart))]</visible>
 					</control>
 					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
                         <texture background="true" fallback="Fanart_Fallback_Small.jpg" diffuse="episodematte.png">$VAR[LocalFanArt]</texture>
                         <visible>Window.IsVisible(Videos) + !Container.Content(Episodes) + !Container.Content(Seasons) + !StringCompare(ListItem.Label,..)</visible>                      
@@ -321,11 +321,11 @@
                         <posy>24</posy>
                         <width>169</width>
                         <height>102</height>
-                         <aspectratio aligny="bottom">keep</aspectratio>
+                        <aspectratio aligny="bottom">keep</aspectratio>
                         <fadetime>IconCrossfadeTime</fadetime>
-                        <texture background="true" diffuse="episodematte.png"  fallback="Fanart_Fallback_Small.jpg">$VAR[MediaClearArt]</texture>
-                        <visible>Skin.HasSetting(Enable529ClearArt)</visible>
-					</control>
+                        <texture background="true" diffuse="episodematte.png">$INFO[ListItem.Art(clearart)]</texture>
+                        <visible>Skin.HasSetting(Enable529ClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
+                   </control>
 					<control type="image">
                         <posx>18</posx>
                         <posy>24</posy>
@@ -530,7 +530,10 @@
                 <onright>61</onright>
                 <onup>60</onup>
                 <ondown>60</ondown>
-				<showonepage>true</showonepage><orientation>vertical</orientation><visible>Control.IsVisible(529)</visible></control>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(529)</visible>
+				</control>
         </control>
     </include>
 </includes>
