@@ -63,11 +63,12 @@
 				<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
+		<!--include>Clock</include-->
 			<control type="label" id="1">
 				<description>date label</description>
-				<posx>1250</posx>
+				<posx>15r</posx>
 				<posy>5</posy>
-				<width>800</width>
+				<width>345</width>
 				<height>10</height>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -78,9 +79,9 @@
 			</control>
 			<control type="label" id="1">
 				<description>time label</description>
-				<posx>1250</posx>
-				<posy>15</posy>
-				<width>800</width>
+				<posx>15r</posx>
+				<posy>20</posy>
+				<width>345</width>
 				<height>30</height>
 				<align>right</align>
 				<aligny>center</aligny>
