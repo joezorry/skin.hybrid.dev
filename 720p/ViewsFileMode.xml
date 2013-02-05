@@ -671,6 +671,40 @@
 					<texture diffuse="diffuse_mirror3.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 			</control>
+<!--Plot Popup window-->
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<control type="group">
+				<visible>!IsEmpty(ListItem.Plot) + !Container.OnNext + !Container.OnPrevious</visible>
+				<animation effect="fade" start="0" end="100" time="1600" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+				<posx>100</posx>
+				<posy>0</posy>
+				<include>ViewsFileModeInfoPanel</include>
+			</control>
+		</control>
+<!--End Plot Popup window-->
 		</control>
 	</include>
-</includes>
+	<include name="ViewsFileModeInfoPanel">
+		<control type="image">
+			<width>720</width>
+			<height>80</height>
+			<texture border="20">ContentPanel.png</texture>
+			<colordiffuse>FFFFFFFF</colordiffuse>
+		</control>
+		<control type="textbox">
+			<description>Description Value The Movie</description>
+			<posx>5</posx>
+			<posy>5</posy>
+			<width>710</width>
+			<height>70</height>
+			<align>justify</align>
+			<font>font16_title</font>
+			<textcolor>white</textcolor>
+			<label>$VAR[ShowMediaPlot,[B][COLOR=blue]$LOCALIZE[207]: [/COLOR][/B]]</label>
+			<autoscroll time="4000" delay="5000" repeat="5000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
+		</control>
+</include>
+
+	</includes>
