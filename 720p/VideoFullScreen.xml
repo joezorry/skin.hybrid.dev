@@ -63,12 +63,11 @@
 				<label>$INFO[VideoPlayer.ChannelGroup,$LOCALIZE[31509]: ]</label>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
-		<!--include>Clock</include-->
 			<control type="label" id="1">
 				<description>date label</description>
-				<posx>15r</posx>
+				<posx>1250</posx>
 				<posy>5</posy>
-				<width>345</width>
+				<width>800</width>
 				<height>10</height>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -79,9 +78,9 @@
 			</control>
 			<control type="label" id="1">
 				<description>time label</description>
-				<posx>15r</posx>
-				<posy>20</posy>
-				<width>345</width>
+				<posx>1250</posx>
+				<posy>15</posy>
+				<width>800</width>
 				<height>30</height>
 				<align>right</align>
 				<aligny>center</aligny>
@@ -101,9 +100,9 @@
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(HidePauseInfo) + Player.Paused + !Player.Caching</visible>
 				<visible>!IsEmpty(VideoPlayer.Plot)</visible>
-				<!--animation effect="slide" end="-300,160" time="100" tween="back" easing="out" condition="!Window.IsActive(VideoOSD) + Skin.HasSetting(HideSeekBarOSD)" reversible="true">Conditional</animation-->
-				<posx>20</posx><!--320 -->
-				<posy>20</posy><!--370r -->
+				<animation effect="slide" end="-300,160" time="100" tween="back" easing="out" condition="!Window.IsActive(VideoOSD) + Skin.HasSetting(HideSeekBarOSD)" reversible="true">Conditional</animation>
+				<posx>320</posx>
+				<posy>370r</posy>
 				<control type="image" id="1">
 					<posx>0</posx>
 					<posy>0</posy>
