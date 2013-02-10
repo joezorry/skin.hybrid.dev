@@ -145,6 +145,11 @@
 		</control>
 		<control type="group">
 			<include>HomeSubMenuImage</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserList)</visible>
+			<visible>!IsEmpty(Skin.String(SubMenuItem.1.Path)) + !IsEmpty(Skin.String(SubMenuItem.1.Label))</visible>
+		</control>
+		<control type="group">
+			<include>HomeSubMenuImage</include>
 			<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),AddOns)</visible>
 			<visible>
 				[!IsEmpty(Skin.String(SubMenuItem.6.Path)) + !IsEmpty(Skin.String(SubMenuItem.6.Label))] |

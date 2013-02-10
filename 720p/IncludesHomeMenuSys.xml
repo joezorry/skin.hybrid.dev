@@ -276,11 +276,11 @@
 		</control>
 	</include>
 	<include name="HomeVerticalMainMenu">
-		<control type="wraplist" id="9000">
+		<control type="fixedlist" id="9000">
 			<description>Home Wraplist</description>
 			<hitrect x="5" y="5" w="330" h="650" />
 			<posx>-20</posx>
-			<posy>35</posy>
+			<posy>55</posy>
 			<width>400</width>
 			<height>600</height>
 			<onup>9000</onup>
@@ -298,7 +298,7 @@
 			<animation effect="fade" start="100" end="30" time="200" condition="Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
 			<itemlayout height="102" width="380">
 				<control type="label">
-					<posx>380</posx>
+					<posx>392</posx>
 					<posy>21</posy>
 					<width>380</width>
 					<height>40</height>
@@ -315,9 +315,9 @@
 				<include condition="!Skin.HasSetting(HideSubMenuAdvise)">HomeSubMenuInfo</include>
 				<include condition="!Skin.HasSetting(HideSubMenuAdvise)">HomeSuggestedImage</include>
 				<control type="label">
-					<posx>380</posx>
+					<posx>392</posx>
 					<posy>0</posy>
-					<width>380</width>
+					<width>335</width>
 					<height>102</height>
 					<font>font_MainMenu</font>
 					<textcolor>MenuFocus</textcolor>
