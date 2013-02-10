@@ -4044,6 +4044,7 @@
 						<selected>!Skin.HasSetting(DisableSubmenuPlayList)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>System.HasAddon(script.playlists)</enable>
 					</control>
 					<control type="radiobutton" id="710">
 						<description>Script Playlist list type</description>

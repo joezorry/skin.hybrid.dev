@@ -288,7 +288,7 @@
 			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2118)</onleft>
 			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2119)</onleft>
 			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">ActivateWindow(2120)</onleft>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)">ActivateWindow(2121)</onleft>
+			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)">ActivateWindow(2122)</onleft>
 			<onright>9001</onright>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>550</scrolltime>
@@ -416,7 +416,7 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9010</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9010</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2121)</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2122)</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
 				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9010</onup>

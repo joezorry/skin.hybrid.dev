@@ -1,4 +1,4 @@
-<window type="dialog" id="2121">
+<window type="dialog" id="2122">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -66,7 +66,7 @@
 				<width>450</width>
 				<height>400</height>
 				<onup>450</onup>
-				<onleft>Dialog.Close(2121)</onleft>
+				<onleft>Dialog.Close(2122)</onleft>
 				<onright>60</onright>
 				<ondown>450</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -125,7 +125,7 @@
 				<content>
 				<item id="1">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.1.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -133,7 +133,7 @@
 				</item>
 				<item id="2">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.2.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -141,7 +141,7 @@
 				</item>
 				<item id="3">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.3.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -149,7 +149,7 @@
 				</item>
 				<item id="4">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.4.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -157,7 +157,7 @@
 				</item>
 				<item id="5">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.5.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -165,7 +165,7 @@
 				</item>
 				<item id="6">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.6.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -173,7 +173,7 @@
 				</item>
 				<item id="7">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.7.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.7.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -181,7 +181,7 @@
 				</item>
 				<item id="8">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.8.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.8.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -189,7 +189,7 @@
 				</item>
 				<item id="9">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.9.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.9.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -197,7 +197,7 @@
 				</item>
 				<item id="10">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.10.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.10.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -205,7 +205,7 @@
 				</item>
 				<item id="11">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.11.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.11.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -213,7 +213,7 @@
 				</item>
 				<item id="12">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.12.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.12.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -221,7 +221,7 @@
 				</item>
 				<item id="13">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.13.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.13.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -229,7 +229,7 @@
 				</item>
 				<item id="14">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.14.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.14.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -237,7 +237,7 @@
 				</item>
 				<item id="15">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.15.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.15.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -245,7 +245,7 @@
 				</item>
 				<item id="16">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.16.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.16.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -253,7 +253,7 @@
 				</item>
 				<item id="17">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.17.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.17.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -261,7 +261,7 @@
 				</item>
 				<item id="18">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.18.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.18.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -269,7 +269,7 @@
 				</item>
 				<item id="19">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.19.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.19.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
@@ -277,7 +277,7 @@
 				</item>
 				<item id="20">
 					<label>$INFO[Window(Home).Property(ScriptPlaylist.20.Name)]</label>
-					<onclick>Dialog.Close(2121)</onclick>
+					<onclick>Dialog.Close(2122)</onclick>
 					<onclick>ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.20.Path)],return)</onclick>
 					<icon>Fanart_Fallback_Small.jpg</icon>
 					<thumb>Fanart_Fallback_Small.jpg</thumb>
