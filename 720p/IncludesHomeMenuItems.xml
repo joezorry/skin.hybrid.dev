@@ -1052,6 +1052,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.1.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.1.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.1.Name))</visible>
@@ -1060,6 +1064,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.2.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.2.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.2.Name))</visible>
@@ -1068,6 +1076,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.3.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.3.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.3.Name))</visible>
@@ -1076,6 +1088,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.4.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.4.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.4.Name))</visible>
@@ -1084,6 +1100,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.5.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.5.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.5.Name))</visible>
@@ -1092,6 +1112,10 @@
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
 			<label>$INFO[Window(Home).Property(ScriptPlaylist.6.Name)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + !Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction) + Skin.HasSetting(SubmenuPlayListMusic)">Skin.SetString(HomeItemLastAction,ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return))</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Window(Home).Property(ScriptPlaylist.6.Name)])</onclick>
+			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return)</onclick>
 			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return)</onclick>
 			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.6.Name))</visible>

@@ -114,8 +114,8 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 					<item id="2">
-						<description>Playlist</description>
-						<label>$LOCALIZE[559]</label>
+						<description>User Selection</description>
+						<label>$LOCALIZE[31037]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Playlists)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
@@ -206,7 +206,7 @@
 					</item>
 					<item id="15">
 						<description>PlayList List</description>
-						<label>$LOCALIZE[31037]</label>
+						<label>$LOCALIZE[559]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,UserList)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>

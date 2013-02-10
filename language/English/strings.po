@@ -154,7 +154,7 @@ msgid "Submenu Shows Music not Video PlayLists"
 msgstr ""
 
 msgctxt "#31037"
-msgid "User Playlists"
+msgid "User Select"
 msgstr ""
 
 #empty strings from id 31038 to 31039
