@@ -1658,7 +1658,7 @@
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
-					<visible>!Control.HasFocus(8016)</visible>
+					<visible>!Control.HasFocus(8027)</visible>
 				</control>
 				<control type="label">
 					<description>Recent Title label</description>
@@ -1673,7 +1673,7 @@
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
-					<visible>!Control.HasFocus(8016)</visible>
+					<visible>!Control.HasFocus(8027)</visible>
 				</control>
 				<control type="label">
 					<description>Title label</description>
@@ -1687,14 +1687,14 @@
 					<font>font13_title</font>
 					<textcolor>HomeInfoOne</textcolor>
 					<shadowcolor>black</shadowcolor>
-					<visible>Control.HasFocus(8016)</visible>
+					<visible>Control.HasFocus(8027)</visible>
 				</control>
-				<control type="panel" id="8016">
+				<control type="panel" id="8027">
 					<include>DimensionsLandscapePanel</include>
-					<onup>8016</onup>
+					<onup>8027</onup>
 					<ondown>9000</ondown>
-					<onleft>8016</onleft>
-					<onright>8016</onright>
+					<onleft>8027</onleft>
+					<onright>8027</onright>
 					<preloaditems>2</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
@@ -1703,12 +1703,12 @@
 					<include>PlayListEpisodes</include>
 					<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 				</control>
-				<control type="panel" id="8016">
+				<control type="panel" id="8027">
 					<include>DimensionsLandscapePanel</include>
-					<onup>8016</onup>
-					<ondown>8016</ondown>
+					<onup>8027</onup>
+					<ondown>8027</ondown>
 					<onleft>9000</onleft>
-					<onright>8016</onright>
+					<onright>8027</onright>
 					<preloaditems>2</preloaditems>
 					<scrolltime>150</scrolltime>
 					<pagecontrol>-</pagecontrol>
