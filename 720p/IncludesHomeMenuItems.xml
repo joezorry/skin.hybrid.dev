@@ -1041,4 +1041,66 @@
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 		</control>
 	</include>
+	<include name="HomeSubMenuPlayLists">
+		<control type="image" id="91600">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HorizontalMenu/HomeSubEnd.png</texture>
+			<visible>Skin.HasSetting(HorizontalHomeScreen) + System.HasAddon(script.playlists)</visible>
+		</control>
+		<control type="button" id="91601">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.1.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.1.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.1.Name))</visible>
+		</control>
+		<control type="button" id="91602">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.2.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.2.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.2.Name))</visible>
+		</control>
+		<control type="button" id="91603">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.3.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.3.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.3.Name))</visible>
+		</control>
+		<control type="button" id="91604">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.4.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.4.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.4.Name))</visible>
+		</control>
+		<control type="button" id="91605">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.5.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.5.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.5.Name))</visible>
+		</control>
+		<control type="button" id="91606">
+			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
+			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
+			<label>$INFO[Window(Home).Property(ScriptPlaylist.6.Name)]</label>
+			<onclick condition="!Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(VideoLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return)</onclick>
+			<onclick condition="Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(ScriptPlaylist.6.Path)],return)</onclick>
+			<visible>!IsEmpty(Window(Home).Property(ScriptPlaylist.6.Name))</visible>
+		</control>
+		<control type="image" id="91607">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HorizontalMenu/HomeSubEnd.png</texture>
+			<visible>Skin.HasSetting(HorizontalHomeScreen) + System.HasAddon(script.playlists)</visible>
+		</control>
+	</include>
 </includes>

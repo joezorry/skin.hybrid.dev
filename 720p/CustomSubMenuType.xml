@@ -204,6 +204,14 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Favourites)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
+					<item id="15">
+						<description>PlayList List</description>
+						<label>$LOCALIZE[31037]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,UserList)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>System.HasAddon(script.playlists) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+					</item>
 				</content>
 			</control>
 			<control type="button">

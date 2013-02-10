@@ -145,7 +145,19 @@ msgctxt "#31034"
 msgid "Enable Artwork Downloader Script"
 msgstr ""
 
-#empty strings from id 31035 to 31039
+msgctxt "#31035"
+msgid "Enable Submenu Playlists Script"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Submenu Shows Music not Video PlayLists"
+msgstr ""
+
+msgctxt "#31037"
+msgid "User Playlists"
+msgstr ""
+
+#empty strings from id 31038 to 31039
 
 msgctxt "#31040"
 msgid "Now Playing"

@@ -4032,7 +4032,34 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="709">
+					<control type="radiobutton" id="709">
+						<description>Enable Script Playlist list</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31035]</label>
+						<onclick>Skin.ToggleSetting(DisableSubmenuPlayList)</onclick>
+						<selected>!Skin.HasSetting(DisableSubmenuPlayList)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="710">
+						<description>Script Playlist list type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>    $LOCALIZE[31036]</label>
+						<onclick>Skin.ToggleSetting(SubmenuPlayListMusic)</onclick>
+						<selected>Skin.HasSetting(SubmenuPlayListMusic)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>System.HasAddon(script.playlists) + !Skin.HasSetting(DisableSubmenuPlayList)</enable>
+					</control>
+					<control type="label" id="711">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -4042,7 +4069,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="710">
+					<control type="button" id="712">
 						<description>Reset Skin Values</description>
 						<width>750</width>
 						<height>40</height>

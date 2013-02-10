@@ -619,6 +619,21 @@
 				<include>HomeSubMenuFullScreen</include>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),NowPlaying)</visible>
 			</control>
+			<control type="grouplist" id="9025">
+				<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalSubMenuValues</include>
+				<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalSubMenuValues</include>
+				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9025</onleft>
+				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9025</onright>
+				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">9003</ondown>
+				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
+				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
+				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9025</onup>
+				<ondown condition="!Skin.HasSetting(HorizontalHomeScreen)">9025</ondown>
+				<include>HomeSubMenuPlayLists</include>
+				<visible>System.HasAddon(script.playlists) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserList)</visible>
+			</control>
 		</control>
 	</include>
 </includes>
