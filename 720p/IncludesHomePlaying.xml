@@ -8,7 +8,7 @@
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<animation effect="slide" start="600,0" end="0,0" time="900" delay="1200" condition="Player.HasMedia">conditional</animation>
-			<animation effect="slide" end="900,0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(Favourites) | Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml)">Conditional</animation>
+			<animation effect="slide" end="900,0" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(Favourites) | Window.IsVisible(CustomSuggestedMovies.xml) | Window.IsVisible(CustomSuggestedEpisodes.xml) | Window.IsVisible(CustomSuggestedAlbums.xml) | Window.IsVisible(CustomPlaylistsVideos.xml)">Conditional</animation>
 			<control type="image">
 				<posx>0</posx>
 				<posy>25</posy>
