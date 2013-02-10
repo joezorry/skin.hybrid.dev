@@ -398,7 +398,7 @@
 		<value condition="Container(9000).Hasfocus(10)">$INFO[Window(home).Property(HomePlayListTen.5.Title)]</value>
 	</variable>
 	<variable name="UsrHomePlaylistTitleSix" type="text">
-		<value condition="Container(9000).Hasfocus(1)">$INFO[Window(home).Property(HomePlayListOne.1.Title)]</value>
+		<value condition="Container(9000).Hasfocus(1)">$INFO[Window(home).Property(HomePlayListOne.6.Title)]</value>
 		<value condition="Container(9000).Hasfocus(2)">$INFO[Window(home).Property(HomePlayListTwo.6.Title)]</value>
 		<value condition="Container(9000).Hasfocus(3)">$INFO[Window(home).Property(HomePlayListThree.6.Title)]</value>
 		<value condition="Container(9000).Hasfocus(4)">$INFO[Window(home).Property(HomePlayListFour.6.Title)]</value>
