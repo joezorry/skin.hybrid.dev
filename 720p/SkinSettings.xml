@@ -3445,6 +3445,18 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>$LOCALIZE[31687]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideInfoStartOSD)</onclick>
+						<selected>!Skin.HasSetting(HideInfoStartOSD)</selected>
+					</control>
+					<control type="radiobutton" id="535">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>$LOCALIZE[31696]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -3453,7 +3465,7 @@
 						<onclick>Skin.ToggleSetting(HideSeekBarOSD)</onclick>
 						<selected>Skin.HasSetting(HideSeekBarOSD)</selected>
 					</control>
-					<control type="radiobutton" id="535">
+					<control type="radiobutton" id="536">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3465,7 +3477,7 @@
 						<onclick>Skin.ToggleSetting(HidePauseInfo)</onclick>
 						<selected>!Skin.HasSetting(HidePauseInfo)</selected>
 					</control>
-					<control type="radiobutton" id="536">
+					<control type="radiobutton" id="537">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3477,7 +3489,7 @@
 						<onclick>Skin.ToggleSetting(TVShowUsesLogo)</onclick>
 						<selected>Skin.HasSetting(TVShowUsesLogo)</selected>
 					</control>
-					<control type="label" id="537">
+					<control type="label" id="538">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -3487,7 +3499,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="538">
+					<control type="radiobutton" id="539">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3499,7 +3511,7 @@
 						<onclick>Skin.ToggleSetting(ShowMusicVizOnly)</onclick>
 						<selected>Skin.HasSetting(ShowMusicVizOnly)</selected>
 					</control>
-					<control type="radiobutton" id="539">
+					<control type="radiobutton" id="540">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3512,7 +3524,7 @@
 						<selected>Skin.HasSetting(ShowArtistSlideShow)</selected>
 						<enable>!Skin.HasSetting(DisableArtistSlideShow) + !Skin.HasSetting(ShowBackgroundAlbumWall) + !Skin.HasSetting(ShowMusicVizOnly)</enable>
 					</control>
-					<control type="radiobutton" id="540">
+					<control type="radiobutton" id="541">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3525,7 +3537,7 @@
 						<selected>Skin.HasSetting(ShowBackgroundAlbumWall)</selected>
 						<enable>!Skin.HasSetting(ShowArtistSlideShow) + !Skin.HasSetting(ShowMusicVizOnly) </enable>
 					</control>
-					<control type="button" id="541">
+					<control type="button" id="542">
 						<description>CD Wall Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -3540,7 +3552,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(ShowBackgroundAlbumWall) + !Skin.HasSetting(ShowMusicVizOnly)</enable>
 					</control>
-					<control type="radiobutton" id="542">
+					<control type="radiobutton" id="543">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3553,7 +3565,7 @@
 						<selected>Skin.HasSetting(NoAnimateFanArt)</selected>
 						<enable>!Skin.HasSetting(ShowMusicVizOnly)</enable>
 					</control>
-					<control type="radiobutton" id="543">
+					<control type="radiobutton" id="544">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3566,7 +3578,7 @@
 						<selected>Skin.HasSetting(HideCDArt)</selected>
 						<enable>!Skin.HasSetting(ShowMusicVizOnly)</enable>
 					</control>
-					<control type="label" id="544">
+					<control type="label" id="545">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -3576,7 +3588,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="545">
+					<control type="radiobutton" id="546">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3589,7 +3601,7 @@
 						<onclick>Skin.Reset(EnableStartupPlaylist)</onclick>
 						<selected>!Skin.HasSetting(HideXBMCIntro)</selected>
 					</control>
-					<control type="radiobutton" id="546">
+					<control type="radiobutton" id="547">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -3602,7 +3614,7 @@
 						<onclick>Skin.ToggleSetting(EnableStartupPlaylist)</onclick>
 						<selected>Skin.HasSetting(EnableStartupPlaylist)</selected>
 					</control>
-					<control type="button" id="547">
+					<control type="button" id="548">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>

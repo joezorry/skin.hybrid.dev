@@ -911,7 +911,9 @@ msgctxt "#31686"
 msgid "Hide Now Playing Background"
 msgstr ""
 
-#empty string with id 31687
+msgctxt "#31687"
+msgid "Show OSD Info Bar at Start of Videos"
+msgstr ""
 
 msgctxt "#31688"
 msgid "Next Recording Not Set"
