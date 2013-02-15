@@ -1532,7 +1532,7 @@
 					<pagecontrol>-</pagecontrol>
 					<orientation>horizontal</orientation>
 					<include>MoviePosterLayout</include>
-					<include>PlayListeightContent</include>
+					<include>PlayListEightContent</include>
 					<visible>Skin.HasSetting(HorizontalHomeScreen) + Container(9000).HasFocus(8)</visible>
 				</control>
 				<control type="panel" id="8014">
