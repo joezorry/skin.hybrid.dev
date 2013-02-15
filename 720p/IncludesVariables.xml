@@ -38,6 +38,14 @@
 		<value condition="!IsEmpty(Skin.CurrentTheme)  + !stringcompare(Skin.CurrentTheme,$LOCALIZE[15109])">special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</value>
 		<value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
 	</variable>
+	<variable name="MenuPopUpNav" type="text">
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + !Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(2122)</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Playlists) + !Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(2122)</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2118)</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2119)</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">ActivateWindow(2120)</value>
+		<!--value>9003</value-->
+	</variable>
 	<variable name="AutoGenreImage">
 		<value condition="!Skin.HasSetting(UsrGenreFanArt) + [substring(ListItem.Label,$LOCALIZE[31600],Left) | substring(ListItem.Label,Action,Left)]">DefaultGenre/Action.png</value>
 		<value condition="!Skin.HasSetting(UsrGenreFanArt) + [substring(ListItem.Label,$LOCALIZE[31601],Left) | substring(ListItem.Label,Adventure,Left)]">DefaultGenre/Adventure.png</value>

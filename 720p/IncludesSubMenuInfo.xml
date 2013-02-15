@@ -47,6 +47,7 @@
 		<control type="group">
 			<visible>
 				[StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + System.HasAddon(script.playlists) + !Skin.HasSetting(DisableSubmenuPlayList) + !Skin.HasSetting(SubmenuPlayListMusic)] |
+				[StringCompare(Container(9000).ListItem.Property(HiLiteItem),Playlists) + System.HasAddon(script.playlists) + !Skin.HasSetting(DisableSubmenuPlayList) + !Skin.HasSetting(SubmenuPlayListMusic)] |
 				StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) |
 				StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) |
 				StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)
