@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
+			<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mkv,right)</visible>
 			<control type="slider" id="87">
 				<description>Seek Slider</description>
 				<posx>430</posx>
