@@ -349,6 +349,8 @@
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),TVShows) + IsEmpty(Skin.String(TVShowSubMenu.1.Path)) + IsEmpty(Skin.String(TVShowSubMenu.2.Path)) + IsEmpty(Skin.String(TVShowSubMenu.3.Path))]">$VAR[MenuPopUpNav]</ondown>
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Music) + [!IsEmpty(Skin.String(MusicSubMenu.1.Path)) | !IsEmpty(Skin.String(MusicSubMenu.2.Path)) | !IsEmpty(Skin.String(MusicSubMenu.3.Path))]">9001</ondown>
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Music) + IsEmpty(Skin.String(MusicSubMenu.1.Path)) + IsEmpty(Skin.String(MusicSubMenu.2.Path)) + IsEmpty(Skin.String(MusicSubMenu.3.Path))]">$VAR[MenuPopUpNav]</ondown>
+			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Concerts) + [!IsEmpty(Skin.String(ConcertSubMenu.1.Path)) | !IsEmpty(Skin.String(ConcertSubMenu.2.Path)) | !IsEmpty(Skin.String(ConcertSubMenu.3.Path))]">9001</ondown>
+			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Concerts) + IsEmpty(Skin.String(ConcertSubMenu.1.Path)) + IsEmpty(Skin.String(ConcertSubMenu.2.Path)) + IsEmpty(Skin.String(ConcertSubMenu.3.Path))]">$VAR[MenuPopUpNav]</ondown>
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Pictures) + [!IsEmpty(Skin.String(PicSubMenu.1.Path)) | !IsEmpty(Skin.String(PicSubMenu.2.Path)) | !IsEmpty(Skin.String(PicSubMenu.3.Path))]">9001</ondown>
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Pictures) + IsEmpty(Skin.String(PicSubMenu.1.Path)) + IsEmpty(Skin.String(PicSubMenu.2.Path)) + IsEmpty(Skin.String(PicSubMenu.3.Path))]">$VAR[MenuPopUpNav]</ondown>
 			<ondown condition="Skin.HasSetting(HideDefaultSubItem) + StringCompare(Container(9000).ListItem.Property(SubMenu),Programs) + [!IsEmpty(Skin.String(ProgSubMenu.1.Path)) | !IsEmpty(Skin.String(ProgSubMenu.2.Path)) | !IsEmpty(Skin.String(ProgSubMenu.3.Path))]">9001</ondown>
@@ -652,13 +654,6 @@
 				<visible>System.HasAddon(script.playlists) + !Skin.HasSetting(DisableScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserList)</visible>
 			</control>
-			
-			
-			
-			
-			
-			
-			
 		</control>
 	</include>
 </includes>
