@@ -916,6 +916,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListOne.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListOne.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListOne.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListOne.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListOne.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListOne.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListTwoContentFanArt">
@@ -994,6 +1003,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListTwo.9.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(home).Property(HomePlayListTwo.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTwo.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTwo.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTwo.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTwo.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListTwo.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1074,6 +1092,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListThree.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListThree.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListThree.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListThree.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListThree.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListThree.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListFourContentFanArt">
@@ -1152,6 +1179,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListFour.9.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(home).Property(HomePlayListFour.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFour.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFour.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFour.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFour.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListFour.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1232,6 +1268,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListFive.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFive.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFive.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFive.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFive.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListFive.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListSixContentFanArt">
@@ -1310,6 +1355,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListSix.9.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(home).Property(HomePlayListSix.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSix.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSix.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSix.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSix.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListSix.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1390,6 +1444,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListSeven.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSeven.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSeven.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSeven.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSeven.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListSeven.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListEightContentFanArt">
@@ -1468,6 +1531,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListEight.9.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(home).Property(HomePlayListEight.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListEight.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListEight.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListEight.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListEight.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListEight.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1548,6 +1620,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListNine.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListNine.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListNine.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListNine.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListNine.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListNine.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>			
 		</content>
 	</include>
 	<include name="PlayListTenContentFanArt">
@@ -1627,6 +1708,15 @@
 				<visible>!IsEmpty(Window(home).Property(HomePlayListTen.9.Title))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTen.10.Title)]</label>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTen.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTen.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTen.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(home).Property(HomePlayListTen.10.Title))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>			
 		</content>
 	</include>
 	<include name="PlayListOneEpisodes">
@@ -1705,6 +1795,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListOne.9.Art(poster))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListOne.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListOne.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListOne.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListOne.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListOne.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListOne.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListOne.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1785,6 +1884,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListTwo.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTwo.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListTwo.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListTwo.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTwo.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTwo.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTwo.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListThreeEpisodes">
@@ -1863,6 +1971,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListThree.9.Art(poster))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListThree.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListThree.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListThree.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListThree.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListThree.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListThree.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListThree.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -1943,6 +2060,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListFour.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFour.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListFour.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListFour.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFour.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFour.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFour.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListFiveEpisodes">
@@ -2021,6 +2147,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListFive.9.Art(poster))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListFive.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFive.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListFive.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListFive.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFive.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFive.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFive.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -2101,6 +2236,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListSix.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSix.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListSix.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListSix.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSix.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSix.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSix.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListSevenEpisodes">
@@ -2179,6 +2323,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListSeven.9.Art(poster))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListSeven.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSeven.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListSeven.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListSeven.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSeven.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSeven.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSeven.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -2259,6 +2412,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListEight.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListEight.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListEight.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListEight.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListEight.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListEight.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListEight.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListNineEpisodes">
@@ -2338,6 +2500,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListNine.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListNine.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListNine.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListNine.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListNine.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListNine.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListNine.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListTenEpisodes">
@@ -2416,6 +2587,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListTen.9.Art(poster))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListTen.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTen.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListTen.10.EpisodeNo)] - $INFO[Window(home).Property(HomePlayListTen.10.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTen.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTen.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTen.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -3336,6 +3516,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListOne.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListOne.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListOne.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListOne.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListOne.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListOne.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListTwoAlbumsFanArt">
@@ -3414,6 +3603,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListTwo.9.Art(thumb))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListTwo.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTwo.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListTwo.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTwo.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTwo.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTwo.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -3494,6 +3692,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListThree.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListThree.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListThree.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListThree.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListThree.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListThree.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListFourAlbumsFanArt">
@@ -3572,6 +3779,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListFour.9.Art(thumb))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListFour.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFour.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListFour.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFour.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFour.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFour.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -3652,6 +3868,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListFive.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListFive.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListFive.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListFive.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListFive.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListFive.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListSixAlbumsFanArt">
@@ -3730,6 +3955,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListSix.9.Art(thumb))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListSix.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSix.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListSix.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSix.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSix.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSix.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -3810,6 +4044,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListSeven.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListSeven.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListSeven.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListSeven.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListSeven.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListSeven.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListEightAlbumsFanArt">
@@ -3888,6 +4131,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListEight.9.Art(thumb))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListEight.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListEight.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListEight.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListEight.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListEight.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListEight.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -3968,6 +4220,15 @@
 				<thumb>$INFO[Window(home).Property(HomePlayListNine.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
 			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListNine.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListNine.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListNine.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListNine.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListNine.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
 		</content>
 	</include>
 	<include name="PlayListTenAlbumsFanArt">
@@ -4046,6 +4307,15 @@
 				<icon>$INFO[Window(home).Property(HomePlayListTen.9.Art(thumb))]</icon>
 				<thumb>$INFO[Window(home).Property(HomePlayListTen.9.Art(fanart))]</thumb>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="10">
+				<label>$INFO[Window(home).Property(HomePlayListTen.10.Title)]</label>
+				<label2>$INFO[Window(home).Property(HomePlayListTen.10.Artist)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>$INFO[Window(home).Property(HomePlayListTen.10.Play)]</onclick>
+				<icon>$INFO[Window(home).Property(HomePlayListTen.10.Art(thumb))]</icon>
+				<thumb>$INFO[Window(home).Property(HomePlayListTen.10.Art(fanart))]</thumb>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -4556,7 +4826,7 @@
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.19.PercentPlayed)]</property>
 				<property name="Watched">$INFO[Window(Home).Property(RecommendedMovie.19.Watched)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecommendedMovie.20.Title)]</label>
@@ -4569,7 +4839,7 @@
 				<property name="PercentPlayed">$INFO[Window(Home).Property(RecommendedMovie.20.PercentPlayed)]</property>
 				<property name="Watched">$INFO[Window(Home).Property(RecommendedMovie.20.Watched)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="21">
 				<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
@@ -4845,7 +5115,7 @@
 				<property name="Watched">$INFO[Window(Home).Property(RecommendedEpisode.19.Watched)]</property>
 				<property name="EpisodePath">$INFO[Window(Home).Property(RecommendedEpisode.19.Path)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.19.TVshowTitle))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</label>
@@ -4859,7 +5129,7 @@
 				<property name="Watched">$INFO[Window(Home).Property(RecommendedEpisode.20.Watched)]</property>
 				<property name="EpisodePath">$INFO[Window(Home).Property(RecommendedEpisode.20.Path)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.20.TVshowTitle))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="21">
 				<label>$INFO[Window(Home).Property(RecentEpisode.1.TVshowTitle)]</label>
@@ -5305,7 +5575,7 @@
 				<icon>$INFO[Window(Home).Property(RecommendedAlbum.19.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.19.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecommendedAlbum.20.Title)]</label>
@@ -5316,7 +5586,7 @@
 				<icon>$INFO[Window(Home).Property(RecommendedAlbum.20.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedAlbum.20.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="21">
 				<label>$INFO[Window(Home).Property(RecentAlbum.1.Title)]</label>
@@ -5708,7 +5978,7 @@
 				<icon>$INFO[Window(Home).Property(RecentMovie.19.Art(poster))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMovie.19.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentMovie.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecentMovie.20.Title)]</label>
@@ -5718,7 +5988,7 @@
 				<icon>$INFO[Window(Home).Property(RecentMovie.20.Art(poster))]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMovie.20.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentMovie.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -5898,6 +6168,26 @@
 				<thumb>$INFO[Window(Home).Property(RecentEpisode.18.Art(thumb))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.18.TVshowTitle))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RecentEpisode.19.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecentEpisode.19.EpisodeNo)] $INFO[Window(Home).Property(RecentEpisode.19.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.19.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.19.Art(tvshow.fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.19.Art(thumb))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.19.TVshowTitle))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RecentEpisode.20.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RecentEpisode.20.EpisodeNo)] $INFO[Window(Home).Property(RecentEpisode.20.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.20.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentEpisode.20.Art(tvshow.fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentEpisode.20.Art(thumb))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentEpisode.20.TVshowTitle))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -6281,7 +6571,7 @@
 				<icon>$INFO[Window(Home).Property(RecentAlbum.19.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.19.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecentAlbum.20.Title)]</label>
@@ -6291,7 +6581,7 @@
 				<icon>$INFO[Window(Home).Property(RecentAlbum.20.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentAlbum.20.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentAlbum.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -6673,7 +6963,7 @@
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.19.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.19.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RecentMusicVideo.20.Title)]</label>
@@ -6683,7 +6973,7 @@
 				<icon>$INFO[Window(Home).Property(RecentMusicVideo.20.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecentMusicVideo.20.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -7104,7 +7394,7 @@
 				<thumb>$INFO[Window(Home).Property(RandomMovie.19.Art(fanart))]</thumb>
 				<property name="MoviePath">$INFO[Window(Home).Property(RandomMovie.19.Path)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RandomMovie.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RandomMovie.20.Title)]</label>
@@ -7115,7 +7405,7 @@
 				<thumb>$INFO[Window(Home).Property(RandomMovie.20.Art(fanart))]</thumb>
 				<property name="MoviePath">$INFO[Window(Home).Property(RandomMovie.20.Path)]</property>
 				<visible>!IsEmpty(Window(Home).Property(RandomMovie.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -7294,6 +7584,27 @@
 				<thumb>$INFO[Window(Home).Property(RandomEpisode.18.Art(thumb))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomEpisode.18.TVshowTitle))</visible>
 				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+			</item>
+			<item id="19">
+				<label>$INFO[Window(Home).Property(RandomEpisode.19.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RandomEpisode.19.EpisodeNo)] $INFO[Window(Home).Property(RandomEpisode.19.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.19.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RandomEpisode.19.Art(tvshow.fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RandomEpisode.19.Art(thumb))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RandomEpisode.19.TVshowTitle))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
+			</item>
+			<item id="20">
+				<label>$INFO[Window(Home).Property(RandomEpisode.20.Title)]</label>
+				<label2>$INFO[Window(Home).Property(RandomEpisode.20.EpisodeNo)] $INFO[Window(Home).Property(RandomEpisode.20.TVshowTitle)]</label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.20.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RandomEpisode.20.Art(tvshow.fanart))]</icon>
+				<thumb>$INFO[Window(Home).Property(RandomEpisode.20.Art(thumb))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RandomEpisode.20.TVshowTitle))</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -7677,7 +7988,7 @@
 				<icon>$INFO[Window(Home).Property(RandomAlbum.19.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.19.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RandomAlbum.20.Title)]</label>
@@ -7687,7 +7998,7 @@
 				<icon>$INFO[Window(Home).Property(RandomAlbum.20.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomAlbum.20.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -8069,7 +8380,7 @@
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.19.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.19.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(Home).Property(RandomMusicVideo.20.Title)]</label>
@@ -8079,7 +8390,7 @@
 				<icon>$INFO[Window(Home).Property(RandomMusicVideo.20.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.20.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
@@ -8498,7 +8809,7 @@
 				<icon>$INFO[Window(Home).Property(PlaylistRandomMovieUnWatched.19.Art(poster))]</icon>
 				<thumb>$INFO[Window(Home).Property(PlaylistRandomMovieUnWatched.19.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.19.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 			<item id="20">
 				<label>$INFO[Window(home).Property(PlaylistRandomMovieUnWatched.20.Title)]</label>
@@ -8507,7 +8818,7 @@
 				<icon>$INFO[Window(Home).Property(PlaylistRandomMovieUnWatched.20.Art(poster))]</icon>
 				<thumb>$INFO[Window(Home).Property(PlaylistRandomMovieUnWatched.20.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.20.Title))</visible>
-				<visible>!Skin.HasSetting(HidePanelScrolling)</visible>
+				<visible>!Skin.HasSetting(HidePanelScrolling) + Skin.HasSetting(HorizontalHomeScreen)</visible>
 			</item>
 		</content>
 	</include>
