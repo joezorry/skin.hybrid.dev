@@ -464,7 +464,7 @@
 				<onleft condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onleft>
 				<onright condition="Skin.HasSetting(HorizontalHomeScreen)">9012</onright>
 				<onup condition="Skin.HasSetting(HorizontalHomeScreen)">9000</onup>
-				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">ActivateWindow(2119)</ondown>
+				<ondown condition="Skin.HasSetting(HorizontalHomeScreen)">$VAR[MenuPopUpNav]</ondown>
 				<onleft condition="!Skin.HasSetting(HorizontalHomeScreen)">9000</onleft>
 				<onright condition="!Skin.HasSetting(HorizontalHomeScreen)">9003</onright>
 				<onup condition="!Skin.HasSetting(HorizontalHomeScreen)">9012</onup>
