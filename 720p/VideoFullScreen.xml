@@ -4,7 +4,8 @@
 	<controls>
 		<control type="group" id="1">
 			<description>Media Info at Start of Play</description>
-			<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(Episodes)</visible>		
+			<visible>VideoPlayer.Content(Movies) | VideoPlayer.Content(Episodes) | VideoPlayer.Content(Episodes)</visible>
+			<visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)]</visible>
 			<visible>!Skin.HasSetting(HideInfoStartOSD) + !IntegerGreaterThan(Player.time,10) + !Window.IsVisible(VideoOSD) + !substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mkv,right)</visible>		
 			<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
 			<animation effect="slide" end="0,-60" time="500" tween="back" easing="out" condition="Window.IsVisible(infodialog) | Window.IsVisible(volumebar)" reversible="true">Conditional</animation>
