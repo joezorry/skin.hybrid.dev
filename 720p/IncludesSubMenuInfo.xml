@@ -90,9 +90,9 @@
 			<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Movies)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(MovieSubMenu.1.Path)) + !IsEmpty(Skin.String(MovieSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.2.Path)) + !IsEmpty(Skin.String(MovieSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.3.Path)) + !IsEmpty(Skin.String(MovieSubMenu.3.Label))]
 			</visible>
 		</control>
 		<control type="group">
@@ -100,9 +100,9 @@
 			<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),TVShows)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(TVShowSubMenu.1.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.2.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.3.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.3.Label))]
 			</visible>
 		</control>
 		<control type="group">

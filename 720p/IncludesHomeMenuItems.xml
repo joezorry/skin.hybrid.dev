@@ -99,43 +99,43 @@
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(MovieSubMenu.1.Path)) + !IsEmpty(Skin.String(MovieSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.2.Path)) + !IsEmpty(Skin.String(MovieSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.3.Path)) + !IsEmpty(Skin.String(MovieSubMenu.3.Label))]
 			</visible>
 		</control>
 		<control type="button" id="90201">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.1.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.1.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.1.Label)])</onclick>
+			<label>$INFO[Skin.String(MovieSubMenu.1.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(MovieSubMenu.1.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(MovieSubMenu.1.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.1.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.1.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.1.Label))</visible>
+			<onclick>$INFO[Skin.String(MovieSubMenu.1.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.1.Path))</visible>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.1.Label))</visible>
 		</control>
 		<control type="button" id="90202">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.2.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.2.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.2.Label)])</onclick>
+			<label>$INFO[Skin.String(MovieSubMenu.2.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(MovieSubMenu.2.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(MovieSubMenu.2.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.2.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.2.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.2.Label))</visible>
+			<onclick>$INFO[Skin.String(MovieSubMenu.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.2.Path))</visible>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.2.Label))</visible>
 		</control>
 		<control type="button" id="90203">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.3.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.3.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.3.Label)])</onclick>
+			<label>$INFO[Skin.String(MovieSubMenu.3.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(MovieSubMenu.3.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(MovieSubMenu.3.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.3.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.3.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.3.Label))</visible>
+			<onclick>$INFO[Skin.String(MovieSubMenu.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.3.Path))</visible>
+			<visible>!IsEmpty(Skin.String(MovieSubMenu.3.Label))</visible>
 		</control>
 		<control type="button" id="90204">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -174,9 +174,9 @@
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(MovieSubMenu.1.Path)) + !IsEmpty(Skin.String(MovieSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.2.Path)) + !IsEmpty(Skin.String(MovieSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(MovieSubMenu.3.Path)) + !IsEmpty(Skin.String(MovieSubMenu.3.Label))]
 			</visible>
 		</control>
 	</include>
@@ -188,43 +188,43 @@
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(TVShowSubMenu.1.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.2.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.3.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.3.Label))]
 			</visible>
 		</control>
 		<control type="button" id="90301">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.1.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.1.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.1.Label)])</onclick>
+			<label>$INFO[Skin.String(TVShowSubMenu.1.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(TVShowSubMenu.1.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(TVShowSubMenu.1.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.1.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.1.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.1.Label))</visible>
+			<onclick>$INFO[Skin.String(TVShowSubMenu.1.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.1.Path))</visible>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.1.Label))</visible>
 		</control>
 		<control type="button" id="90302">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.2.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.2.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.2.Label)])</onclick>
+			<label>$INFO[Skin.String(TVShowSubMenu.2.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(TVShowSubMenu.2.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(TVShowSubMenu.2.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.2.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.2.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.2.Label))</visible>
+			<onclick>$INFO[Skin.String(TVShowSubMenu.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.2.Path))</visible>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.2.Label))</visible>
 		</control>
 		<control type="button" id="90303">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
 			<include condition="Skin.HasSetting(HorizontalHomeScreen)">HorizontalCommonSubMenu</include>
-			<label>$INFO[Skin.String(VideoSubMenu.3.Label)]</label>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(VideoSubMenu.3.Path)])</onclick>
-			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(VideoSubMenu.3.Label)])</onclick>
+			<label>$INFO[Skin.String(TVShowSubMenu.3.Label)]</label>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastAction,$INFO[Skin.String(TVShowSubMenu.3.Path)])</onclick>
+			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(StickyHomeMenuAction)">Skin.SetString(HomeItemLastLabel,$INFO[Skin.String(TVShowSubMenu.3.Label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[CommonScreenBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(VideoSubMenu.3.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.3.Path))</visible>
-			<visible>!IsEmpty(Skin.String(VideoSubMenu.3.Label))</visible>
+			<onclick>$INFO[Skin.String(TVShowSubMenu.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.3.Path))</visible>
+			<visible>!IsEmpty(Skin.String(TVShowSubMenu.3.Label))</visible>
 		</control>
 		<control type="button" id="90304">
 			<include condition="!Skin.HasSetting(HorizontalHomeScreen)">VerticalCommonSubMenu</include>
@@ -263,9 +263,9 @@
 			<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
 			<visible>
 				!Skin.HasSetting(HideDefaultSubItem) |
-				[!IsEmpty(Skin.String(VideoSubMenu.1.Path)) + !IsEmpty(Skin.String(VideoSubMenu.1.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.2.Path)) + !IsEmpty(Skin.String(VideoSubMenu.2.Label))] |
-				[!IsEmpty(Skin.String(VideoSubMenu.3.Path)) + !IsEmpty(Skin.String(VideoSubMenu.3.Label))]
+				[!IsEmpty(Skin.String(TVShowSubMenu.1.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.1.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.2.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.2.Label))] |
+				[!IsEmpty(Skin.String(TVShowSubMenu.3.Path)) + !IsEmpty(Skin.String(TVShowSubMenu.3.Label))]
 			</visible>
 		</control>
 	</include>
