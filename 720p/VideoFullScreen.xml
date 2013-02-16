@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <window>
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
@@ -101,7 +102,7 @@
 				<visible>!Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>
 			</control>
 			<control type="group" id="1">
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>!Skin.HasSetting(HidePauseInfo) + Player.Paused + !Player.Caching</visible>
 				<visible>!IsEmpty(VideoPlayer.Plot)</visible>
 				<animation effect="slide" end="-300,160" time="100" tween="back" easing="out" condition="!Window.IsActive(VideoOSD) + Skin.HasSetting(HideSeekBarOSD)" reversible="true">Conditional</animation>
@@ -130,7 +131,7 @@
 			</control>
 			<control type="group" id="1">
 				<animation effect="slide" end="0,-60" time="500" tween="back" easing="out" condition="Window.IsVisible(infodialog) | Window.IsVisible(volumebar)" reversible="true">Conditional</animation>
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)]</visible>
 				<control type="image" id="1">
 					<description>clearart image</description>
@@ -228,12 +229,12 @@
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>!Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)</visible>
 			</control>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)]</visible>
 				<posx>330</posx>
 				<posy>175r</posy>
@@ -372,7 +373,7 @@
 			</control>
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist" id="1">
@@ -432,7 +433,7 @@
 			<control type="group" id="1">
 				<visible>!Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>
 				<visible>!VideoPlayer.Content(LiveTV) | [VideoPlayer.Content(LiveTV) + VideoPlayer.HasEpg]</visible>
-				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>			
+				<visible>!substring(Player.Filenameandpath,extras/Intro/XBMC-Intro-Video.mp4,right)</visible>
 				<visible>![SubString(Player.FolderPath,mms://,Left) | SubString(Player.FolderPath,http://,Left) | SubString(Player.FolderPath,rtmp://,Left)]</visible>
 				<posx>330</posx>
 				<posy>85r</posy>
@@ -537,10 +538,6 @@
 			<ondown>500</ondown>
 			<include>VisibleFadeEffect</include>
 		</control>
-		
-		
-		
-		
 		<control type="group">
 			<visible>Player.ShowCodec + VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
 			<posy>165</posy>

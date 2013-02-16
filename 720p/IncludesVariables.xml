@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<variable name="GlobalScreenBackground" type="text">
 		<value condition="Skin.HasSetting(GlobalMovieBackdrop)">$INFO[Skin.String(HomeScreenMoviesBackGround)]</value>
