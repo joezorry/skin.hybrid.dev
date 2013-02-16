@@ -136,37 +136,37 @@
 					<item id="1">
 						<label>$LOCALIZE[10000] $LOCALIZE[31302]</label>
 						<label2>$LOCALIZE[31025]</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="2">
 						<label>$LOCALIZE[1034]</label>
 						<label2>$LOCALIZE[31025]</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="3">
 						<label>33068</label>
 						<label2>31115</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="4">
 						<label>513</label>
 						<label2>31112</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="5">
 						<label>128</label>
 						<label2>5</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="6">
 						<label>$LOCALIZE[24000]</label>
 						<label2>$LOCALIZE[31200]</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 					<item id="7">
 						<label>$LOCALIZE[247]</label>
 						<label2> &amp; $LOCALIZE[31680]</label2>
-						<onclick>-</onclick>
+						<onclick>noop</onclick>
 					</item>
 				</content>
 			</control>
@@ -1163,7 +1163,7 @@
 							<item id="1">
 								<description>Global Home Menu</description>
 								<label>$LOCALIZE[31998]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon condition="IsEmpty(Skin.String(GlobalLiveBackdrop))">$VAR[GlobalScreenBackground]</icon>
 								<icon condition="!IsEmpty(Skin.String(GlobalLiveBackdrop))">special://skin/backgrounds/homescreen/livecases.jpg</icon>
 								<visible>Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1171,7 +1171,7 @@
 							<item id="2">
 								<description>Home Menu Item One</description>
 								<label>$VAR[MenuItemOneLabel]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.1.FanArt)]</thumb>
 								<visible>!Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1180,7 +1180,7 @@
 							<item id="3">
 								<description>Home Menu Item Two</description>
 								<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.2.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.2.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1188,7 +1188,7 @@
 							<item id="4">
 								<description>Home Menu Item Three</description>
 								<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.3.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.3.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1196,7 +1196,7 @@
 							<item id="5">
 								<description>Home Menu Item Four</description>
 								<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.4.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.4.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1204,7 +1204,7 @@
 							<item id="6">
 								<description>Home Menu Item Five</description>
 								<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.5.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.5.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1212,7 +1212,7 @@
 							<item id="7">
 								<description>Home Menu Item Six</description>
 								<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.6.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.6.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1220,7 +1220,7 @@
 							<item id="8">
 								<description>Home Menu Item Seven</description>
 								<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.7.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.7.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1228,7 +1228,7 @@
 							<item id="9">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.8.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.8.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1236,7 +1236,7 @@
 							<item id="10">
 								<description>Home Menu Item Nine</description>
 								<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.9.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.9.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1244,7 +1244,7 @@
 							<item id="11">
 								<description>Home Menu Item Ten</description>
 								<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.10.FanArt)]</thumb>
 								<visible>!IsEmpty(Skin.String(HomeItem.10.Path)) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1252,7 +1252,7 @@
 							<item id="12">
 								<description>Home Menu Settings</description>
 								<label>$LOCALIZE[13000]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon>special://skin/backgrounds/$INFO[Skin.CurrentTheme].jpg</icon>
 								<thumb>$INFO[Skin.String(HomeItem.11.FanArt)]</thumb>
 								<visible>!Skin.HasSetting(HideHomeMenuSystem) + !Skin.HasSetting(GlobalMenuBackdrop)</visible>
@@ -1260,7 +1260,7 @@
 							<item id="13">
 								<description>Video Browser Backdrop</description>
 								<label>$LOCALIZE[1212] $LOCALIZE[31684]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon condition="IsEmpty(Skin.String(GlobalLiveBackdrop))">$VAR[GlobalScreenBackground]</icon>
 								<icon condition="!IsEmpty(Skin.String(GlobalLiveBackdrop))">special://skin/backgrounds/homescreen/livecases.jpg</icon>
 								<thumb>$INFO[Skin.String(VideoBrowserBackdrop)]</thumb>
@@ -1269,7 +1269,7 @@
 							<item id="14">
 								<description>Music Browser Backdrop</description>
 								<label>$LOCALIZE[1211] $LOCALIZE[31684]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon condition="IsEmpty(Skin.String(GlobalLiveBackdrop))">$VAR[GlobalScreenBackground]</icon>
 								<icon condition="!IsEmpty(Skin.String(GlobalLiveBackdrop))">special://skin/backgrounds/homescreen/livecases.jpg</icon>
 								<thumb>$INFO[Skin.String(MusicBrowserBackdrop)]</thumb>
@@ -1278,7 +1278,7 @@
 							<item id="15">
 								<description>Pictures Browser Backdrop</description>
 								<label>$LOCALIZE[1213] $LOCALIZE[31684]</label>
-								<onclick>-</onclick>
+								<onclick>noop</onclick>
 								<icon condition="IsEmpty(Skin.String(GlobalLiveBackdrop))">$VAR[GlobalScreenBackground]</icon>
 								<icon condition="!IsEmpty(Skin.String(GlobalLiveBackdrop))">special://skin/backgrounds/homescreen/livecases.jpg</icon>
 								<thumb>$INFO[Skin.String(PhotoBrowserBackdrop)]</thumb>
@@ -3636,25 +3636,25 @@
 					<content>
 						<item id="1">
 							<label>$LOCALIZE[31700]</label>
-							<onclick>-</onclick>
+							<onclick>noop</onclick>
 							<icon>-</icon>
 							<thumb>-</thumb>
 						</item>
 						<item id="2">
 							<label>$LOCALIZE[31701]</label>
-							<onclick>-</onclick>
+							<onclick>noop</onclick>
 							<icon>-</icon>
 							<thumb>-</thumb>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[31702]</label>
-							<onclick>-</onclick>
+							<onclick>noop</onclick>
 							<icon>-</icon>
 							<thumb>-</thumb>
 						</item>
 						<item id="4">
 							<label>$LOCALIZE[31703]</label>
-							<onclick>-</onclick>
+							<onclick>noop</onclick>
 							<icon>-</icon>
 							<thumb>-</thumb>
 						</item>
