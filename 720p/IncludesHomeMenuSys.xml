@@ -285,11 +285,7 @@
 			<height>600</height>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2118)</onleft>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2119)</onleft>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">ActivateWindow(2120)</onleft>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + !Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(2122)</onleft>
-			<onleft condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Playlists) + !Skin.HasSetting(SubmenuPlayListMusic)">ActivateWindow(2122)</onleft>
+			<onleft>$VAR[MenuPopUpNav]</onleft>
 			<onright>9001</onright>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>550</scrolltime>
