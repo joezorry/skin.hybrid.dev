@@ -1,3 +1,12 @@
+[B]1.0.9[/B][I]Feb 2013[/I]
+- Added submenu sets for - Movies, TVShows & Concerts
+- Added default Left/Down menu action for Favourites
+- Added video Info OSD to start play
+- Added support for script.playlists
+- Added Playlist Content Window
+- Re-Coded Home Panel Playlist content
+- Various small bugfixes + tweak code snippets
+
 [B]1.0.8[/B][I]Jan 2013[/I]
 - Bugfix PosterThumb now looks for Thumb before Fallback
 - Added Local Artwork Toggle (FanArt & Posters)
@@ -8,7 +17,7 @@
 [B]1.0.7[/B][I]Jan 2013[/I]
 - Adjusted Transparency Values
 - Added view Logo Wall
-- Added UnWatched Movies Home Paanel
+- Added UnWatched Movies Home Panel
 - Added suggested Media home Panel
 - Added Now Playing to OSD & Menu Options
 - Added Option to Disable Scroll in Home Panel
