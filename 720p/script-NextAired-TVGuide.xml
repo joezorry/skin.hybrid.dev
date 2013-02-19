@@ -187,7 +187,9 @@
 					<control type="list" id="200">
 						<description>Monday list</description>
 						<posx>124</posx>
-						<posy>65</posy>
+						
+						<posy>82</posy>
+						
 						<width>750</width>
 						<height>77</height>
 						<orientation>horizontal</orientation>
@@ -345,7 +347,9 @@
 					<control type="list" id="201">
 						<description>Tuesday list</description>
 						<posx>124</posx>
+						
 						<posy>159</posy>
+						
 						<width>750</width>
 						<height>77</height>
 						<orientation>horizontal</orientation>
