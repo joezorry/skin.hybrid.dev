@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.hybrid.dev"
+  id="skin.hybrid.spin.dev"
   version="1.0.9"
-  name="Hybrid Devopment"
-  provider-name="Mudislander">
+  name="Spin Hybrid"
+  provider-name="joezorry">
   <requires>
    <import addon="xbmc.gui" version="4.0.0"/>
    <import addon="service.skin.widgets" version="0.0.22"/>
@@ -37,12 +37,12 @@
     <summary lang="pt_BR">Hybrid uma skin customizada</summary>
     <summary lang="sv">Hybrid ett anpassningsbart skal</summary>
     <summary lang="zh">Hybrid 一套可定制的皮肤</summary>
-    <description lang="be">Hybrid is a customizable skin incorporating many of the now popular tweaks, addons and scripts.</description>
+    <description lang="be">Spin Hybrid is a forked skin of Hybrid which will become an own skin overtime.</description>
     <description lang="ca">Hybrid és una aparença personalitzable que incorpora molts dels ara populars ajustaments, complements i scripts.</description>
     <description lang="da">Hybrid er et tilpasninsvenligt skin, som indarbejder mange af tidens populære tweaks, add-ons og scripts.</description>
     <description lang="de">Hybrid ist ein anpasserbarer Skin der die beliebten Optimierungen, AddOns und Scripte umfasst.</description>
     <description lang="el">Το Hybrid είναι ένα προσαρμόσιμο κέλυφος που περιλαμβάνει πολλά από τα πλέον δημοφιλή tweaks, πρόσθετα και scripts.</description>
-    <description lang="en">Hybrid is a customizable skin incorporating many of the now popular tweaks, addons and scripts.</description>
+    <description lang="en">Spin Hybrid is a forked skin of Hybrid which will become an own skin overtime.</description>
     <description lang="es">Hybrid es un skin personalizable que incorpora muchos de los ajustes, addons y scripts más populares</description>
     <description lang="fr">Hybrid est un thème personalisable incluant de nombreux Add-ons, scripts et améliorations populaires</description>
     <description lang="ko">Hybrid는 사용자 설정이 가능한 스킨으로 최신 트윅, 추가기능, 스크립트를 지원합니다.</description>
@@ -51,20 +51,6 @@
     <description lang="pl">Hybryda to dopasowana skórka zawierająca wiele popularnych usprawnień, dodatków i skryptów.</description>
     <description lang="pt_BR">Hybrid é uma skin customizada que incorpora muitos tweaks, add-ons e scripts populares.</description>
     <description lang="sv">Hybrid är ett anpassningsbart skal som innehåller många av dom nu populära anpassningarna, tilläggen och skripten.</description>
-    <description lang="zh">Hybrid是一套可定制的皮肤具备许多流行的改进，插件和脚本。</description>
-    <disclaimer lang="be">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="da">Du smadrer det - Du får lov at beholde stumperne</disclaimer>
-    <disclaimer lang="de">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="el">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="en">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="es">Tu lo rompes-tu tienes que guardar los trozos</disclaimer>
-    <disclaimer lang="fr">Vous le cassez, vous assumez!</disclaimer>
-    <disclaimer lang="it">Chi rompe... I cocci sono suoi</disclaimer>
-    <disclaimer lang="lt">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="nl">You break it - You get to keep the pieces</disclaimer>
-    <disclaimer lang="pl">Zepsułeś to - Pozbieraj kawałki</disclaimer>
-    <disclaimer lang="pt_BR">Se quebrar - Você começa a manter as peças</disclaimer>
-    <disclaimer lang="sv">Om du har sönder det - Får du behålla bitarna</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
